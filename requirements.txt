@@ -1,0 +1,11 @@
+# requirements.txt
+# Python Version: 3.11
+# Install all: pip install -r requirements.txt
+
+pinecone-client>=3.0.0
+sentence-transformers>=2.2.2
+langchain>=0.1.0
+datasets>=2.14.0
+transformers>=4.35.0
+tqdm>=4.65.0
+requests>=2.31.0

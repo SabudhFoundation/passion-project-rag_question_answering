@@ -1,0 +1,40 @@
+# .gitignore
+# Files that should NEVER be pushed to GitHub
+
+# ── API Keys (CRITICAL — never commit these) ──────────────────────────────────
+.env
+*.env
+secrets.py
+
+# ── Large data files (too big for GitHub) ────────────────────────────────────
+src/data/raw/hotpot_train_v1.1.json
+src/data/raw/wikipedia_sample.jsonl
+src/data/processed/chunks.jsonl
+src/data/processed/*.jsonl
+
+# ── Python virtual environment ────────────────────────────────────────────────
+venv/
+env/
+.venv/
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── VS Code settings ──────────────────────────────────────────────────────────
+.vscode/
+*.code-workspace
+
+# ── Mac OS files ──────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── Jupyter checkpoints ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Model cache (large files) ─────────────────────────────────────────────────
+*.bin
+*.pt
+*.pth

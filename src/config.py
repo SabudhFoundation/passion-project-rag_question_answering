@@ -1,56 +1,45 @@
 """
 src/config.py
 =============
-Central settings file for the entire RAG project.
+Central configuration file for the RAG project.
 
 WHY THIS FILE EXISTS:
-  Instead of writing your API key, file paths, or model names
-  inside every class, we put all settings HERE in one place.
+  All settings live here. No class has hardcoded values.
+  Change one thing here → the whole project uses the new value.
 
-  Benefit: If you want to change the embedding model, you change
-  ONE line here — every class automatically uses the new value.
-
-HOW TO USE:
-  from config import PINECONE_API_KEY, CHUNK_SIZE
+HOW TO USE IN ANY FILE:
+  import sys, os
+  sys.path.append(...)
+  from config import CHUNK_SIZE, PINECONE_INDEX
 """
 
 import os
 
 # ─────────────────────────────────────────────────────────────────────────────
-# PINECONE — Vector Database
-# ─────────────────────────────────────────────────────────────────────────────
-# Before running, set your key in the terminal:
-#   Windows: set PINECONE_API_KEY=your-key-here
+# PINECONE
+# Set API key in terminal before running:
+#   Windows : set PINECONE_API_KEY=your-key-here
 #   Mac/Linux: export PINECONE_API_KEY=your-key-here
+# ─────────────────────────────────────────────────────────────────────────────
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "PASTE_YOUR_KEY_HERE")
 PINECONE_REGION  = os.getenv("PINECONE_REGION",  "us-east-1")
 PINECONE_INDEX   = "rag-baseline"
-NAMESPACE_HOTPOT = "hotpotqa"   # namespace inside Pinecone index
+NAMESPACE_HOTPOT = "hotpotqa"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # EMBEDDING MODEL
+# all-MiniLM-L6-v2 → free, CPU-friendly, 384-dimensional output
 # ─────────────────────────────────────────────────────────────────────────────
-# all-MiniLM-L6-v2:
-#   - Free to use, no API key needed
-#   - Runs on CPU (no GPU required)
-#   - Outputs 384-dimensional vectors
-#   - Industry standard for RAG baseline systems
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-EMBEDDING_DIM   = 384   # must match the model AND the Pinecone index
+EMBEDDING_DIM   = 384
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CHUNKING
+# chunk_size=512  → under MiniLM's 512-token limit
+# chunk_overlap=50 → preserves bridge entities at boundaries
 # ─────────────────────────────────────────────────────────────────────────────
-# chunk_size = 512 characters (~100-120 words)
-#   WHY: MiniLM has a 512-token limit. 512 chars keeps us safely under it.
-#
-# chunk_overlap = 50 characters
-#   WHY: HotpotQA has 88.4% bridge-type questions.
-#        The "bridge" entity connects two paragraphs.
-#        If it falls at a chunk boundary, overlap ensures it appears
-#        in BOTH neighboring chunks so retrieval never misses it.
 
 CHUNK_SIZE    = 512
 CHUNK_OVERLAP = 50
@@ -58,23 +47,20 @@ CHUNK_OVERLAP = 50
 # ─────────────────────────────────────────────────────────────────────────────
 # FILE PATHS
 # ─────────────────────────────────────────────────────────────────────────────
-# os.path.dirname(__file__) = the folder where this config.py lives (src/)
-# We build all paths relative to src/ so the project works on any computer.
 
 SRC_DIR       = os.path.dirname(os.path.abspath(__file__))
-
 RAW_DIR       = os.path.join(SRC_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(SRC_DIR, "data", "processed")
 
-# HotpotQA — the ONLY dataset used in this pipeline
+HOTPOTQA_URL  = "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json"
 HOTPOTQA_FILE = os.path.join(RAW_DIR,       "hotpot_train_v1.1.json")
 CHUNKS_FILE   = os.path.join(PROCESSED_DIR, "chunks.jsonl")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # DATASET LIMITS
+# Set MAX_HOTPOT_RECORDS = None for full dataset (90,447 records)
+# Keep at 200 during testing to finish in ~5 minutes
 # ─────────────────────────────────────────────────────────────────────────────
-# Set to None to process ALL records (full run takes ~30 min)
-# Keep at 200 for testing (finishes in ~5 min)
 
 MAX_HOTPOT_RECORDS = 200
 
@@ -82,11 +68,13 @@ MAX_HOTPOT_RECORDS = 200
 # PERFORMANCE
 # ─────────────────────────────────────────────────────────────────────────────
 
-UPSERT_BATCH_SIZE = 100  # vectors per Pinecone API request (max safe = 100)
-EMBED_BATCH_SIZE  = 64   # texts processed per embedding model forward pass
+UPSERT_BATCH_SIZE = 100   # vectors per Pinecone API request (max safe = 100)
+EMBED_BATCH_SIZE  = 64    # texts per embedding model forward pass
+TOP_K             = 5     # chunks returned per query (used by retrieval team)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# RETRIEVAL (used by retrieval team — do not change)
+# LOGGING
 # ─────────────────────────────────────────────────────────────────────────────
 
-TOP_K = 5   # how many chunks to return per query
+LOG_FORMAT = "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+LOG_LEVEL  = "INFO"

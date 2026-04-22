@@ -78,9 +78,6 @@ class Generator:
     def __repr__(self) -> str:
         return f"Generator(model='{self._model}')"
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # PUBLIC METHOD
-    # ─────────────────────────────────────────────────────────────────────────
 
     def generate(self, query: str, chunks: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
@@ -155,10 +152,6 @@ class Generator:
                 "answer": f"Generation error: {e}",
                 "sources": [],
             }
-
-    # ─────────────────────────────────────────────────────────────────────────
-    # PRIVATE METHODS
-    # ─────────────────────────────────────────────────────────────────────────
 
     @staticmethod
     def _build_context(chunks: List[Dict[str, Any]]) -> str:

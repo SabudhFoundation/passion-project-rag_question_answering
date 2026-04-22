@@ -27,7 +27,7 @@ HOW TO RUN:
   Interactive mode (keep asking questions):
     python src/main.py --interactive
     
-  Launch Gradio Dashboard:
+  Launch Chainlit Dashboard:
     python src/main.py --app
 """
 
@@ -84,7 +84,7 @@ def main() -> None:
     parser.add_argument(
         "--app",
         action="store_true",
-        help="Launch the Gradio Web application dashboard",
+        help="Launch the Chainlit Web application dashboard",
     )
     parser.add_argument(
         "--all",
@@ -99,7 +99,7 @@ def main() -> None:
     if args.all:
         from pipelines.ingestion import IngestionPipeline
         from pipelines.query import QueryPipeline
-        from visualization.app import RAGApp
+        import subprocess
         try:
             logger.info("Starting end-to-end pipeline execution...")
             # 1. Ingestion
@@ -112,10 +112,14 @@ def main() -> None:
             query_pipeline = QueryPipeline()
             query_pipeline.run("What is the main topic of the ingested dataset?")
             
-            # 3. Launch App for UI
-            logger.info("=== Phase 3: Launching Gradio App ===")
-            app = RAGApp()
-            app.launch()
+            # 3. Launch Chainlit App for UI
+            logger.info("=== Phase 3: Launching Chainlit App ===")
+            app_path = os.path.join(SRC_DIR, "visualization", "app.py")
+            subprocess.run(
+                [sys.executable, "-m", "chainlit", "run", app_path,
+                 "--host", "0.0.0.0", "--port", "8000"],
+                cwd=os.path.dirname(SRC_DIR),
+            )
         except RAGPipelineError as e:
             logger.error("End-to-end pipeline failed: %s", e)
             sys.exit(1)
@@ -159,9 +163,14 @@ def main() -> None:
                 break
                 
     elif args.app:
-        from visualization.app import RAGApp
-        app = RAGApp()
-        app.launch()
+        import subprocess
+        logger.info("Launching Chainlit dashboard...")
+        app_path = os.path.join(SRC_DIR, "visualization", "app.py")
+        subprocess.run(
+            [sys.executable, "-m", "chainlit", "run", app_path,
+             "--host", "0.0.0.0", "--port", "8000"],
+            cwd=os.path.dirname(SRC_DIR),
+        )
 
     else:
         _print_usage()

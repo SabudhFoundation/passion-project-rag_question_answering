@@ -477,20 +477,30 @@ class Preprocessor:
 
     def _save_to_disk(self, records: List[Dict[str, Any]]) -> None:
         """
-        Saves processed records to src/data/processed/ as JSONL.
+        Saves processed records to src/data/processed/ as both 
+        efficient JSONL and formatted JSON.
 
         Raises:
             PreprocessingError — if disk write fails.
         """
-        path = os.path.join(config.PROCESSED_DIR, "hotpotqa_processed.jsonl")
+        jsonl_path = os.path.join(config.PROCESSED_DIR, "hotpotqa_processed.jsonl")
+        json_path  = os.path.join(config.PROCESSED_DIR, "hotpotqa_processed.json")
+        
         try:
-            with open(path, "w", encoding="utf-8") as f:
+            # Save JSONL (efficient for streaming)
+            with open(jsonl_path, "w", encoding="utf-8") as f:
                 for record in records:
                     f.write(json.dumps(record, ensure_ascii=False) + "\n")
-            logger.info("  Saved processed records to: %s", path)
+            logger.info("  Saved JSONL to: %s", jsonl_path)
+
+            # Save JSON (formatted for human reading)
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(records, f, ensure_ascii=False, indent=2)
+            logger.info("  Saved JSON  to: %s", json_path)
+
         except IOError as e:
             raise PreprocessingError(
-                f"Cannot save processed records to '{path}': {e}"
+                f"Cannot save processed records: {e}"
             ) from e
 
 

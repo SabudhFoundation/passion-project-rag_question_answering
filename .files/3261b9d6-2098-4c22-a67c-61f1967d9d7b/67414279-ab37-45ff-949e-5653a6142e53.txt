@@ -1,6 +1,6 @@
 **Source:** Wiki · N/A
-**Score:** 0.010 (cosine)
-**Chunk:** 3/5
+**Score:** 0.016 (cosine)
+**Chunk:** 2/5
 
 ---
 

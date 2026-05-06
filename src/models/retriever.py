@@ -158,6 +158,15 @@ class HybridRetriever:
             bm25_results = self._bm25_retriever.invoke(query)
             vector_results = self._vector_retriever.invoke(query)
 
+            # Fetch raw semantic scores to display "real" numbers in the UI
+            try:
+                pc_store = self._langchain_store.get_vectorstore()
+                docs_and_scores = pc_store.similarity_search_with_score(query, k=20)
+                semantic_scores = {doc.page_content[:200]: float(score) for doc, score in docs_and_scores}
+            except Exception as e:
+                logger.warning("Could not fetch raw semantic scores: %s", e)
+                semantic_scores = {}
+
             logger.info(
                 "  BM25: %d results | Vector: %d results",
                 len(bm25_results), len(vector_results),
@@ -171,7 +180,20 @@ class HybridRetriever:
 
             # Convert LangChain Documents to our standard dict format
             retrieved_chunks = []
+            
+            # Max possible RRF score
+            k_val = 60 
+            
             for rank, (doc, score) in enumerate(merged, 1):
+                doc_key = doc.page_content[:200]
+                
+                # Use real semantic score if available, otherwise fallback to normalized RRF
+                if doc_key in semantic_scores:
+                    final_score = semantic_scores[doc_key]
+                else:
+                    normalized_score = min(score * (k_val + 1), 1.0)
+                    final_score = normalized_score
+                
                 retrieved_chunks.append({
                     "text":        doc.page_content,
                     "title":       doc.metadata.get("title", ""),
@@ -181,7 +203,7 @@ class HybridRetriever:
                     "answer":      doc.metadata.get("answer", ""),
                     "is_bridge":   doc.metadata.get("is_bridge", False),
                     "is_multihop": doc.metadata.get("is_multihop", False),
-                    "score":       round(score, 4),
+                    "score":       round(final_score, 4),
                     "rank":        rank,
                 })
 

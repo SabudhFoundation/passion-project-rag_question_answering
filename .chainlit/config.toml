@@ -103,7 +103,7 @@ name = "Assistant"
 # If not set, the browser's language will be used
 # language = "en-US"
 
-# layout = "wide"
+layout = "wide"
 
 # default_sidebar_state = "open"  # Options: "open", "closed", "hidden"
 

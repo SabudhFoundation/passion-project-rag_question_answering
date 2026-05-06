@@ -263,7 +263,7 @@ async def on_chat_start():
     cl.user_session.set("generator", generator)
     cl.user_session.set("settings", {
         "top_k": 5,
-        "threshold": 0.0,
+        "threshold": 0.40,
         "model": "llama-3.3-70b-versatile",
         "temperature": 0.2,
     })
@@ -283,7 +283,7 @@ async def on_chat_start():
             Slider(
                 id="threshold",
                 label="Min similarity threshold",
-                initial=0.0,
+                initial=0.40,
                 min=0.0,
                 max=1.0,
                 step=0.05,
@@ -379,10 +379,12 @@ async def on_settings_update(settings: dict):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _score_emoji(score: float) -> str:
-    if score >= 0.85:
+    if score >= 0.80:
         return "🟢"
-    if score >= 0.70:
+    if score >= 0.60:
         return "🟡"
+    if score >= 0.40:
+        return "🟠"
     return "🔴"
 
 
@@ -402,7 +404,7 @@ async def on_message(message: cl.Message):
     model = settings.get("model", "llama-3.3-70b-versatile")
 
     # ── Step 1: Retrieval ─────────────────────────────────────────────────
-    async with cl.Step(name="🔍 Retrieving documents", type="retrieval") as retrieval_step:
+    async with cl.Step(name="Retrieving documents", type="tool", icon="🔍") as retrieval_step:
         result = await asyncio.to_thread(
             _run_rag, query, retriever, generator, top_k, thr, model
         )
@@ -427,7 +429,7 @@ async def on_message(message: cl.Message):
         retrieval_step.output = chunks_md
 
     # ── Step 2: Generation ────────────────────────────────────────────────
-    async with cl.Step(name="🧠 Generating answer", type="llm") as gen_step:
+    async with cl.Step(name="Generating answer", type="run", icon="🧠") as gen_step:
         gen_step.output = (
             f"**Model:** `{model}`\n"
             f"**Tokens:** ~{result.tokens_used:,}\n"

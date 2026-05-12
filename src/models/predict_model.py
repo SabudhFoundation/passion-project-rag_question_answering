@@ -106,13 +106,40 @@ class Generator:
             # 2. Format prompt
             prompt = RAG_SYSTEM_PROMPT.format(context=context, query=query)
 
-            # 3. Call LLM
-            logger.info("Calling Groq LLM (%s)...", self._model)
-            response = self._client.chat.completions.create(
-                model=self._model,
-                messages=[{"role": "user", "content": prompt}],
-                response_format={"type": "json_object"},
-            )
+            # 3. Call LLM with fallback mechanism for rate limits
+            fallback_models = [
+                self._model,
+                "llama-3.1-8b-instant",
+                "llama-3.3-70b-versatile",
+                "gemma2-9b-it",
+                "mixtral-8x7b-32768",
+            ]
+            
+            # Remove duplicates while preserving order
+            fallback_models = list(dict.fromkeys(fallback_models))
+            
+            response = None
+            last_error = None
+            
+            for m in fallback_models:
+                logger.info("Calling Groq LLM (%s)...", m)
+                try:
+                    response = self._client.chat.completions.create(
+                        model=m,
+                        messages=[{"role": "user", "content": prompt}],
+                        response_format={"type": "json_object"},
+                    )
+                    # Update active model so subsequent calls prefer this one
+                    self._model = m
+                    break
+                except Exception as e:
+                    last_error = e
+                    # Fallback on any API-related error (rate limit, decommissioned model, etc)
+                    logger.warning("Generation failed for model %s: %s. Trying fallback...", m, str(e)[:100])
+                    continue
+                        
+            if response is None:
+                raise last_error
 
             # 4. Parse JSON response
             raw_content = response.choices[0].message.content

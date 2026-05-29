@@ -3,7 +3,7 @@ src/visualization/app.py
 ========================
 RAG QnA Bot — Chainlit-based interactive chatbot UI.
 
-Dataset : HotpotQA (649 documents)
+Dataset : HotpotQA
 Retrieval: Hybrid BM25 + Vector (Pinecone)
 LLM     : Groq llama-3.3-70b-versatile
 
@@ -49,10 +49,10 @@ except ImportError:
     log.warning("BackendGenerator not found — stub mode.")
 try:
     from preprocessing_data.pre_processing import Chunker
-    from models.train_model import LangChainVectorStore
+    from feature_engineering.build_features import VectorStoreManager
     from models.retriever import HybridRetriever
     _Chunker = Chunker
-    _VectorStore = LangChainVectorStore
+    _VectorStore = VectorStoreManager
     _HybridRetriever = HybridRetriever
 except ImportError:
     log.warning("Retriever pipeline not found — stub mode.")
@@ -167,19 +167,12 @@ def _stub(query: str, top_k: int, thr: float, model: str) -> RAGResult:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _build_retriever():
-    """Build the hybrid retriever from disk chunks + Pinecone."""
-    if not (_Chunker and _VectorStore and _HybridRetriever):
+    """Build the hybrid retriever for Pinecone + ColBERT re-ranking."""
+    if not _HybridRetriever:
         return None
     try:
-        chunker = _Chunker()
-        chunks = chunker.load_chunks_from_disk()
-        if not chunks:
-            log.warning("No chunks on disk — run ingest.")
-            return None
-        docs = _Chunker.to_langchain_documents(chunks)
-        store = _VectorStore()
-        store.connect_existing()
-        return _HybridRetriever(documents=docs, langchain_store=store)
+        # The new HybridRetriever automatically connects to Pinecone and BGE-M3
+        return _HybridRetriever()
     except Exception as e:
         log.error("Retriever build failed: %s — stub mode.", e)
         return None
@@ -315,7 +308,16 @@ async def on_chat_start():
 
     # Status indicator
     pipeline_status = "🟢 Connected" if retriever else "🟡 Stub mode"
-    doc_count = "649" if retriever else "0"
+    if retriever:
+        try:
+            store = _VectorStore()
+            stats = store.get_stats()
+            doc_count = str(stats.get("total_vector_count", "Unknown"))
+        except Exception as e:
+            log.warning("Failed to fetch Pinecone stats: %s", e)
+            doc_count = "Unknown"
+    else:
+        doc_count = "0"
 
     await cl.Message(
         content=(

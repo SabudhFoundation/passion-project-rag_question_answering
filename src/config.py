@@ -30,7 +30,7 @@ dotenv.load_dotenv(dotenv_path)
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "PASTE_YOUR_KEY_HERE")
 PINECONE_REGION  = os.getenv("PINECONE_REGION",  "us-east-1")
-PINECONE_INDEX   = "rag-baseline"
+PINECONE_INDEX   = "bge-m3-hybrid"
 NAMESPACE_HOTPOT = "hotpotqa"   # namespace inside Pinecone index
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -42,14 +42,20 @@ NAMESPACE_HOTPOT = "hotpotqa"   # namespace inside Pinecone index
 #   - Outputs 384-dimensional vectors
 #   - Industry standard for RAG baseline systems
 
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-EMBEDDING_DIM   = 384   # must match the model AND the Pinecone index
+EMBEDDING_MODEL = "BAAI/bge-m3"
+EMBEDDING_DIM   = 1024
+PINECONE_METRIC = "dotproduct"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CHUNKING
 # ─────────────────────────────────────────────────────────────────────────────
+
+
 # chunk_size = 512 characters (~100-120 words)
-#   WHY: MiniLM has a 512-token limit. 512 chars keeps us safely under it.
+#   WHY: Aligns exactly with the ground-truth chunk boundaries in the
+#        synthetic evaluation dataset (synthetic_qa_hotpotqa_*.json).
+#        This gives clean 1-to-1 Precision/Recall measurement with no
+#        size-mismatch artifacts.
 #
 # chunk_overlap = 50 characters
 #   WHY: HotpotQA has 88.4% bridge-type questions.
@@ -95,6 +101,11 @@ EMBED_BATCH_SIZE  = 64   # texts processed per embedding model forward pass
 # ─────────────────────────────────────────────────────────────────────────────
 
 TOP_K = 5   # how many chunks to return per query
+
+# HYBRID_ALPHA — balance between dense (semantic) and sparse (lexical/BM25) search.
+# 1.0 = pure dense (semantic),  0.0 = pure sparse (keyword/BM25).
+# Default: 0.5 (equal weight). Updated automatically by alpha_sweep.py after tuning.
+HYBRID_ALPHA = 0.2
 
 # ─────────────────────────────────────────────────────────────────────────────
 # HYBRID RETRIEVER

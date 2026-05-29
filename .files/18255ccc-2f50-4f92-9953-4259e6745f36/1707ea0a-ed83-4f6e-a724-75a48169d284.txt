@@ -1,7 +1,0 @@
-**Source:** Wiki · N/A
-**Score:** 0.522 (cosine)
-**Chunk:** 1/5
-
----
-
-Context: [The Messenger (2015 horror film)] The Messenger is a 2015 British supernatural mystery horror film directed by David Blair, written by Andrew Kirk and starring Robert Sheehan and Lily Cole. [Robert Sheehan] Robert Michael Sheehan (Irish: "Roibeárd Mícheál Ó Siodhacháin" ; born 7 January 1988) is an Irish actor. He is best known for television roles such as Nathan Young in "Misfits" and Darren in "Love/Hate", as well as the 2009 film "Cherrybomb" alongside Rupert Grint

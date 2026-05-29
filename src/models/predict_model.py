@@ -88,7 +88,10 @@ class Generator:
             chunks: list of chunk dicts from the retriever.
 
         Returns:
-            dict with keys: status, answer_found, answer, sources.
+            dict with keys: status, answer_found, answer, scratchpad, sources.
+            ``scratchpad`` contains the LLM's step-by-step chain-of-thought
+            reasoning (multi-hop bridging, arithmetic, comparisons) that
+            produced the final answer.  Useful for debugging and evaluation.
         """
         if not chunks:
             logger.warning("No chunks provided -- returning fallback answer")
@@ -96,6 +99,7 @@ class Generator:
                 "status": "success",
                 "answer_found": False,
                 "answer": "I don't have enough context to answer this question.",
+                "scratchpad": "",
                 "sources": [],
             }
 
@@ -112,7 +116,6 @@ class Generator:
                 "llama-3.1-8b-instant",
                 "llama-3.3-70b-versatile",
                 "gemma2-9b-it",
-                "mixtral-8x7b-32768",
             ]
             
             # Remove duplicates while preserving order
@@ -146,20 +149,32 @@ class Generator:
             llm_output = json.loads(raw_content)
 
             answer_found = llm_output.get("answer_found", False)
-            answer = llm_output.get("answer", "Error generating text.")
+            answer       = llm_output.get("answer", "Error generating text.")
+            # scratchpad contains the model's <thinking>…</thinking> CoT block
+            # (multi-hop bridging, arithmetic, citation verification) — kept for
+            # debugging and evaluation; not shown to end-users by default.
+            scratchpad   = llm_output.get("scratchpad", "")
+            # citations: list of "chunk_N | doc_id | Title" strings the model
+            # verified against during STEP 5 — Citation Verification.
+            citations    = llm_output.get("citations", [])
 
-            # 5. Extract source titles
+            # 5. Extract source titles (from all retrieved chunks)
             sources = list({
                 c.get("title", c.get("source", "Unknown"))
                 for c in chunks
             })
 
-            logger.info("  Answer generated (found=%s, sources=%d)", answer_found, len(sources))
+            logger.info(
+                "  Answer generated (found=%s, sources=%d, citations=%d, scratchpad_len=%d)",
+                answer_found, len(sources), len(citations), len(scratchpad)
+            )
 
             return {
                 "status": "success",
                 "answer_found": answer_found,
                 "answer": answer,
+                "scratchpad": scratchpad,
+                "citations": citations,
                 "sources": sources,
             }
 
@@ -168,7 +183,8 @@ class Generator:
             return {
                 "status": "error",
                 "answer_found": False,
-                "answer": "LLM returned invalid JSON. Please try again.",
+                "answer": "[ERROR] LLM returned invalid JSON. Please try again.",
+                "scratchpad": "",
                 "sources": [],
             }
         except Exception as e:
@@ -176,31 +192,37 @@ class Generator:
             return {
                 "status": "error",
                 "answer_found": False,
-                "answer": f"Generation error: {e}",
+                "answer": f"[ERROR] Generation error: {e}",
+                "scratchpad": "",
                 "sources": [],
             }
 
     @staticmethod
     def _build_context(chunks: List[Dict[str, Any]]) -> str:
         """
-        Formats retrieved chunks into a single context string for the LLM.
+        Formats retrieved chunks into a labelled context string for the LLM.
 
-        Each chunk is wrapped with source markers so the LLM knows
-        which information came from which document.
+        Each chunk header is formatted as:
+            [chunk_N | doc_id | Title]
+        so the CoT prompt's citation rules work correctly. The LLM can then
+        cite these chunks in its scratchpad/thinking block, and STEP 5 (Citation Verification)
+        can trace every claim back to its exact source chunk, keeping the final
+        answer clean of inline bracketed references.
 
         Args:
             chunks: list of chunk dicts from retrieval.
 
         Returns:
-            formatted context string.
+            formatted, labelled context string.
         """
         context_parts = []
         for i, chunk in enumerate(chunks):
-            title = chunk.get("title", chunk.get("source", f"Source {i + 1}"))
-            text = chunk.get("text", "")
+            num    = i + 1
+            title  = chunk.get("title",     chunk.get("source", f"Source {num}"))
+            doc_id = chunk.get("doc_id",    "unknown")
+            text   = chunk.get("text",      "")
             context_parts.append(
-                f"--- START CHUNK FROM {title} ---\n"
-                f"{text}\n"
-                f"--- END CHUNK ---"
+                f"[chunk_{num} | {doc_id} | {title}]\n"
+                f"{text}"
             )
         return "\n\n".join(context_parts)

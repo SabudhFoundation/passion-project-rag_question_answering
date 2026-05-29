@@ -34,7 +34,7 @@ import sys
 from typing import List, Dict, Any, Optional
 
 from tqdm import tqdm
-from sentence_transformers import SentenceTransformer
+from FlagEmbedding import BGEM3FlagModel
 from pinecone import Pinecone, ServerlessSpec
 
 # ── Project imports ───────────────────────────────────────────────────────────
@@ -94,7 +94,7 @@ class Embedder:
         """
         self._model_name = model_name or config.EMBEDDING_MODEL
         self._batch_size = batch_size or config.EMBED_BATCH_SIZE
-        self._model: Optional[SentenceTransformer] = None
+        self._model: Optional[BGEM3FlagModel] = None
 
         logger.info("Embedder initialised (model loads on first use)")
         logger.info("  Model: %s", self._model_name)
@@ -135,12 +135,14 @@ class Embedder:
 
         try:
             model = self._get_model()
-            vector = model.encode(
-                query,
-                normalize_embeddings=True,
-                convert_to_numpy=True,
-            )
-            return vector.tolist()
+            output = model.encode([query], return_dense=True, return_sparse=True)
+            return {
+                "dense": output["dense_vecs"][0].tolist(),
+                "sparse": {
+                    "indices": [int(k) for k in output["lexical_weights"][0].keys()],
+                    "values": [float(v) for v in output["lexical_weights"][0].values()]
+                }
+            }
         except EmbeddingError:
             raise
         except Exception as e:
@@ -173,17 +175,20 @@ class Embedder:
             model = self._get_model()
             texts = [chunk["text"] for chunk in chunks]
 
-            embeddings = model.encode(
+            output = model.encode(
                 texts,
                 batch_size=self._batch_size,
-                show_progress_bar=True,
-                normalize_embeddings=True,
-                convert_to_numpy=True,
+                return_dense=True,
+                return_sparse=True,
             )
 
             # Attach each embedding to its chunk
-            for chunk, embedding in zip(chunks, embeddings):
-                chunk["embedding"] = embedding.tolist()
+            for i, chunk in enumerate(chunks):
+                chunk["embedding"] = output["dense_vecs"][i].tolist()
+                chunk["sparse_values"] = {
+                    "indices": [int(k) for k in output["lexical_weights"][i].keys()],
+                    "values": [float(v) for v in output["lexical_weights"][i].values()]
+                }
 
             logger.info("  Embedded %d chunks successfully", len(chunks))
             return chunks
@@ -274,25 +279,18 @@ class Embedder:
     # PRIVATE METHODS
     # ─────────────────────────────────────────────────────────────────────────
 
-    def _get_model(self) -> SentenceTransformer:
+    def _get_model(self) -> BGEM3FlagModel:
         """
-        Lazy-loads the SentenceTransformer model.
-        Downloads ~80MB on first run, then cached locally.
+        Lazy-loads the BGEM3FlagModel model.
 
         Raises:
             EmbeddingError — if model cannot be loaded.
         """
         if self._model is None:
             try:
-                logger.info(
-                    "Loading embedding model: %s", self._model_name
-                )
-                logger.info("  (First run downloads ~80 MB — this is normal)")
-                self._model = SentenceTransformer(self._model_name)
-                dim = self._model.get_sentence_embedding_dimension()
-                logger.info(
-                    "  Model loaded — outputs %d-dimensional vectors", dim
-                )
+                logger.info("Loading embedding model: %s", self._model_name)
+                self._model = BGEM3FlagModel(self._model_name, use_fp16=True)
+                logger.info("  Model loaded")
             except Exception as e:
                 raise EmbeddingError(
                     f"Failed to load embedding model '{self._model_name}': {e}"
@@ -502,7 +500,7 @@ class VectorStoreManager:
                 pc.create_index(
                     name=config.PINECONE_INDEX,
                     dimension=config.EMBEDDING_DIM,
-                    metric="cosine",
+                    metric="dotproduct",
                     spec=ServerlessSpec(
                         cloud="aws",
                         region=config.PINECONE_REGION,
@@ -564,32 +562,24 @@ class VectorStoreManager:
             if "embedding" not in chunk:
                 continue
 
-            vectors.append((
-                chunk["chunk_id"],
-                chunk["embedding"],
-                {
-                    # Text stored so no second DB needed
+            vectors.append({
+                "id": chunk["chunk_id"],
+                "values": chunk["embedding"],
+                "sparse_values": chunk.get("sparse_values", {}),
+                "metadata": {
                     "original_text": chunk["text"][:1000],
-
-                    # Dataset and document info
-                    "source":    chunk["source"],
-                    "doc_id":    chunk["doc_id"],
-                    "chunk_idx": chunk["chunk_idx"],
-                    "title":     chunk["title"][:200],
-
-                    # Ground truth for evaluation
+                    "source":    chunk.get("source", ""),
+                    "doc_id":    chunk.get("doc_id", ""),
+                    "chunk_idx": chunk.get("chunk_idx", 0),
+                    "title":     chunk.get("title", "")[:200],
                     "question":  chunk.get("question", "")[:300],
                     "answer":    chunk.get("answer", "")[:200],
-
-                    # Retrieval strategy flags
                     "is_multihop": chunk.get("is_multihop", False),
                     "is_bridge":   chunk.get("is_bridge", False),
-
-                    # HotpotQA metadata
                     "type":  chunk.get("type", ""),
                     "level": chunk.get("level", ""),
-                },
-            ))
+                }
+            })
         return vectors
 
 

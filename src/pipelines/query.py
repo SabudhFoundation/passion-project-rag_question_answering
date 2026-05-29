@@ -34,8 +34,6 @@ if _SRC_DIR not in sys.path:
 import config
 from logger import get_logger
 from exceptions import RAGPipelineError, RetrievalError
-from preprocessing_data.pre_processing import Chunker
-from models.train_model import LangChainVectorStore
 from models.retriever import HybridRetriever
 from models.predict_model import Generator
 
@@ -52,9 +50,8 @@ class QueryPipeline:
       semantic similarities.
 
     COMPONENTS:
-      - Chunker:              loads chunks from disk → LangChain Documents
-      - LangChainVectorStore: connects to existing Pinecone index
-      - HybridRetriever:      BM25 + Vector ensemble search
+      - HybridRetriever:      Pinecone Hybrid search (BM25 + Dense) + ColBERT Re-rank
+      - Generator:            Groq LLM for answering
 
     USAGE:
         pipeline = QueryPipeline()
@@ -128,12 +125,6 @@ class QueryPipeline:
     def _ensure_initialized(self) -> None:
         """
         Lazily builds the hybrid retriever on first use.
-
-        Steps:
-          1. Load chunks from disk (saved during ingestion)
-          2. Convert to LangChain Documents
-          3. Connect to existing Pinecone index via LangChain
-          4. Build HybridRetriever (BM25 + Vector)
         """
         if self._initialized:
             return
@@ -141,28 +132,7 @@ class QueryPipeline:
         logger.info("Building hybrid retriever (first query — one-time setup)...")
 
         try:
-            # Step 1: Load chunks from disk
-            chunker = Chunker()
-            chunks = chunker.load_chunks_from_disk()
-
-            if not chunks:
-                raise RetrievalError(
-                    "No chunks found on disk. Run --ingest first."
-                )
-
-            # Step 2: Convert to LangChain Documents
-            documents = Chunker.to_langchain_documents(chunks)
-
-            # Step 3: Connect to existing Pinecone index
-            store = LangChainVectorStore()
-            store.connect_existing()
-
-            # Step 4: Build HybridRetriever
-            self._retriever = HybridRetriever(
-                documents=documents,
-                langchain_store=store,
-            )
-
+            self._retriever = HybridRetriever()
             self._initialized = True
             logger.info("Hybrid retriever ready")
 
@@ -193,12 +163,9 @@ class QueryPipeline:
             logger.info("  Found %d chunks:", len(retrieved_chunks))
             for i, c in enumerate(retrieved_chunks, 1):
                 logger.info(
-                    "  [%d] score=%.4f | bridge=%s | %s",
-                    i, c.get("score", 0), c.get("is_bridge", False),
-                    c.get("title", "")[:50],
+                    "  [%d] score=%.4f | title=%s",
+                    i, c.get("score", 0), c.get("title", "")[:50],
                 )
-
-        return retrieved_chunks
 
         return retrieved_chunks
 

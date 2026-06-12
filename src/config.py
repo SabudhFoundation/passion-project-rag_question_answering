@@ -15,6 +15,11 @@ HOW TO USE:
 """
 
 import os
+import dotenv
+
+project_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir)
+dotenv_path = os.path.join(project_dir, '.env')
+dotenv.load_dotenv(dotenv_path)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PINECONE — Vector Database
@@ -25,7 +30,7 @@ import os
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "PASTE_YOUR_KEY_HERE")
 PINECONE_REGION  = os.getenv("PINECONE_REGION",  "us-east-1")
-PINECONE_INDEX   = "rag-baseline"
+PINECONE_INDEX   = "bge-m3-hybrid"
 NAMESPACE_HOTPOT = "hotpotqa"   # namespace inside Pinecone index
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -37,14 +42,20 @@ NAMESPACE_HOTPOT = "hotpotqa"   # namespace inside Pinecone index
 #   - Outputs 384-dimensional vectors
 #   - Industry standard for RAG baseline systems
 
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-EMBEDDING_DIM   = 384   # must match the model AND the Pinecone index
+EMBEDDING_MODEL = "BAAI/bge-m3"
+EMBEDDING_DIM   = 1024
+PINECONE_METRIC = "dotproduct"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CHUNKING
 # ─────────────────────────────────────────────────────────────────────────────
+
+
 # chunk_size = 512 characters (~100-120 words)
-#   WHY: MiniLM has a 512-token limit. 512 chars keeps us safely under it.
+#   WHY: Aligns exactly with the ground-truth chunk boundaries in the
+#        synthetic evaluation dataset (synthetic_qa_hotpotqa_*.json).
+#        This gives clean 1-to-1 Precision/Recall measurement with no
+#        size-mismatch artifacts.
 #
 # chunk_overlap = 50 characters
 #   WHY: HotpotQA has 88.4% bridge-type questions.
@@ -90,3 +101,43 @@ EMBED_BATCH_SIZE  = 64   # texts processed per embedding model forward pass
 # ─────────────────────────────────────────────────────────────────────────────
 
 TOP_K = 5   # how many chunks to return per query
+
+# HYBRID_ALPHA — balance between dense (semantic) and sparse (lexical/BM25) search.
+# 1.0 = pure dense (semantic),  0.0 = pure sparse (keyword/BM25).
+# Default: 0.5 (equal weight). Updated automatically by alpha_sweep.py after tuning.
+HYBRID_ALPHA = 0.2
+
+# ─────────────────────────────────────────────────────────────────────────────
+# HYBRID RETRIEVER
+# ─────────────────────────────────────────────────────────────────────────────
+# The retriever combines BM25 (keyword) + Vector (semantic) search.
+#
+# BM25: catches exact names and IDs that embeddings might miss.
+# MMR:  Maximal Marginal Relevance — reduces redundancy in vector results.
+# Ensemble: combines both with configurable weights.
+
+BM25_K          = 3           # top-K for BM25 keyword retriever
+VECTOR_FETCH_K  = 20          # candidates fetched before MMR re-ranking
+MMR_LAMBDA      = 0.7         # 1.0 = pure relevance, 0.0 = pure diversity
+ENSEMBLE_WEIGHTS = [0.4, 0.6] # [BM25 weight, Vector weight]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# GENERATION — LLM (Groq)
+# ─────────────────────────────────────────────────────────────────────────────
+# Groq provides free, fast inference for open-source LLMs.
+# Get your API key at: https://console.groq.com/keys
+#
+# Before running, set your key:
+#   Windows: set GROQ_API_KEY=gsk_...
+#   Or add to .env file in project root
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL   = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# GRADIO APP
+# ─────────────────────────────────────────────────────────────────────────────
+
+APP_TITLE = "RAG Question Answering - HotpotQA"
+APP_PORT  = 7860
+

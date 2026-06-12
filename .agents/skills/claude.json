@@ -1,0 +1,7 @@
+{
+    "name": "claude",
+    "command": "/opt/homebrew/bin/claude",
+    "description": "Throttled Claude Code implementation agent",
+    "auto_summarize": true,
+    "max_tokens_per_call": 4000
+}

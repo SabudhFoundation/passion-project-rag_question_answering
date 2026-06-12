@@ -209,7 +209,7 @@
             "button": "New Chat",
             "dialog": {
                 "title": "Create New Chat",
-                "description": "This will clear your current chat history. Are you sure you want to continue?",
+                "description": "Start a new conversation? Your current chat will be saved in your history and you can resume it later.",
                 "tooltip": "New Chat"
             }
         },

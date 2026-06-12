@@ -185,34 +185,53 @@ indexed documents."
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# OPTIONAL: Query Rewriting Prompt  (pre-retrieval step)
-# Feed this to the LLM BEFORE hitting your vector DB to clean up vague or
-# conversational queries. Parse the JSON array and use each string as a
-# separate retrieval query, then merge + deduplicate the results.
+# ACTIVE: Query Rewriting Prompt  (pre-retrieval step)
+# Called by the Smart Query Router in app.py BEFORE hitting the vector DB.
+# Only triggered when the router detects pronouns OR keyword overlap with
+# recent history — keeping latency near-zero for standalone questions.
 #
-# Usage in retriever.py / pipeline.py:
-#   rewrite_prompt = QUERY_REWRITE_PROMPT.format(query=raw_query, history="None")
-#   rewritten_json = llm.generate(rewrite_prompt)   # returns JSON array string
-#   queries = json.loads(rewritten_json)
+# Uses a small fast model (llama-3-8b-8192) via Groq so the rewrite adds
+# only ~200ms, leaving the big model exclusively for answer generation.
+#
+# Usage in app.py:
+#   rewrite_prompt = QUERY_REWRITE_PROMPT.format(query=raw_query, history=history_str)
+#   rewritten = _call_small_llm(rewrite_prompt)   # returns JSON array string
+#   best_query = json.loads(rewritten)[0]
 # ─────────────────────────────────────────────────────────────────────────────
 
 QUERY_REWRITE_PROMPT = """\
 You are a search-query optimizer for a RAG pipeline backed by a vector \
 database indexed on HotpotQA documents.
 
-Conversation history (if any):
+══════════════════════════════════
+RECENT CONVERSATION HISTORY
+══════════════════════════════════
 {history}
+══════════════════════════════════
 
-User's latest message:
+USER'S LATEST MESSAGE:
 {query}
 
-Rewrite the message into 1–3 standalone retrieval queries that:
-- Resolve all pronouns and references (no "it", "they", "this" without a referent)
-- Use domain-specific keywords likely to match document chunks
-- For multi-hop questions, generate one query per hop (each targeting a \
-  different fact needed to answer the question)
-- For arithmetic questions, add a query that retrieves the specific numbers \
-  needed (e.g. birth year, population count, distance)
+══════════════════════════════════
+YOUR TASK
+══════════════════════════════════
+Rewrite the user's latest message into 1–3 standalone, self-contained \
+retrieval queries that can be understood WITHOUT the conversation history.
 
-Return ONLY a JSON array of strings.
+Rules:
+1. PRONOUN RESOLUTION — Replace all pronouns (he, she, it, they, this, that, \
+   its, their, him, her, those) with the exact named entity from the history.
+2. TOPIC CONTINUITY — If the new question is about the same topic discussed \
+   in the history (same person, place, event, or concept), include that \
+   entity name even if the user did not repeat it.
+3. KEYWORD ENRICHMENT — Use domain-specific keywords and entity names likely \
+   to match document chunks. Avoid vague words like "the thing" or "that place".
+4. MULTI-HOP SPLIT — For questions needing facts from multiple sources, \
+   generate one query per fact hop (e.g., one query for the person's birth \
+   year, one for the city's population).
+5. STANDALONE — Every rewritten query must make complete sense on its own \
+   with zero context from the history.
+
+Return ONLY a JSON array of strings. No explanation, no extra text.
+Example output: ["Who directed the 1997 film Titanic?", "James Cameron filmography"]
 """

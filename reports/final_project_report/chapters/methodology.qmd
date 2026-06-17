@@ -30,3 +30,7 @@ Based on the results of the model evaluation, the next step is to optimize the m
 Once the model is optimized, the final step is to fit the model and report final test error for each model
 
 Present the information with support Screen Shots/ Figures (Each Figure must be numbered and Description of Figure must be provided)
+*   **Chainlit Integration:** A custom `MongoDataLayer` intercepts application hooks. It automatically saves:
+    *   **Conversational steps:** Each user query, rewritten prompt, retrieved document list, and final answer.
+    *   **User feedback:** Upvotes and downvotes on specific answers.
+    *   **Session states:** Allowing users to resume their conversations after page reloads or server restarts.

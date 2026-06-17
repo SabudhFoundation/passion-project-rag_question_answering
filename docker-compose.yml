@@ -1,0 +1,55 @@
+
+services:
+  # MongoDB service for persistent chat history
+  mongodb:
+    image: mongo:6.0
+    container_name: rag-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - rag-network
+
+  # RAG application service running Chainlit
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-app
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      # Inject host environment variables from local .env
+      - PINECONE_API_KEY=${PINECONE_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      # Point to the MongoDB container's host name inside the docker network
+      - MONGO_URI=mongodb://mongodb:27017
+      # Redirect HuggingFace models cache to a persistent volume path
+      - HF_HOME=/root/.cache/huggingface
+    volumes:
+      # Mount application code for live reloading during development
+      - .:/app
+      # Exclude host virtual environment and Python caches from overwriting the container
+      - /app/venv
+      - /app/__pycache__
+      # Mount local data directory so database ingestion files sync with host
+      - ./data:/app/data
+      # Persist huggingface downloads (like the 2.2GB BAAI/bge-m3 embedding model)
+      - huggingface_cache:/root/.cache/huggingface
+    depends_on:
+      - mongodb
+    networks:
+      - rag-network
+
+volumes:
+  mongo_data:
+    driver: local
+  huggingface_cache:
+    driver: local
+
+networks:
+  rag-network:
+    driver: bridge

@@ -1,0 +1,12 @@
+pinecone-client>=3.0.0
+FlagEmbedding>=1.2.9
+torch>=2.0.0
+transformers>=4.36.0
+datasets>=2.14.0
+rank-bm25>=0.2.2
+sentence-transformers>=2.6.0
+tqdm>=4.65.0
+numpy>=1.24.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+groq>=0.9.0

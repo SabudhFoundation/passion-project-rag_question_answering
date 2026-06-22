@@ -1,0 +1,36 @@
+# Chapter 5: Implementation / Work Done
+
+## 4.1 Codebase File Inventory
+
+The RAG application follows a modular, object-oriented architecture. The following list details the core files and their specific responsibilities:
+- src/config.py: Manages global variables, API keys, index configurations (BGE-M3, Pinecone, MongoDB, and Groq settings).
+- src/preprocessing_data/pre_processing.py: Implements DataDownloader (downloads raw JSON), Preprocessor (discards distractor text and structures data), and Chunker (splits text recursively).
+- src/feature_engineering/build_features.py: Implements Embedder (BGE-M3 dense and sparse representations) and VectorStoreManager (manages Pinecone upload batches).
+- src/models/retriever.py: Implements HybridRetriever (Pinecone query execution + ColBERT late-interaction re-ranking).
+- src/models/predict_model.py: Implements Generator (context builder, Groq API execution, and structured JSON parser).
+- src/models/prompts.py: Houses RAG system prompt templates, query rewrite instructions, and fallback prompts.
+- src/agents/query_router.py: Implements QueryRouter (classifies intent and routes math/coding queries directly).
+- src/agents/query_rewriter.py: Implements QueryRewriter (pronoun resolution and context expansions).
+- src/db/mongo_data_layer.py: Custom Motor-based Chainlit storage class for chat thread and step history.
+- src/pipelines/ingestion.py: Orchestrates the 5-step data loading and index initialization process.
+- src/pipelines/query.py: Orchestrates the runtime pipeline, connecting routing, rewriting, retrieval, re-ranking, generation, and memory storage.
+- src/evaluation/improved_ragas_eval.py: Performs post-generation RAGAS evaluations using Gemini-3.1-flash-lite.
+- synthetic_data_generator.py: Generates synthetic datasets using BERTopic clustering and LLMs.
+- src/visualization/app.py: Launches the Chainlit web interface.
+
+## 4.2 Detail: Pre-processing and Ingestion
+
+The ingestion pipeline (src/pipelines/ingestion.py) connects the downloader, preprocessor, chunker, embedder, and vector manager. By filtering out the 8 distractor paragraphs per query, the preprocessor keeps vector storage dense and relevant. The Chunker utilizes LangChain's RecursiveCharacterTextSplitter, searching sequentially for double newlines, single newlines, periods, and spaces to split text without cutting words.
+
+## 4.3 Detail: Query Processing and Routing
+
+When a query enters the system, the QueryRouter classifies it. Math queries (e.g., calculations) are routed directly to the LLM to avoid useless vector searches. Greeting and coding categories are also handled directly. If a query requires retrieval, the router checks if a rewrite is needed based on length and pronoun presence. The QueryRewriter then references the last three messages in the history to build a self-contained search query.
+
+## 4.4 Detail: post-Retrieval Re-ranking
+
+The retriever fetches the top 50 passages from Pinecone using dense similarity and sparse lexical weights. To maximize precision, these 50 candidates are re-scored using late-interaction ColBERT. ColBERT calculates token-level dot products between query tokens and document tokens, aligning subtle details and returning the top 5 chunks. This post-retrieval filtering step resolves the 'lost-in-the-middle' problem.
+
+## 4.5 Detail: Persistent Memory and UI
+
+The MongoDataLayer persists the user's thread state. Each session registers user metadata, thread IDs, execution steps, and individual elements. This permits the Chainlit interface to load historical threads and resume conversations smoothly while keeping conversational context valid for rewrite agents.
+

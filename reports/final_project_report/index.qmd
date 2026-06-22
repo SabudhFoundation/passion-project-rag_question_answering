@@ -1,9 +1,13 @@
 <!-- Include all the files in the order of combining into the file report -->
+{{< include chapters/acknowledgement.qmd >}}
 {{< include chapters/preface.qmd >}}
 {{< include chapters/abstract.qmd >}}
 {{< include chapters/intro.qmd >}}
+{{< include chapters/literature_review.qmd >}}
 {{< include chapters/eda.qmd >}}
 {{< include chapters/methodology.qmd >}}
+{{< include chapters/implementation.qmd >}}
 {{< include chapters/results.qmd >}}
 {{< include chapters/conclusion.qmd >}}
 {{< include chapters/references.qmd >}}
+{{< include chapters/appendix.qmd >}}

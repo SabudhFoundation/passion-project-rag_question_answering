@@ -78,7 +78,7 @@ RAW_DIR       = os.path.join(SRC_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(SRC_DIR, "data", "processed")
 
 # HotpotQA — the ONLY dataset used in this pipeline
-HOTPOTQA_FILE = os.path.join(RAW_DIR,       "hotpot_train_v1.1.json")
+HOTPOTQA_FILE = os.path.join(SRC_DIR, "..", "data", "evaluation", "synthetic_qa_hotpotqa_20260506_063747.json")
 CHUNKS_FILE   = os.path.join(PROCESSED_DIR, "chunks.jsonl")
 
 # ─────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,5 @@
+# Acknowledgement {.unnumbered}
+
+This project would not have been possible without the support, guidance, and resources provided by the Sabudh Foundation. We express our deepest gratitude to our project mentors, Dr. Sukhjit Singh Sehra and Yadav, M., whose template, technical reviews, and insights helped shape this system into a production-ready application.
+
+We also thank the engineering team at Sabudh Foundation for providing access to essential computational infrastructure, vector storage solutions, and model inference APIs. The collaborative research environment and the foundation's commitment to education and society served as a constant source of inspiration during the development of this Retrieval-Augmented Generation (RAG) system.

@@ -1,0 +1,18 @@
+# Chapter 2: Literature Review
+
+## 2.1 Evolution from Naive to Advanced RAG
+
+First-generation RAG systems relied on a simple 'retrieve-then-read' pipeline: queries were converted into dense vectors, the top-K chunks were retrieved from a vector database using cosine similarity, and the LLM synthesized the response. While effective for simple lookups, this naive approach suffers from low retrieval precision, semantic mismatch, and the 'lost-in-the-middle' effect (where LLMs ignore context in the middle of long prompts). Advanced RAG addresses these issues by introducing pre-retrieval query optimization (such as rewriting and routing) and post-retrieval refinement (such as re-ranking and chunk compression).
+
+## 2.2 Sparse vs. Dense Retrieval
+
+Lexical retrieval methods, such as BM25, match exact terms using TF-IDF statistics. They excel at finding specific entities, serial numbers, and names, but fail when users use synonyms or alternate phrasing. Dense retrieval represents documents and queries as high-dimensional continuous vectors, capturing semantic similarity. However, dense search is susceptible to false positives on out-of-vocabulary terms. Hybrid retrieval ensembles sparse and dense scores, balancing lexical precision with semantic recall.
+
+## 2.3 Late-Interaction Models (ColBERT)
+
+Traditional cross-encoders yield high reranking precision but are computationally prohibitive, as they feed both the query and the document into the transformer model simultaneously. Late-interaction architectures, such as ColBERT (Contextualized Late Interaction over BERT), pre-compute token-level embeddings for documents. During retrieval, they calculate the MaxSim operator (maximum similarity between query and document tokens) using fast dot products. This preserves fine-grained token alignment, making it highly effective for multi-hop bridging.
+
+## 2.4 Conversational Memory and Context Rewriting
+
+In a conversational interface, user queries are rarely self-contained. Follow-up statements (e.g., 'who directed it?') contain pronouns and elliptical references. To perform successful retrieval, the RAG system must maintain conversational memory. Pre-retrieval query rewriting leverages small, fast LLMs to resolve these references using recent chat history, converting conversational queries into standalone search queries.
+

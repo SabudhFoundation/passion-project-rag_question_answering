@@ -1,4 +1,17 @@
-# References {.unnumbered}
+# References
 
-::: {#refs}
-:::
+[1] Z. Yang, P. Qi, S. Zhang, Y. Bengio, W. Cohen, R. Salakhutdinov, and C. D. Manning, "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering," in Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP), Brussels, Belgium, 2018, pp. 2369-2380.
+
+[2] V. Karpukhin, B. Oguz, S. Min, P. Lewis, L. Wu, S. Edunov, D. Chen, and W. Yih, "Dense Passage Retrieval for Open-Domain Question Answering," in Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2020, pp. 6769-6781.
+
+[3] P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. Küttler, M. Lewis, W. Yih, T. Rocktäschel, S. Riedel, and D. Kiela, "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks," in Advances in Neural Information Processing Systems (NeurIPS), vol. 33, 2020, pp. 9459-9474.
+
+[4] BAAI, "BGE-M3: Open Multilingual Flag Embedding Model," GitHub repository, 2024. [Online]. Available: https://github.com/FlagOpen/FlagEmbedding.
+
+[5] O. Khattab and M. Zaharia, "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT," in Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval, 2020, pp. 39-48.
+
+[6] Pinecone Systems, "Pinecone Vector Database and Hybrid Search Architecture," Pinecone Documentation, 2026. [Online]. Available: https://docs.pinecone.io/.
+
+[7] Exploding Gradients, "RAGAS: Retrieval Augmented Generation Assessment," GitHub repository, 2026. [Online]. Available: https://github.com/explodinggradients/ragas.
+
+[8] Chainlit Team, "Conversational Web Applications and Chat Memory Layer," Chainlit Documentation, 2026. [Online]. Available: https://docs.chainlit.io/.

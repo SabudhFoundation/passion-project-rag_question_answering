@@ -1,30 +1,20 @@
-# Introduction
+# Chapter 1: Introduction
 
-See this how you can add a reference, @knuth84.
+## 1.1 Background and Motivation
 
-## Overview
+Retrieval-Augmented Generation (RAG) has emerged as the standard architecture for grounding Large Language Models (LLMs) on external, domain-specific knowledge bases. By retrieving relevant document passages and feeding them as context to the LLM, RAG systems dramatically reduce hallucinations and bypass context window limits. However, naive RAG architectures struggle significantly when dealing with complex, multi-hop queries. Multi-hop question answering requires the system to locate and synthesize scattered facts across multiple documents. For example, to answer the question, 'In what year was the director of the film Titanic born?', the system must first identify the director (James Cameron) and then find his birth year (1954). If the retrieval system fails in either hop, the generator will produce an incorrect or incomplete answer.
 
-### Existing System
+## 1.2 Objectives of Project
 
-## Objectives of Project (Must be clearly, precisely defined and must be covered in the work)
+The primary objectives of this project were to design, implement, and evaluate an advanced RAG system capable of resolving multi-hop reasoning queries. Specifically, the project aimed to:
+- Establish a clean, object-oriented data ingestion and preprocessing pipeline to clean and index the HotpotQA dataset.
+- Develop a hybrid retriever combining sparse lexical search (BM25) and dense semantic vector search to capture both exact terminology and conceptual meaning.
+- Incorporate a late-interaction ColBERT re-ranker to optimize candidate passages before passing them to the generator.
+- Design a smart query processing layer (router and rewriter) to handle conversational context, pronoun resolution, and direct non-retrieval routing (e.g., math and greeting classification).
+- Implement a database persistence layer to store user profiles, session threads, and multi-step pipeline actions.
+- Conduct a rigorous quantitative evaluation using RAGAS metrics and LLM-as-a-judge frameworks.
 
- 
+## 1.3 Scope and Limitations
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The scope of this project is centered on the HotpotQA dataset, a benchmark specifically designed for multi-hop question answering. Preprocessing is limited to the gold supporting paragraphs to optimize storage and vector DB search efficiency. The system relies on third-party APIs (Pinecone for vector storage and Groq for LLM inference), meaning that network latency and rate limits are external constraints. The evaluations are conducted on a synthetic dataset of 295 samples generated using BERTopic document clustering and Llama-3.3-70B.
 

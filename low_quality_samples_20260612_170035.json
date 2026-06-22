@@ -1,0 +1,326 @@
+[
+  {
+    "sample_id": "hotpotqa_clu0000_hard_2",
+    "question": "What is the time difference between the start of Arthur's Magazine and the year First for Women reached a circulation of 1,310,696 copies?",
+    "ground_truth_answer": "145 years",
+    "generated_answer": "The time difference between the start of Arthur's Magazine and the year First for Women reached a circulation of 1,310,696 copies is 167 years.",
+    "retrieved_contexts": [
+      "Q: Which magazine was started first Arthur's Magazine or First for Women?",
+      ". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey. In 2011 the circulation of the magazine was 1,310,696 copies.",
+      "[Arthur's Magazine] Arthur's Magazine (1844–1846) was an American literary periodical published in Philadelphia in the 19th century. Edited by T.S. Arthur, it featured work by Edgar A. Poe, J.H. Ingraham, Sarah Josepha Hale, Thomas G. Spear, and others. In May 1846 it was merged into \"Godey's Lady's Book\". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey",
+      "Q: Are Jane and First for Women both women's magazines?",
+      ". It is based in Englewood Cliffs, New Jersey. In 2011 the circulation of the magazine was 1,310,696 copies."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0003_hard_2",
+    "question": "What was the nationality of the wife of the husband of Elizabeth Stuart, Queen of Bohemia, and what was the duration of her husband's reign in Bohemia?",
+    "ground_truth_answer": "The wife of Frederick V of the Palatinate, Elizabeth Stuart's husband, was Elizabeth Stuart herself, who was of English nationality, and her husband's reign in Bohemia lasted for just one winter.",
+    "generated_answer": "The wife of Frederick V of the Palatinate, Elizabeth Stuart, Queen of Bohemia, does not have her nationality explicitly stated, but her husband's reign in Bohemia lasted just one winter.",
+    "retrieved_contexts": [
+      ". Due to her husband’s reign in Bohemia lasting for just one winter, Elizabeth is often referred to as The Winter Queen.",
+      "[Francis Nethersole] Sir Francis Nethersole (1587–1659) was an English diplomat, secretary to the Electress Elizabeth, Member of Parliament for Corfe Castle, Dorset, and a Civil War political pamphleteer. [Elizabeth Stuart, Queen of Bohemia] Elizabeth Stuart (19 August 1596 – 13 February 1662) was Electress of the Palatinate and briefly Queen of Bohemia as the wife of Frederick V of the Palatinate",
+      "Q: What nationality was James Henry Miller's wife?",
+      "Q: Who was born first, Francis Nethersole or Elizabeth Stuart?",
+      "[Myra Kraft] Myra Hiatt Kraft (\"née\" Myra Nathalie Hiatt; December 27, 1942 – July 20, 2011) was an American philanthropist and the wife of New England Patriots and New England Revolution owner Robert Kraft. [Robert Kraft] Robert Kenneth Kraft (born June 5, 1941) is an American businessman"
+    ],
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.8,
+    "context_recall": 0.5,
+    "context_precision": 0.2,
+    "answer_correctness": 0.4
+  },
+  {
+    "sample_id": "hotpotqa_clu0005_easy_0",
+    "question": "When was Ewan MacColl born?",
+    "ground_truth_answer": "January 25, 1915",
+    "generated_answer": "Ewan MacColl was born on January 25, 1915.",
+    "retrieved_contexts": [
+      "[Peggy Seeger] Margaret \"Peggy\" Seeger (born June 17, 1935) is an American folksinger. She is also well known in Britain, where she has lived for more than 30 years, and was married to the singer and songwriter Ewan MacColl until his death in 1989. [Ewan MacColl] James Henry Miller (25 January 1915 – 22 October 1989), better known by his stage name Ewan MacColl, was an English folk singer, songwriter, communist, labour activist, actor, poet, playwright and record producer.",
+      "Q: When was Fannie Lee Chaney's son born?",
+      ". Abe Weinberg would become one of Schultz's top gunmen during the Manhattan Bootleg Wars and was a later suspect in the high-profile gangland slayings of Jack \"Legs\" Diamond, Vincent \"Mad Dog\" Coll, and mob boss Salvatore Maranzano. [Mad Dog Coll] Vincent \"Mad Dog\" Coll (born Uinseann Ó Colla, July 20, 1908 – February 7, 1932) was an Irish American mob hitman in the 1920s and early 1930s in New York City. Coll gained notoriety for the alleged accidental killing of a young child during a mob kidnap attempt.",
+      "Q: What year was the winner of the 2016 Marrakesh ePrix born?",
+      "Q: Which musician, Edwyn Collins or Jimmie Ross, played the bass guitar?"
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_recall": 0.0,
+    "context_precision": 0.0,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0007_hard_2",
+    "question": "What is the time difference between the release of Dua Lipa's single 'New Rules' in the United Kingdom and her birthday, and how does this compare to the formation year of the band The Wolfhounds?",
+    "ground_truth_answer": "Dua Lipa's single 'New Rules' was released in the United Kingdom on 21 July 2017, which is 1 day before her 22nd birthday. The Wolfhounds were formed in 1985, 10 years before Dua Lipa was born in 1995.",
+    "generated_answer": "The time difference between the release of Dua Lipa's album and her birthday is 22 years, which is less than the 32-year difference between the album's release year and The Wolfhounds' formation year in 1985.",
+    "retrieved_contexts": [
+      "Q: Dua Lipa, an English singer, songwriter and model, the album spawned the number-one single \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album, released in what year?",
+      ". Her self-titled debut studio album was released on 2 June 2017. The album spawned seven singles, including the top-10 single \"Be the One\" and the number-one single \"New Rules\". [New Rules (song)] \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album (2017). The track was written by Caroline Ailin, Emily Warren and Ian Kirkpatrick, while production was handled by the latter",
+      "[Dua Lipa] Dua Lipa ( ; ] ; born 22 August 1995) is an English singer, songwriter and model. Her musical career began at age 16, when she began covering songs by other artists on YouTube. In 2015, she was signed with Warner Music Group, and released her first single soon after. In December 2016, a documentary about Lipa was commissioned by \"The Fader\" magazine, titled \"See in Blue\". In January 2017, she won the EBBA Public Choice Award",
+      ". Love has drawn public attention for her uninhibited live performances and confrontational lyrics, as well as her highly publicized personal life following her marriage to Kurt Cobain. [The Wolfhounds] The Wolfhounds are an indie pop/noise pop band formed in Romford, UK in 1985 by Dave Callahan, Paul Clark, Andy Golding, Andy Bolton and Frank Stebbing, and originally active until 1990. The band reformed in 2005 and continues to write, record and play live, releasing new albums in 2014 and 2016.",
+      "Q: Which band was founded first, Hole, the rock band that Courtney Love was a frontwoman of, or The Wolfhounds?"
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.2,
+    "context_recall": 0.5,
+    "context_precision": 0.4,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0007_medium_1",
+    "question": "Which singer, Dua Lipa or Courtney Love, released their debut studio album first?",
+    "ground_truth_answer": "Courtney Love's band Hole released their debut studio album in 1991, but Dua Lipa's self-titled debut studio album was released on 2 June 2017. Since Courtney Love's band released their debut album before Dua Lipa, Courtney Love is the answer.",
+    "generated_answer": "Dua Lipa's debut studio album was released in 2017, but the release year of Courtney Love's debut album is not provided in the context.",
+    "retrieved_contexts": [
+      ". Her self-titled debut studio album was released on 2 June 2017. The album spawned seven singles, including the top-10 single \"Be the One\" and the number-one single \"New Rules\". [New Rules (song)] \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album (2017). The track was written by Caroline Ailin, Emily Warren and Ian Kirkpatrick, while production was handled by the latter",
+      "Q: Dua Lipa, an English singer, songwriter and model, the album spawned the number-one single \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album, released in what year?",
+      "[Dua Lipa] Dua Lipa ( ; ] ; born 22 August 1995) is an English singer, songwriter and model. Her musical career began at age 16, when she began covering songs by other artists on YouTube. In 2015, she was signed with Warner Music Group, and released her first single soon after. In December 2016, a documentary about Lipa was commissioned by \"The Fader\" magazine, titled \"See in Blue\". In January 2017, she won the EBBA Public Choice Award",
+      "[Courtney Love] Courtney Michelle Love (born Courtney Michelle Harrison; July 9, 1964) is an American singer, songwriter, actress, and visual artist. Prolific in the punk and grunge scenes of the 1990s, Love has enjoyed a career that spans four decades. She rose to prominence as the frontwoman of the alternative rock band Hole, which she formed in 1989",
+      "Q: Which band was founded first, Hole, the rock band that Courtney Love was a frontwoman of, or The Wolfhounds?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 0.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0009_hard_2",
+    "question": "What is the connection between the village where Brian Tarquin recorded his album 'Guitars for Wounded Warriors' and the chart performance of U2's song 'I Still Haven't Found What I'm Looking For' in the UK?",
+    "ground_truth_answer": "The village where Brian Tarquin recorded 'Guitars for Wounded Warriors' is New Paltz, New York, and U2's song 'I Still Haven't Found What I'm Looking For' peaked at number six on the UK Singles Chart.",
+    "generated_answer": "There is no direct connection between the village where Brian Tarquin recorded his album 'Guitars for Wounded Warriors' and the chart performance of U2's song 'I Still Haven't Found What I'm Looking For' in the UK.",
+    "retrieved_contexts": [
+      "Q: Guitars for Wounded Warriors is an album that was recorded in the village in which New York county?",
+      ". [I Still Haven't Found What I'm Looking For] \"I Still Haven't Found What I'm Looking For\" is a song by Irish rock band U2. It is the second track from their 1987 album \"The Joshua Tree\" and was released as the album's second single in May 1987. The song was a hit, becoming the band's second consecutive number-one single on the US \"Billboard\" Hot 100 while peaking at number six on the UK Singles Chart.",
+      "[Guitars for Wounded Warriors] Guitars for Wounded Warriors is the sixth solo studio album by guitarist Brian Tarquin, released in August 2014 by Cleopatra Records. In 2016, it received a Best Compilation Album nomination by the Independent Music Awards. All tracks were recorded at Tarquin's Jungle Room Studios in New Paltz (village), New York",
+      "[Pauline Henry] Pauline Henry (born 29 January 1961) is a British Jamaican recording artist. She was the vocalist in the Scottish band The Chimes, best known for their 1990 cover version of U2's \"I Still Haven't Found What I'm Looking For\", between 1988 and 1991. Following her departure from the group, Henry embarked on a solo career, and achieved five UK top 40 singles between 1993 and 1996",
+      ". The entire album was engineered, produced and composed by Tarquin especially for each one of the guest guitarists. Partial proceeds are donated to the Fisher House Foundation from sales. [New Paltz (village), New York] New Paltz is a village in Ulster County located in the U.S. state of New York. It is about 80 mi north of New York City and 70 mi south of Albany. The population was 6,818 at the 2010 census."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.2
+  },
+  {
+    "sample_id": "hotpotqa_clu0014_hard_2",
+    "question": "What is the occupation and a notable alias of the lead singer and guitarist in the band Portugal. The Man, and how does this compare to another musician, Richard Hawley, who was also a member of a band and later became a solo musician?",
+    "ground_truth_answer": "John Gourley is a musician, singer, and songwriter, and he uses the alias The Fantastic The. In comparison, Richard Hawley is a guitarist, singer-songwriter, and producer, who was a member of the band Longpigs and later became a solo musician.",
+    "generated_answer": "John Gourley goes by the alias The Fantastic The.",
+    "retrieved_contexts": [
+      ". [John Gourley] John Baldwin Gourley (born 1981) is an American musician, singer, and songwriter from Alaska. He is the lead singer and guitarist in the Portland, Oregon rock band Portugal. The Man. Gourley was previously the lead singer in screamo punk band, Anatomy of a Ghost. Gourley is also a visual artist, who often uses the alias The Fantastic The.",
+      "[Portugal. The Man] Portugal. The Man is an American rock band from Wasilla, Alaska. The group consists of John Gourley, Zach Carothers, Kyle O'Quin, Jason Sechrist and Eric Howk. Gourley and Carothers met and began playing music together originally at Wasilla High School in Wasilla, Alaska. Their first two albums were released on Fearless Records. On April 2, 2010, the band signed to Atlantic Records",
+      "[Catherine (alternative rock band)] Catherine was an alternative rock band from Chicago, Illinois that was active from 1985 to 1998. They were signed to TVT Records. [Richard Hawley] Richard Willis Hawley (born 17 January 1967) is an English guitarist, singer-songwriter and producer. After his first band Treebound Story (formed while he was still at school) broke up, Hawley found success as a member of Britpop band Longpigs in the 1990s",
+      "Q: The lead singer and guitarist in the Portland, Oregon rock band consisting of John Gourley, Zach Carothers, Kyle O'Quin, Jason Sechrist and Eric Howk, goes by what alias?",
+      ". After that group broke up in 2000, he later joined the band Pulp, led by his friend Jarvis Cocker, for a short time. As a solo musician, Hawley has released seven studio albums. He has been nominated for a Mercury prize twice and once for a Brit Award. He has collaborated with Lisa Marie Presley, Arctic Monkeys, Manic Street Preachers and Paul Weller."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.4,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.3
+  },
+  {
+    "sample_id": "hotpotqa_clu0015_hard_2",
+    "question": "What genre of music is associated with a band that, like Fu Manchu, has covered a song by Blue Öyster Cult?",
+    "ground_truth_answer": "Stoner rock and a variant of synth-pop, such as Electropop",
+    "generated_answer": "The genre associated with Fu Manchu, who covered a song by Blue Öyster Cult, is stoner rock.",
+    "retrieved_contexts": [
+      "Q: What southern California based band covered Blue Öyster Cult's Godzilla?",
+      "[Godzilla (song)] \"Godzilla\" is a song by Blue Öyster Cult from their fifth album, \"Spectres\". The lyrics are a tongue-in-cheek tribute to the popular movie monster of the same name. The song is, along with \"(Don't Fear) The Reaper\" and \"Burnin' for You\", one of Blue Öyster Cult's best known songs and has become a staple of their live performances. It has been covered by bands such as Racer X, Fu Manchu, The Smashing Pumpkins, Sebastian Bach and Fighting Gravity",
+      ". [Fu Manchu (band)] Fu Manchu is an American, Southern California-based stoner rock band that formed in 1985.",
+      "Q: Superheaven and Oceansize, are bands of which shared genre?",
+      "Q: What are the names of the current members of American heavy metal band who wrote the music for Hurt Locker The Musical?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5,
+    "context_recall": 0.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.2
+  },
+  {
+    "sample_id": "hotpotqa_clu0019_hard_2",
+    "question": "What genres of music are associated with the bands mentioned in the passages, including Roy Orbison, Jane's Addiction, Weeping Willows, Gorillaz, and Superheaven?",
+    "ground_truth_answer": "Rock, including sub-genres like operatic rock, indie rock, alternative rock, and possibly others",
+    "generated_answer": "The genres of music associated with the bands mentioned are rock, alternative rock, indie rock, grunge, shoegazing, funk rock, pop rock.",
+    "retrieved_contexts": [
+      "Q: Jane's Addiction and Weeping Willows, play which genre of music? [Jane's Addiction] Jane's Addiction is an American rock band from Los Angeles, formed in 1985. The band consists of Perry Farrell (vocals), Dave Navarro (guitar), Stephen Perkins (drums) and Chris Chaney (bass). [Weeping Willows] Weeping Willows is a Swedish indie rock group that started in 1995.",
+      "Q: Superheaven and Oceansize, are bands of which shared genre?",
+      "[Superheaven] Superheaven (formerly known as Daylight) is an American alternative rock band from Doylestown, Pennsylvania, formed in 2008. Their music has been described as reminiscent of 1990s grunge and shoegazing, but Taylor Madison has expressed a dislike for such labels, describing it simply as rock/rock and roll. [Oceansize] Oceansize were an English rock band from Manchester, formed in 1998",
+      "[Glenn Hughes] Glenn Hughes (born 21 August 1951) is an English rock bassist and vocalist, best known for playing bass and performing vocals for funk rock pioneers Trapeze, the Mk. III and IV line-ups of Deep Purple, as well as briefly fronting Black Sabbath in the mid-1980s. [Ross Lynch] Ross Shor Lynch (born December 29, 1995) is an American singer, songwriter, and actor. He is one of the founding members of the pop rock band R5",
+      "[Godzilla (song)] \"Godzilla\" is a song by Blue Öyster Cult from their fifth album, \"Spectres\". The lyrics are a tongue-in-cheek tribute to the popular movie monster of the same name. The song is, along with \"(Don't Fear) The Reaper\" and \"Burnin' for You\", one of Blue Öyster Cult's best known songs and has become a staple of their live performances. It has been covered by bands such as Racer X, Fu Manchu, The Smashing Pumpkins, Sebastian Bach and Fighting Gravity"
+    ],
+    "faithfulness": 0.4,
+    "answer_relevancy": 1.0,
+    "context_recall": 0.4,
+    "context_precision": 0.6,
+    "answer_correctness": 0.6
+  },
+  {
+    "sample_id": "hotpotqa_clu0019_medium_1",
+    "question": "What genre of music do the bands Jane's Addiction, Weeping Willows, and Gorillaz belong to?",
+    "ground_truth_answer": "Rock",
+    "generated_answer": "All of the bands belong to the genre of rock music.",
+    "retrieved_contexts": [
+      "Q: Jane's Addiction and Weeping Willows, play which genre of music? [Jane's Addiction] Jane's Addiction is an American rock band from Los Angeles, formed in 1985. The band consists of Perry Farrell (vocals), Dave Navarro (guitar), Stephen Perkins (drums) and Chris Chaney (bass). [Weeping Willows] Weeping Willows is a Swedish indie rock group that started in 1995.",
+      "Q: Are both The New Pornographers and Kings of Leon American rock bands?",
+      "Q: The lead singer and guitarist in the Portland, Oregon rock band consisting of John Gourley, Zach Carothers, Kyle O'Quin, Jason Sechrist and Eric Howk, goes by what alias?",
+      "Q: What are the names of the current members of American heavy metal band who wrote the music for Hurt Locker The Musical?",
+      "Q: What southern California based band covered Blue Öyster Cult's Godzilla?"
+    ],
+    "faithfulness": 0.5,
+    "answer_relevancy": 1.0,
+    "context_recall": 0.33,
+    "context_precision": 0.2,
+    "answer_correctness": 0.5
+  },
+  {
+    "sample_id": "hotpotqa_clu0020_medium_1",
+    "question": "What is the state where both Superheaven and Halestorm originated?",
+    "ground_truth_answer": "Pennsylvania",
+    "generated_answer": "Both Superheaven and Halestorm originated in Massachusetts.",
+    "retrieved_contexts": [
+      "[Superheaven] Superheaven (formerly known as Daylight) is an American alternative rock band from Doylestown, Pennsylvania, formed in 2008. Their music has been described as reminiscent of 1990s grunge and shoegazing, but Taylor Madison has expressed a dislike for such labels, describing it simply as rock/rock and roll. [Oceansize] Oceansize were an English rock band from Manchester, formed in 1998",
+      "Q: Superheaven and Oceansize, are bands of which shared genre?",
+      "[Apocalyptic (song)] \"Apocalyptic\" is a song by the American hard rock band Halestorm. It was released on January 12, 2015, as the lead single from the band's third studio album, \"Into the Wild Life\". The video for the song was released on January 28. [Halestorm] Halestorm is an American hard rock band from Red Lion, Pennsylvania, consisting of lead vocalist and guitarist Lzzy Hale, her brother drummer and percussionist Arejay Hale, guitarist Joe Hottinger, and bassist Josh Smith",
+      "Q: Which state does the drug stores, of which the CEO is Warren Bryant, are located?",
+      "Q: Michael Ralph DeVito (born June 10, 1984) is a former American football defensive end, he the National Football League (NFL), DeVito attended high school at Nauset Regional High School an NEASC accredited high school located in North Eastham, in which state?"
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0023_hard_2",
+    "question": "What is the total number of Grand Slam titles won by Jonathan Stark and the number of times Henri Leconte reached a Grand Slam singles final?",
+    "ground_truth_answer": "Jonathan Stark won 2 Grand Slam titles and Henri Leconte reached the men's singles final at the French Open in 1988 once.",
+    "generated_answer": "Jonathan Stark won more Grand Slam titles.",
+    "retrieved_contexts": [
+      "Q: Which tennis player won more Grand Slam titles, Henri Leconte or Jonathan Stark?",
+      "[Jonathan Stark (tennis)] Jonathan Stark (born April 3, 1971) is a former professional tennis player from the United States. During his career he won two Grand Slam doubles titles (the 1994 French Open Men's Doubles and the 1995 Wimbledon Championships Mixed Doubles). Stark reached the World No. 1 doubles ranking in 1994. [Henri Leconte] Henri Leconte (born 4 July 1963) is a former French professional tennis player",
+      ". He reached the men's singles final at the French Open in 1988, won the French Open men's doubles title in 1984, and helped France win the Davis Cup in 1991. Leconte's career-high singles ranking was world No. 5.",
+      "[Chris Evert] Christine Marie Evert (born December 21, 1954), known as Chris Evert Lloyd from 1979 to 1987, is a former World No. 1 professional tennis player from the United States. She won 18 Grand Slam singles championships and three doubles titles. She was the year-ending World No. 1 singles player in 1974, 1975, 1976, 1977, 1978, 1980, and 1981. Overall Evert won 157 singles championships and 32 doubles titles",
+      "Q: The 2000–01 NBA season was the Jazz's 27th season in the National Basketball Association, and 22nd season in Salt Lake City, Utah, after the retirement of Jeff Hornacek, the Jazz signed free agents John Starks, and who?"
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0025_hard_2",
+    "question": "What is the native region of the genus Indogrammodes pectinicornalis and the genus Baptisia, and how do the foliage characteristics of Kniphofia compare to the foliage of Baptisia?",
+    "ground_truth_answer": "Indogrammodes pectinicornalis is native to India, while Baptisia is native to eastern and southern North America. Kniphofia has narrow, grass-like leaves or broader, strap-shaped foliage, whereas Baptisia has pea-like flowers followed by pods, indicating different foliage characteristics.",
+    "generated_answer": "Kniphofia and Baptisia share their native regions with other plants and a moth species, but not all have the same foliage characteristics.",
+    "retrieved_contexts": [
+      "Q: What type of vegetation does Kniphofia and Baptisia have in common?",
+      "[Kniphofia] Kniphofia , also called tritoma, red hot poker, torch lily, knofflers or poker plant, is a genus of flowering plants in the family Asphodelaceae, first described as a genus in 1794. It is native to Africa. Herbaceous species and hybrids have narrow, grass-like leaves 10 - long, while perennial species have broader, strap-shaped foliage up to 1.5 m long",
+      ". All plants produce spikes of upright, brightly coloured flowers well above the foliage, in shades of red, orange and yellow, often bicoloured. The flowers produce copious nectar while blooming and are attractive to bees. In the New World they may attract sap-suckers such as hummingbirds and New World orioles. [Baptisia] Baptisia (wild indigo, false indigo) is a genus in the legume family, Fabaceae",
+      "[Indogrammodes] Indogrammodes is a genus of moths of the Crambidae family. It contains only one species, Indogrammodes pectinicornalis, which is found in India. [India] India, officially the Republic of India (\"Bhārat Gaṇarājya\"), is a country in South Asia. It is the seventh-largest country by area, the second-most populous country (with over 1.2 billion people), and the most populous democracy in the world",
+      ". They are flowering herbaceous perennial plants with pea-like flowers, followed by pods, which are sometimes inflated. They are native to woodland and grassland in eastern and southern North America. The species most commonly found in cultivation is \"B. australis\"."
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0028_hard_2",
+    "question": "What is the time gap between the first air date of the Dutch-Belgian television series 'Het Huis Anubis' and the premiere of the American television series 'House of Anubis' on Nickelodeon in the United States?",
+    "ground_truth_answer": "4 years",
+    "generated_answer": "The time gap could not be calculated because one of the time gaps is negative.",
+    "retrieved_contexts": [
+      "[House of Anubis] House of Anubis is a mystery television series developed for Nickelodeon based on the Dutch-Belgian television series \"Het Huis Anubis\". The series was created by Hans Bourlon and Gert Verhulst and premiered on Nickelodeon on 1 January 2011 in the United States and on 25 February 2011 in the United Kingdom. The series is the first series from the network to be filmed outside the United States and the first telenovela-format series for the network",
+      ". The show aired from 1 January 2011 to 17 June 2013. [Het Huis Anubis] Het Huis Anubis (\"The House of Anubis\") is a Belgian-Dutch children's television drama created by Studio 100 and Nickelodeon, airing in the Netherlands and Flanders. It first aired in September 2006 and the last episode was broadcast on December 4, 2009. The show was a huge success in the Benelux, despite the show's low budget for the first two seasons.",
+      "Q: The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in what year?",
+      "[Human Error (House)] \"Human Error\" is the twenty-fourth episode and season finale of the third season of \"House\" and the seventieth episode overall. [House (TV series)] House (also called House, M.D.) is an American television medical drama that originally ran on the Fox network for eight seasons, from November 16, 2004 to May 21, 2012. The series' main character is Dr",
+      "Q: Axle Whitehead was a part of an American comedy-drama television series that is a remake of the British series with the same name set in what city?"
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0033_medium_1",
+    "question": "What is the total length of the Augusta Canal and are the New Orleans Outfall Canals the same length as this total length?",
+    "ground_truth_answer": "The Augusta Canal is approximately 13 miles total, and the New Orleans Outfall Canals have 13 mi of levees and floodwalls, but the canals themselves are not explicitly stated to be the same length as the Augusta Canal.",
+    "generated_answer": "The New Orleans Outfall Canals are the same length as the Augusta Canal.",
+    "retrieved_contexts": [
+      "Q: Are the New Orleans Outfall Canals the same length as the Augusta Canal?",
+      ". It is the only canal in the US in continuous use for its original purposes of providing power, transport and municipal water. [New Orleans Outfall Canals] There are three outfall canals in New Orleans, Louisiana – the 17th Street, Orleans Avenue and London Avenue canals. These canals are a critical element of New Orleans’ flood control system, serving as drainage conduits for much of the city. There are 13 mi of levees and floodwalls that line the sides of the canals",
+      "[Augusta Canal] The Augusta Canal is a historic canal located in Augusta, Georgia, United States. The canal is fed by the Savannah River and passes through three levels (approximately 13 miles total) in suburban and urban Augusta before the water returns to the river at various locations. It was devised to harness the water power at the fall line of the Savannah River to drive mills, to provide transportation of goods, and to provide a municipal water supply",
+      "Q: What is the length of the River which has Wild Horse Creek as a tributary ?",
+      ". There are 13 mi of levees and floodwalls that line the sides of the canals. The 17th Street Canal is the largest and most important drainage canal and is capable of conveying more water than the Orleans Avenue and London Avenue Canals combined."
+    ],
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.5,
+    "context_recall": 1.0,
+    "context_precision": 0.75,
+    "answer_correctness": 0.2
+  },
+  {
+    "sample_id": "hotpotqa_clu0035_hard_2",
+    "question": "What is the name of the American actress who starred in the 1988 film The Great Outdoors and received a star on the Hollywood Walk of Fame, and in what year did she begin her career on stage with the Colorado Shakespeare Festival company?",
+    "ground_truth_answer": "Annette Bening, 1980",
+    "generated_answer": "We are unable to verify the career start date or the year Annette Bening received a star on the Hollywood Walk of Fame.",
+    "retrieved_contexts": [
+      "Q: The 1988 American comedy film, The Great Outdoors, starred a four-time Academy Award nominee, who received a star on the Hollywood Walk of Fame in what year?",
+      "[The Great Outdoors (film)] The Great Outdoors is a 1988 American comedy film directed by Howard Deutch, and written and produced by John Hughes. It stars Dan Aykroyd, John Candy, Stephanie Faracy and Annette Bening in her film debut. [Annette Bening] Annette Carol Bening (born May 29, 1958) is an American actress. She began her career on stage with the Colorado Shakespeare Festival company in 1980, and played Lady Macbeth in 1984 at the American Conservatory Theatre",
+      ". She was nominated for the 1987 Tony Award for Best Featured Actress in a Play for her Broadway debut in \"Coastal Disturbances\". She is a four-time Academy Award nominee; for \"The Grifters\" (1990), \"American Beauty\" (1999), \"Being Julia\" (2004) and \"The Kids Are All Right\" (2010). In 2006, she received a star on the Hollywood Walk of Fame.",
+      "Q: New Faces of 1952 is a musical revue with songs and comedy skits, it helped jump start the career of which young performer, and American actress?",
+      ". The story was based on Aselton's childhood wish for his parents to adopt a Chinese baby. The film was shot in New York and Connecticut. It had its world premiere at 2008's Toronto International Film Festival and was released in the United States on April 3, 2009. [John Goodman] John Stephen Goodman (born June 20, 1952) is an American actor. Early in his career, he was best known for playing Dan Conner on the ABC TV series \"Roseanne\" (1988–1997), for which he won a Golden Globe Award for Best Actor in 1993"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0039_easy_0",
+    "question": "What is the name of the musical that only ran for a single night before closing during intermission in the 2014 Broadway premiere production of 'Hedwig and the Angry Inch'?",
+    "ground_truth_answer": "Hurt Locker The Musical",
+    "generated_answer": "The musical that only ran for a single night before closing during intermission in the 2014 Broadway premiere production of",
+    "retrieved_contexts": [
+      "[Hurt Locker (musical)] Hurt Locker The Musical is a fictional musical in the 2014 Broadway premiere production of \"Hedwig and the Angry Inch\". In the Broadway performance of \"Hedwig and the Angry Inch\" the musical opens with Hedwig explaining that the musical only ran for a single night before closing during intermission, and that she has convinced a producer to let her perform in what would otherwise be an empty stage",
+      ". The Playbills, which describe the musical as having \"explosions, negligible storytelling, camouflage and tits\", also state that the musical's cast included actors such as Taye Diggs (who would go on to play the role of Hedwig in the summer of 2015) and that the music was written by Metallica and Stephen R. Schwartz, which is the real name of \"Hedwig\" songwriter Stephen Trask. [Metallica] Metallica is an American heavy metal band based in San Rafael, California",
+      ". The Playbills, which describe the musical as having \"explosions, negligible storytelling, camouflage and tits\", also state that the musical's cast included actors such as Taye Diggs (who would go on to play the role of Hedwig in the summer of 2015) and that the music was written by Metallica and Stephen R. Schwartz, which is the real name of \"Hedwig\" songwriter Stephen Trask. [Metallica] Metallica is an American heavy metal band based in San Rafael, California. The band was formed in 1981 in Los Angeles when vocalist/guitarist James Hetfield responded to an advertisement posted by drummer Lars Ulrich in a local newspaper. Metallica's current lineup comprises founding members Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth) and bassists Ron McGovney, Cliff Burton, and Jason Newsted are also former members of the band.",
+      "Q: What are the names of the current members of American heavy metal band who wrote the music for Hurt Locker The Musical?",
+      "[Hot Feet] Hot Feet is a jukebox musical featuring the music of Earth, Wind & Fire, a book by Heru Ptah and was conceived, directed, and choreographed by Maurice Hines. The musical opened on Broadway at the Foxwoods Theatre (then the Hilton Theatre) on April 30, 2006 and closed on July 23, 2006. [Maurice Hines] Maurice Hines (born December 13, 1943) is an American actor, director, singer, and choreographer. He is the brother of dancer Gregory Hines."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.2,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.2
+  },
+  {
+    "sample_id": "hotpotqa_clu0041_medium_1",
+    "question": "What is the difference in the number of beds between the largest private hospital in Washington, D.C. and Children's National Medical Center?",
+    "ground_truth_answer": "623 beds",
+    "generated_answer": "Children's National Medical Center has fewer beds than MedStar Washington Hospital Center.",
+    "retrieved_contexts": [
+      "Q: Is Children's National Medical Center or MedStar Washington Hospital Center the largest private hospital in Washington, D.C.?",
+      "[Children's National Medical Center] Children’s National Medical Center (formerly DC Children’s Hospital) is ranked among the top 10 children’s hospitals in the country by \"U.S. News & World Report.\" Located just north of the McMillan Reservoir and Howard University, it shares grounds with Washington Hospital Center, National Rehabilitation Hospital, and the DC Veterans Affairs Medical Center",
+      ". The hospital is licensed by the District of Columbia Department of Consumer and Regulatory Affairs and accredited by the U.S. Joint Commission. [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients",
+      ". [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients. It also serves as a teaching hospital for Georgetown University School of Medicine.",
+      ". Kurt Newman, M.D., has served as the president and chief executive officer of Children’s National since 2011. Children's National is a not-for-profit institution that performs more than 450,000 visits each year. Featuring 303 beds and a Level IV NICU, Children's National is the regional referral center for pediatric emergency, trauma, cancer, cardiac and critical care as well as neonatology, orthopaedic surgery, neurology and neurosurgery"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.2,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.0
+  }
+]

@@ -1,0 +1,1478 @@
+[
+  {
+    "sample_id": "hotpotqa_clu0000_easy_0",
+    "question": "In what year was Arthur's Magazine merged into Godey's Lady's Book?",
+    "ground_truth_answer": "1846",
+    "generated_answer": "Arthur's Magazine was merged into Godey's Lady's Book in 1846.",
+    "retrieved_contexts": [
+      "[Arthur's Magazine] Arthur's Magazine (1844–1846) was an American literary periodical published in Philadelphia in the 19th century. Edited by T.S. Arthur, it featured work by Edgar A. Poe, J.H. Ingraham, Sarah Josepha Hale, Thomas G. Spear, and others. In May 1846 it was merged into \"Godey's Lady's Book\". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey",
+      "Q: Which magazine was started first Arthur's Magazine or First for Women?",
+      ". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey. In 2011 the circulation of the magazine was 1,310,696 copies.",
+      "Q: Are Jane and First for Women both women's magazines?",
+      ". Founded by George Dayton and headquartered in Minneapolis, Minnesota, the company was originally named Goodfellow Dry Goods in June 1902 before being renamed the Dayton's Dry Goods Company in 1903 and later the Dayton Company in 1910. The first Target store opened in Roseville, Minnesota in 1962 while the parent company was renamed the Dayton Corporation in 1967. It became the Dayton-Hudson Corporation after merging with the J.L. Hudson Company in 1969 and held ownership of several department store chains including Dayton's, Hudson's, Marshall Field's, and Mervyn's."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0000_medium_1",
+    "question": "Which magazine was started first, Arthur's Magazine or First for Women?",
+    "ground_truth_answer": "Arthur's Magazine",
+    "generated_answer": "Arthur's Magazine was started first.",
+    "retrieved_contexts": [
+      "Q: Which magazine was started first Arthur's Magazine or First for Women?",
+      "[Arthur's Magazine] Arthur's Magazine (1844–1846) was an American literary periodical published in Philadelphia in the 19th century. Edited by T.S. Arthur, it featured work by Edgar A. Poe, J.H. Ingraham, Sarah Josepha Hale, Thomas G. Spear, and others. In May 1846 it was merged into \"Godey's Lady's Book\". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey",
+      "Q: Are Jane and First for Women both women's magazines?",
+      ". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey. In 2011 the circulation of the magazine was 1,310,696 copies.",
+      "Q: Who was born first, Francis Nethersole or Elizabeth Stuart?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0001_easy_0",
+    "question": "Which magazine is owned by Time Inc?",
+    "ground_truth_answer": "Golf Magazine",
+    "generated_answer": "Golf Magazine is owned by Time Inc.",
+    "retrieved_contexts": [
+      "Q: El Nuevo Cojo and Golf Magazine are both special interest publications but which one is owned by Time Inc?",
+      ". The website slowly embraced a wider audience by covering general interest issues. [Golf Magazine] Golf Magazine is a monthly golf magazine owned by \"Time Inc.\" It was started in April, 1959 by Universal Publishing and Distributing, who sold it to Times Mirror in 1972. Time Inc. acquired it in 2000. It was the world's most widely read golf publication from August 2006 to January 2007. The magazine is for golfers of all skill levels",
+      "Q: Are Jane and First for Women both women's magazines?",
+      "[Bizarre (magazine)] Bizarre was a British alternative magazine published from 1997 to 2015. It was published by Dennis Publishing, and was a sister publication to the \"Fortean Times\". [Fortean Times] Fortean Times is a British monthly magazine devoted to the anomalous phenomena popularised by Charles Fort. Previously published by John Brown Publishing (from 1991 to 2001) and then I Feel Good Publishing (2001 to 2005), it is now published by Dennis Publishing Ltd.",
+      ". It is based in Englewood Cliffs, New Jersey. In 2011 the circulation of the magazine was 1,310,696 copies."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0001_hard_2",
+    "question": "What are the names of the magazines owned by Dennis Publishing and Time Inc. mentioned in the passages?",
+    "ground_truth_answer": "Dennis Publishing owns Bizarre and Fortean Times, while Time Inc. owns Golf Magazine",
+    "generated_answer": "The magazines owned by Dennis Publishing and Time Inc. mentioned in the passages are Bizarre, Fortean Times, and Golf Magazine.",
+    "retrieved_contexts": [
+      "Q: El Nuevo Cojo and Golf Magazine are both special interest publications but which one is owned by Time Inc?",
+      "[Bizarre (magazine)] Bizarre was a British alternative magazine published from 1997 to 2015. It was published by Dennis Publishing, and was a sister publication to the \"Fortean Times\". [Fortean Times] Fortean Times is a British monthly magazine devoted to the anomalous phenomena popularised by Charles Fort. Previously published by John Brown Publishing (from 1991 to 2001) and then I Feel Good Publishing (2001 to 2005), it is now published by Dennis Publishing Ltd.",
+      ". The website slowly embraced a wider audience by covering general interest issues. [Golf Magazine] Golf Magazine is a monthly golf magazine owned by \"Time Inc.\" It was started in April, 1959 by Universal Publishing and Distributing, who sold it to Times Mirror in 1972. Time Inc. acquired it in 2000. It was the world's most widely read golf publication from August 2006 to January 2007. The magazine is for golfers of all skill levels",
+      "Q: Which publishing company has published Bizarre and a sister publication devoted to the anomalous phenomena popularised by Charles Fort?",
+      "Q: Are Jane and First for Women both women's magazines?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0001_medium_1",
+    "question": "Which magazine owned by Time Inc. is targeted at golfers of all skill levels and was started in April 1959?",
+    "ground_truth_answer": "Golf Magazine",
+    "generated_answer": "Golf Magazine is the magazine owned by Time Inc., targeted at golfers of all skill levels, and was started in April 1959.",
+    "retrieved_contexts": [
+      ". The website slowly embraced a wider audience by covering general interest issues. [Golf Magazine] Golf Magazine is a monthly golf magazine owned by \"Time Inc.\" It was started in April, 1959 by Universal Publishing and Distributing, who sold it to Times Mirror in 1972. Time Inc. acquired it in 2000. It was the world's most widely read golf publication from August 2006 to January 2007. The magazine is for golfers of all skill levels",
+      "Q: El Nuevo Cojo and Golf Magazine are both special interest publications but which one is owned by Time Inc?",
+      ". The magazine is for golfers of all skill levels. Some features it includes are instruction from the top 100 teachers in America, interviews with famous golfers, tips on the best values for golf courses to go to on vacation, and an annual club test.",
+      ". The magazine is for golfers of all skill levels. Some features it includes are instruction from the top 100 teachers in America, interviews with famous golfers, tips on the best values for golf courses to go to on vacation, and an annual club test.",
+      ". [First for Women] First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989. It is based in Englewood Cliffs, New Jersey. In 2011 the circulation of the magazine was 1,310,696 copies."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.8,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0002_easy_0",
+    "question": "What is the middle name of the character Milhouse Van Houten in the animated television series 'The Simpsons'?",
+    "ground_truth_answer": "Mussolini",
+    "generated_answer": "The middle name of the character Milhouse Van Houten in the animated television series 'The Simpsons' is Mussolini.",
+    "retrieved_contexts": [
+      ". [Milhouse Van Houten] Milhouse Mussolini van Houten is a fictional character featured in the animated television series \"The Simpsons\", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name. Later in the series, it is revealed that Milhouse's middle name is \"Mussolini.\"",
+      ". [Milhouse Van Houten] Milhouse Mussolini van Houten is a fictional character featured in the animated television series \"The Simpsons\", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name. Later in the series, it is revealed that Milhouse's middle name is \"Mussolini.\"",
+      "Q: Musician and satirist Allie Goertz wrote a song about the \"The Simpsons\" character Milhouse, who Matt Groening named after who?",
+      "[Allie Goertz] Allison Beth \"Allie\" Goertz (born March 2, 1991) is an American musician. Goertz is known for her satirical songs based on various pop culture topics. Her videos are posted on YouTube under the name of Cossbysweater. Subjects of her songs have included the film \"The Room\", the character Milhouse from the television show \"The Simpsons\", and the game Dungeons & Dragons. Her style has been compared to that of Bo Burnham",
+      "Q: Ted Sutton plays Sergeant Cunningham in a2002 film that stars Mel Gibson as what character?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.66,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0002_hard_2",
+    "question": "What is the name of the musician who wrote a song about Milhouse Van Houten, and in what year was the composer of the Simpsons theme music approached to create the theme?",
+    "ground_truth_answer": "Allie Goertz, and the composer, Danny Elfman, was approached in 1989",
+    "generated_answer": "The musician who wrote a song about Milhouse Van Houten is Allie Goertz, and the composer of the Simpsons theme music, Danny Elfman, was approached to create the theme in 1989.",
+    "retrieved_contexts": [
+      "[The Simpsons Theme] \"The Simpsons\" Theme\", also referred to as \"The Simpsons\" Main Title Theme\" in album releases, is the theme music of the animated television series \"The Simpsons\". It plays during the opening sequence and was composed by Danny Elfman in 1989, after series creator Matt Groening approached him requesting a retro-style theme. The piece, which took 3 days, 2 hours, 48 minutes, and 19 seconds to create, has been noted by Elfman as the most popular of his career",
+      "Q: Musician and satirist Allie Goertz wrote a song about the \"The Simpsons\" character Milhouse, who Matt Groening named after who?",
+      ". The theme, as used for the opening sequence, was re-arranged during season 2, and the current arrangement by Alf Clausen was introduced at the beginning of the third season. [Alf Clausen] Alf Heiberg Clausen (born March 28, 1941) is an American film and television composer. He is best known for his work scoring many episodes of \"The Simpsons\", of which he had been the sole composer between 1990 and 2017",
+      ". [Milhouse Van Houten] Milhouse Mussolini van Houten is a fictional character featured in the animated television series \"The Simpsons\", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name. Later in the series, it is revealed that Milhouse's middle name is \"Mussolini.\"",
+      ". [Milhouse Van Houten] Milhouse Mussolini van Houten is a fictional character featured in the animated television series \"The Simpsons\", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name. Later in the series, it is revealed that Milhouse's middle name is \"Mussolini.\""
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0002_medium_1",
+    "question": "What is the inspiration behind the name of the Simpsons character Milhouse, and what is the name of the musician who wrote a song about this character?",
+    "ground_truth_answer": "Milhouse was named after President Richard Nixon's middle name, and the musician who wrote a song about Milhouse is Allie Goertz",
+    "generated_answer": "The inspiration behind the name of the Simpsons character Milhouse is President Richard Nixon's middle name, and the musician who wrote a song about this character is Allie Goertz.",
+    "retrieved_contexts": [
+      "Q: Musician and satirist Allie Goertz wrote a song about the \"The Simpsons\" character Milhouse, who Matt Groening named after who?",
+      ". [Milhouse Van Houten] Milhouse Mussolini van Houten is a fictional character featured in the animated television series \"The Simpsons\", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name. Later in the series, it is revealed that Milhouse's middle name is \"Mussolini.\"",
+      ". [Milhouse Van Houten] Milhouse Mussolini van Houten is a fictional character featured in the animated television series \"The Simpsons\", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name. Later in the series, it is revealed that Milhouse's middle name is \"Mussolini.\"",
+      "[Allie Goertz] Allison Beth \"Allie\" Goertz (born March 2, 1991) is an American musician. Goertz is known for her satirical songs based on various pop culture topics. Her videos are posted on YouTube under the name of Cossbysweater. Subjects of her songs have included the film \"The Room\", the character Milhouse from the television show \"The Simpsons\", and the game Dungeons & Dragons. Her style has been compared to that of Bo Burnham",
+      "[The Simpsons Theme] \"The Simpsons\" Theme\", also referred to as \"The Simpsons\" Main Title Theme\" in album releases, is the theme music of the animated television series \"The Simpsons\". It plays during the opening sequence and was composed by Danny Elfman in 1989, after series creator Matt Groening approached him requesting a retro-style theme. The piece, which took 3 days, 2 hours, 48 minutes, and 19 seconds to create, has been noted by Elfman as the most popular of his career"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0003_easy_0",
+    "question": "What was the nationality of Sir Francis Nethersole?",
+    "ground_truth_answer": "English",
+    "generated_answer": "Sir Francis Nethersole was English.",
+    "retrieved_contexts": [
+      "Q: Who was born first, Francis Nethersole or Elizabeth Stuart?",
+      "[Francis Nethersole] Sir Francis Nethersole (1587–1659) was an English diplomat, secretary to the Electress Elizabeth, Member of Parliament for Corfe Castle, Dorset, and a Civil War political pamphleteer. [Elizabeth Stuart, Queen of Bohemia] Elizabeth Stuart (19 August 1596 – 13 February 1662) was Electress of the Palatinate and briefly Queen of Bohemia as the wife of Frederick V of the Palatinate",
+      "Q: What nationality was a historical drama film directed by?",
+      "Q: What nationality was James Henry Miller's wife?",
+      "Q: What man, also known as mi Sde-Or, created a military self-defense system developed for the Israel Defense Forces?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.25,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0003_medium_1",
+    "question": "What was the nationality of Elizabeth Stuart's secretary?",
+    "ground_truth_answer": "English",
+    "generated_answer": "Elizabeth Stuart's secretary was English.",
+    "retrieved_contexts": [
+      "[Francis Nethersole] Sir Francis Nethersole (1587–1659) was an English diplomat, secretary to the Electress Elizabeth, Member of Parliament for Corfe Castle, Dorset, and a Civil War political pamphleteer. [Elizabeth Stuart, Queen of Bohemia] Elizabeth Stuart (19 August 1596 – 13 February 1662) was Electress of the Palatinate and briefly Queen of Bohemia as the wife of Frederick V of the Palatinate",
+      "Q: Who was born first, Francis Nethersole or Elizabeth Stuart?",
+      "Q: What nationality was James Henry Miller's wife?",
+      "Q: What nationality was a historical drama film directed by?",
+      ". [Anthony Eden] Robert Anthony Eden, 1st Earl of Avon, (12 June 1897 – 14 January 1977) was a British Conservative politician who served three periods as Foreign Secretary and then a relatively brief term as Prime Minister of the United Kingdom from 1955 to 1957."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0004_easy_0",
+    "question": "What was the role of producing an autograph in Assyriology?",
+    "ground_truth_answer": "Producing an autograph is often the first step of a tablet's archaeological interpretation and the autograph is frequently the authoritative form that is published as source material.",
+    "generated_answer": "Producing an autograph is often the first step of a tablet's archaeological interpretation.",
+    "retrieved_contexts": [
+      "[Autograph (Assyriology)] An autograph in Assyriology is the hand-copy of a cuneiform clay-tablet. Producing an autograph is often the first step of a tablet's archaeological interpretation and the autograph is frequently the authoritative form that is published as source material. Autographing the text is followed by transliteration, transcription and translation. [Cuneiform script] Cuneiform script ( or or ), one of the earliest systems of writing, was invented by the Sumerians",
+      "Q: Who invented the type of script used in autographs?",
+      "Q: Which documentary is about Finnish rock groups, Adam Clayton Powell or The Saimaa Gesture?",
+      "Q: What author has contributed to such works as \"New Statesmen\", \"The Nation\", and \"The Atlantic\", among others, while also being being associated with Dysteleology?",
+      "Q: St James Street appears as a segment of Whitecross Street on the 1610 map of the Monmouth by an English historian best known as a mapmaker of what perior?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.8
+  },
+  {
+    "sample_id": "hotpotqa_clu0004_hard_2",
+    "question": "What is the connection between the invention of cuneiform script and the kings of the Angles, considering the historical context of Prince William, Duke of Gloucester's family?",
+    "ground_truth_answer": "There is no direct connection between the invention of cuneiform script by the Sumerians and the kings of the Angles, but both are related to the broader context of ancient and medieval history, with Prince William, Duke of Gloucester's family being part of the English monarchy that descended from the Angles.",
+    "generated_answer": "The connection between the invention of cuneiform script and the kings of the Angles, considering the historical context of Prince William, Duke of Gloucester's family, cannot be directly determined from the provided context.",
+    "retrieved_contexts": [
+      "[Prince William, Duke of Gloucester] Prince William, Duke of Gloucester (24 July 1689 – 30 July 1700 ) was the son of Princess Anne, later Queen of England, Ireland and Scotland from 1702, and her husband, Prince George, Duke of Cumberland. He was their only child to survive infancy",
+      "Q: Prince William, Duke of Gloucester and Prince George of Denmark, were eventually monarchs of which Kingdom?",
+      "Q: What book contains a poem which, along with \"Beowulf\" and the \"Anglo-Saxon Chronicle\", preserves a legendary list of the kings of the Angles?",
+      ". He was their only child to survive infancy. Styled Duke of Gloucester, he was viewed by contemporaries as a Protestant champion because his birth seemed to cement the Protestant succession established in the \"Glorious Revolution\" that had deposed his Catholic grandfather James II the previous year. [Prince George of Denmark] Prince George of Denmark and Norway, Duke of Cumberland (Danish: \"Jørgen\" ; 2 April 165328 October 1708), was the husband of Queen Anne, who reigned over Great Britain from 1702.",
+      "Q: Who invented the type of script used in autographs?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 0.0,
+    "context_precision": 0.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0004_medium_1",
+    "question": "Which queen reigned over Great Britain from 1702 and was the wife of Prince George of Denmark?",
+    "ground_truth_answer": "Queen Anne",
+    "generated_answer": "Queen Anne",
+    "retrieved_contexts": [
+      ". He was their only child to survive infancy. Styled Duke of Gloucester, he was viewed by contemporaries as a Protestant champion because his birth seemed to cement the Protestant succession established in the \"Glorious Revolution\" that had deposed his Catholic grandfather James II the previous year. [Prince George of Denmark] Prince George of Denmark and Norway, Duke of Cumberland (Danish: \"Jørgen\" ; 2 April 165328 October 1708), was the husband of Queen Anne, who reigned over Great Britain from 1702.",
+      "Q: Prince William, Duke of Gloucester and Prince George of Denmark, were eventually monarchs of which Kingdom?",
+      "[Prince William, Duke of Gloucester] Prince William, Duke of Gloucester (24 July 1689 – 30 July 1700 ) was the son of Princess Anne, later Queen of England, Ireland and Scotland from 1702, and her husband, Prince George, Duke of Cumberland. He was their only child to survive infancy",
+      "Q: What nationality was James Henry Miller's wife?",
+      "Q: Which 1999 French Open - Women's Doubles runner-up was born in Russia on 7 June 1981?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0005_hard_2",
+    "question": "What is the connection between the birth year of El-P and the number of years Peggy Seeger has lived in Britain, considering Peggy Seeger was born in 1935 and El-P was born in 1975?",
+    "ground_truth_answer": "El-P was born 40 years after Peggy Seeger, and Peggy Seeger has lived in Britain for more than 30 years.",
+    "generated_answer": "El-P was born 40 years after Peggy Seeger, and since Peggy Seeger has lived in Britain for more than 30 years, El-P was born after she had already lived there for some time.",
+    "retrieved_contexts": [
+      "[Peggy Seeger] Margaret \"Peggy\" Seeger (born June 17, 1935) is an American folksinger. She is also well known in Britain, where she has lived for more than 30 years, and was married to the singer and songwriter Ewan MacColl until his death in 1989. [Ewan MacColl] James Henry Miller (25 January 1915 – 22 October 1989), better known by his stage name Ewan MacColl, was an English folk singer, songwriter, communist, labour activist, actor, poet, playwright and record producer.",
+      ". Smash and Definitive Jux label head El-P. All scratches are performed by DJ Big Wiz. [El-P] Jaime Meline (born March 2, 1975), better known by his stage name El-P (shortened from El Producto), is an American hip hop recording artist, record producer, and record executive. Originally a member of Company Flow, El-P has been a major driving force in alternative hip hop for more than two decades, producing for several notable rappers such as Aesop Rock, Mr. Lif, and Cage, among others.",
+      "Q: Pearl Lowe and Alison Goldfrapp, is of which nationality? [Pearl Lowe] Pearl Lowe (born Pearl Samantha Davis; 1970), is an English fashion and textiles designer, and former singer-songwriter. [Alison Goldfrapp] Alison Elizabeth Margaret Goldfrapp (born 13 May 1966) is an English musician and record producer, best known as the lead vocalist of the electronic music duo Goldfrapp.",
+      "[Dua Lipa] Dua Lipa ( ; ] ; born 22 August 1995) is an English singer, songwriter and model. Her musical career began at age 16, when she began covering songs by other artists on YouTube. In 2015, she was signed with Warner Music Group, and released her first single soon after. In December 2016, a documentary about Lipa was commissioned by \"The Fader\" magazine, titled \"See in Blue\". In January 2017, she won the EBBA Public Choice Award",
+      "Q: What year was the winner of the 2016 Marrakesh ePrix born?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.8,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0005_medium_1",
+    "question": "What is the occupation of El-P, who is mentioned as the head of the Definitive Jux label in the context of Aesop Rock's EP 'Fast Cars, Danger, Fire and Knives'?",
+    "ground_truth_answer": "American hip hop recording artist, record producer, and record executive",
+    "generated_answer": "El-P is an American hip hop recording artist, record producer, and record executive.",
+    "retrieved_contexts": [
+      "[Fast Cars, Danger, Fire and Knives] Fast Cars, Danger, Fire and Knives is an EP by American hip hop artist Aesop Rock. Released via the Definitive Jux label on February 22, 2005, the record is produced by Blockhead and Aesop Rock himself, with the former producing three tracks and the latter producing four, with one track produced by Rob Sonic. Vocals are handled by Aesop Rock, with guest appearances from Camu Tao and Metro of S.A. Smash and Definitive Jux label head El-P",
+      ". Smash and Definitive Jux label head El-P. All scratches are performed by DJ Big Wiz. [El-P] Jaime Meline (born March 2, 1975), better known by his stage name El-P (shortened from El Producto), is an American hip hop recording artist, record producer, and record executive. Originally a member of Company Flow, El-P has been a major driving force in alternative hip hop for more than two decades, producing for several notable rappers such as Aesop Rock, Mr. Lif, and Cage, among others.",
+      "Q: Fast Cars, Danger, Fire and Knives includes guest appearances from which hip hop record executive?",
+      "Q: Which American singer-songwriter known as \"the Caruso of Rock\", recorded on the Monument Records label and had hits such as \"Pretty One,\" and \"Uptown\"?",
+      "Q: What genre of music is the solo artist that contributed to Real Damage a variant of? [Real Damage] Real Damage is a Split EP of American indie rock band Gossip and Electropop solo artist Tracy + the Plastics, it was released on January 25, 2005. [Electropop] Electropop is a variant of synth-pop that places more emphasis on a harder, electronic sound. The genre has seen a revival of popularity and influence since the 2000s."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0006_easy_0",
+    "question": "What music genre originated in the United States in the first half of the 20th century and became popular again in the UK in the 1950s?",
+    "ground_truth_answer": "Skiffle",
+    "generated_answer": "Skiffle",
+    "retrieved_contexts": [
+      ". [Skiffle] Skiffle is a music genre with jazz, blues, folk and American folk influences, usually using a combination of manufactured and homemade or improvised instruments. Originating as a term in the United States in the first half of the 20th century, it became popular again in the UK in the 1950s, where it was associated with artists such as Lonnie Donegan, The Vipers Skiffle Group, Ken Colyer and Chas McDevitt",
+      ". Skiffle played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians and has been seen as a critical stepping stone to the second British folk revival, blues boom and British Invasion of the US popular music scene.",
+      ". Skiffle played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians and has been seen as a critical stepping stone to the second British folk revival, blues boom and British Invasion of the US popular music scene.",
+      ". It was released to contemporary hit radio in the United Kingdom on 21 July 2017 as the album's sixth single. It impacted the same format in the United States on 22 August 2017.",
+      "Q: What genre of music is the solo artist that contributed to Real Damage a variant of? [Real Damage] Real Damage is a Split EP of American indie rock band Gossip and Electropop solo artist Tracy + the Plastics, it was released on January 25, 2005. [Electropop] Electropop is a variant of synth-pop that places more emphasis on a harder, electronic sound. The genre has seen a revival of popularity and influence since the 2000s."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0006_hard_2",
+    "question": "What music genre, influenced by jazz, blues, folk, and American folk, played a significant role in the careers of musicians who later contributed to the British Invasion of the US popular music scene, and which band, formed in 1981, is an example of a group that rose to prominence during this period, with its current lineup including James Hetfield and Lars Ulrich?",
+    "ground_truth_answer": "Skiffle and Metallica",
+    "generated_answer": "The music genre influenced by jazz, blues, folk, and American folk that played a significant role in the careers of musicians who later contributed to the British Invasion of the US popular music scene is Skiffle, and an example of a band that rose to prominence during this period is Metallica, formed in 1981 with its current lineup including James Hetfield and Lars Ulrich.",
+    "retrieved_contexts": [
+      ". Skiffle played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians and has been seen as a critical stepping stone to the second British folk revival, blues boom and British Invasion of the US popular music scene.",
+      ". Skiffle played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians and has been seen as a critical stepping stone to the second British folk revival, blues boom and British Invasion of the US popular music scene.",
+      ". The Playbills, which describe the musical as having \"explosions, negligible storytelling, camouflage and tits\", also state that the musical's cast included actors such as Taye Diggs (who would go on to play the role of Hedwig in the summer of 2015) and that the music was written by Metallica and Stephen R. Schwartz, which is the real name of \"Hedwig\" songwriter Stephen Trask. [Metallica] Metallica is an American heavy metal band based in San Rafael, California. The band was formed in 1981 in Los Angeles when vocalist/guitarist James Hetfield responded to an advertisement posted by drummer Lars Ulrich in a local newspaper. Metallica's current lineup comprises founding members Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth) and bassists Ron McGovney, Cliff Burton, and Jason Newsted are also former members of the band.",
+      ". [Skiffle] Skiffle is a music genre with jazz, blues, folk and American folk influences, usually using a combination of manufactured and homemade or improvised instruments. Originating as a term in the United States in the first half of the 20th century, it became popular again in the UK in the 1950s, where it was associated with artists such as Lonnie Donegan, The Vipers Skiffle Group, Ken Colyer and Chas McDevitt",
+      ". The band was formed in 1981 in Los Angeles when vocalist/guitarist James Hetfield responded to an advertisement posted by drummer Lars Ulrich in a local newspaper. Metallica's current lineup comprises founding members Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth) and bassists Ron McGovney, Cliff Burton, and Jason Newsted are also former members of the band."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.8,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0006_medium_1",
+    "question": "What music genre, which originated in the United States and became popular in the UK in the 1950s, played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians?",
+    "ground_truth_answer": "Skiffle",
+    "generated_answer": "Skiffle",
+    "retrieved_contexts": [
+      ". Skiffle played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians and has been seen as a critical stepping stone to the second British folk revival, blues boom and British Invasion of the US popular music scene.",
+      ". Skiffle played a major part in beginning the careers of later eminent jazz, pop, blues, folk and rock musicians and has been seen as a critical stepping stone to the second British folk revival, blues boom and British Invasion of the US popular music scene.",
+      ". [Skiffle] Skiffle is a music genre with jazz, blues, folk and American folk influences, usually using a combination of manufactured and homemade or improvised instruments. Originating as a term in the United States in the first half of the 20th century, it became popular again in the UK in the 1950s, where it was associated with artists such as Lonnie Donegan, The Vipers Skiffle Group, Ken Colyer and Chas McDevitt",
+      "Q: Gary Harrison, began his career in the 1970s and has written over how many major-label recorded songs including several number-one hits, another artist who have recorded his work include Bryan White, an American country music artist?",
+      "[Peggy Seeger] Margaret \"Peggy\" Seeger (born June 17, 1935) is an American folksinger. She is also well known in Britain, where she has lived for more than 30 years, and was married to the singer and songwriter Ewan MacColl until his death in 1989. [Ewan MacColl] James Henry Miller (25 January 1915 – 22 October 1989), better known by his stage name Ewan MacColl, was an English folk singer, songwriter, communist, labour activist, actor, poet, playwright and record producer."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.6,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0007_easy_0",
+    "question": "When was Dua Lipa born?",
+    "ground_truth_answer": "22 August 1995",
+    "generated_answer": "Dua Lipa was born on 22 August 1995",
+    "retrieved_contexts": [
+      "[Dua Lipa] Dua Lipa ( ; ] ; born 22 August 1995) is an English singer, songwriter and model. Her musical career began at age 16, when she began covering songs by other artists on YouTube. In 2015, she was signed with Warner Music Group, and released her first single soon after. In December 2016, a documentary about Lipa was commissioned by \"The Fader\" magazine, titled \"See in Blue\". In January 2017, she won the EBBA Public Choice Award",
+      "Q: Dua Lipa, an English singer, songwriter and model, the album spawned the number-one single \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album, released in what year?",
+      ". Her self-titled debut studio album was released on 2 June 2017. The album spawned seven singles, including the top-10 single \"Be the One\" and the number-one single \"New Rules\". [New Rules (song)] \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album (2017). The track was written by Caroline Ailin, Emily Warren and Ian Kirkpatrick, while production was handled by the latter",
+      "Q: What year was the winner of the 2016 Marrakesh ePrix born?",
+      "Q: In what year was the creator of the current arrangement of the \"Simpson's Theme\" born?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0008_easy_0",
+    "question": "What type of music does the band The New Pornographers play?",
+    "ground_truth_answer": "Indie rock",
+    "generated_answer": "The New Pornographers play Canadian indie rock music.",
+    "retrieved_contexts": [
+      "Q: Are both The New Pornographers and Kings of Leon American rock bands?",
+      "[The New Pornographers] The New Pornographers is a Canadian indie rock band formed in 1997 in Vancouver, British Columbia. Presented as a musical collective of singer-songwriters and musicians from multiple projects, the band has released seven studio albums to critical acclaim for their use of multiple vocalists and elements of power pop incorporated into their music. [Kings of Leon] Kings of Leon is an American rock band that formed in Nashville, Tennessee, in 1999",
+      "Q: What are the names of the current members of American heavy metal band who wrote the music for Hurt Locker The Musical?",
+      "Q: Are both Tim McIlrath and Spike Slawson American punk rock musicians?",
+      "Q: Jane's Addiction and Weeping Willows, play which genre of music? [Jane's Addiction] Jane's Addiction is an American rock band from Los Angeles, formed in 1985. The band consists of Perry Farrell (vocals), Dave Navarro (guitar), Stephen Perkins (drums) and Chris Chaney (bass). [Weeping Willows] Weeping Willows is a Swedish indie rock group that started in 1995."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0008_hard_2",
+    "question": "What is the difference in the formation year between the Canadian indie rock band The New Pornographers and the American rock band Kings of Leon, and which year was David Lee Roth inducted into the Rock and Roll Hall of Fame?",
+    "ground_truth_answer": "The New Pornographers was formed 2 years before Kings of Leon, and David Lee Roth was inducted into the Rock and Roll Hall of Fame in 2007.",
+    "generated_answer": "The difference in formation year between The New Pornographers and Kings of Leon is 2 years, and David Lee Roth was inducted into the Rock and Roll Hall of Fame in 2007.",
+    "retrieved_contexts": [
+      "Q: Are both The New Pornographers and Kings of Leon American rock bands?",
+      "[The New Pornographers] The New Pornographers is a Canadian indie rock band formed in 1997 in Vancouver, British Columbia. Presented as a musical collective of singer-songwriters and musicians from multiple projects, the band has released seven studio albums to critical acclaim for their use of multiple vocalists and elements of power pop incorporated into their music. [Kings of Leon] Kings of Leon is an American rock band that formed in Nashville, Tennessee, in 1999",
+      "Q: Who was inducted into the Rock and Roll Hall of Fame, David Lee Roth or Cia Berg?",
+      "[Cia Berg] Cia Berg (born 2 December 1963), now known as Cia Soro, is a Swedish television presenter and singer. She was at one time the lead singer of the Swedish rock band Whale, who released the single \"Hobo Humpin' Slobo Babe\". [David Lee Roth] David Lee Roth (born October 10, 1954) is an American rock vocalist, musician, songwriter, actor, author, and former radio personality. In 2007, he was inducted into the Rock and Roll Hall of Fame.",
+      "Q: Which band was founded first, Hole, the rock band that Courtney Love was a frontwoman of, or The Wolfhounds?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0008_medium_1",
+    "question": "What is the nationality of the lead vocalist of the band that was formed in Nashville, Tennessee, in 1999?",
+    "ground_truth_answer": "American",
+    "generated_answer": "The nationality of the lead vocalist of the band that was formed in Nashville, Tennessee, in 1999 is American.",
+    "retrieved_contexts": [
+      "Q: What are the names of the current members of American heavy metal band who wrote the music for Hurt Locker The Musical?",
+      "[The New Pornographers] The New Pornographers is a Canadian indie rock band formed in 1997 in Vancouver, British Columbia. Presented as a musical collective of singer-songwriters and musicians from multiple projects, the band has released seven studio albums to critical acclaim for their use of multiple vocalists and elements of power pop incorporated into their music. [Kings of Leon] Kings of Leon is an American rock band that formed in Nashville, Tennessee, in 1999",
+      ". The Playbills, which describe the musical as having \"explosions, negligible storytelling, camouflage and tits\", also state that the musical's cast included actors such as Taye Diggs (who would go on to play the role of Hedwig in the summer of 2015) and that the music was written by Metallica and Stephen R. Schwartz, which is the real name of \"Hedwig\" songwriter Stephen Trask. [Metallica] Metallica is an American heavy metal band based in San Rafael, California. The band was formed in 1981 in Los Angeles when vocalist/guitarist James Hetfield responded to an advertisement posted by drummer Lars Ulrich in a local newspaper. Metallica's current lineup comprises founding members Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth) and bassists Ron McGovney, Cliff Burton, and Jason Newsted are also former members of the band.",
+      ". The band is composed of brothers Caleb Followill (b. January 14, 1982, lead vocals, rhythm guitar), Nathan Followill (b. June 26, 1979, drums, percussion, backing vocals) and Jared Followill (b. November 20, 1986, bass guitar, backing vocals), with their cousin Matthew Followill (b. September 10, 1984, lead guitar, backing vocals).",
+      "Q: Who performed the lead single on the album Friends in Low Places, No Fences, that reached #1 on Billboard?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0009_easy_0",
+    "question": "What is the birth date of Pauline Henry, the British Jamaican recording artist?",
+    "ground_truth_answer": "29 January 1961",
+    "generated_answer": "Pauline Henry, the British Jamaican recording artist, was born on 29 January 1961.",
+    "retrieved_contexts": [
+      "[Pauline Henry] Pauline Henry (born 29 January 1961) is a British Jamaican recording artist. She was the vocalist in the Scottish band The Chimes, best known for their 1990 cover version of U2's \"I Still Haven't Found What I'm Looking For\", between 1988 and 1991. Following her departure from the group, Henry embarked on a solo career, and achieved five UK top 40 singles between 1993 and 1996",
+      "Q: Pauline Henry was known as the vocalist of a very popular cover song. Which album was this song from?",
+      "Q: In what year was the creator of the current arrangement of the \"Simpson's Theme\" born?",
+      "[Robert Fleischman] Robert Fleischman (born March 11, 1953) is an American musician, songwriter, and record producer. [Jimmy Barnes] James Dixon Swan {'1': \", '2': \", '3': \", '4': \"} (born 28 April 1956), better known as Jimmy Barnes, is a Scottish-Australian rock singer-songwriter. His career both as a solo performer and as the lead vocalist with the rock band Cold Chisel has made him one of the most popular and best-selling Australian music artists of all time",
+      "Q: What nationality was James Henry Miller's wife?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0009_medium_1",
+    "question": "What was the chart position of U2's song 'I Still Haven't Found What I'm Looking For' in the UK Singles Chart, which was also covered by Pauline Henry's band The Chimes?",
+    "ground_truth_answer": "Number six",
+    "generated_answer": "The chart position of U2's song 'I Still Haven't Found What I'm Looking For' in the UK Singles Chart, which was also covered by Pauline Henry's band The Chimes, was number six.",
+    "retrieved_contexts": [
+      "[Pauline Henry] Pauline Henry (born 29 January 1961) is a British Jamaican recording artist. She was the vocalist in the Scottish band The Chimes, best known for their 1990 cover version of U2's \"I Still Haven't Found What I'm Looking For\", between 1988 and 1991. Following her departure from the group, Henry embarked on a solo career, and achieved five UK top 40 singles between 1993 and 1996",
+      ". [I Still Haven't Found What I'm Looking For] \"I Still Haven't Found What I'm Looking For\" is a song by Irish rock band U2. It is the second track from their 1987 album \"The Joshua Tree\" and was released as the album's second single in May 1987. The song was a hit, becoming the band's second consecutive number-one single on the US \"Billboard\" Hot 100 while peaking at number six on the UK Singles Chart.",
+      "Q: Pauline Henry was known as the vocalist of a very popular cover song. Which album was this song from?",
+      ". According to a press release, the album was recorded in London, Paris, New York City, Chicago, and Jamaica and produced by Gorillaz, The Twilite Tone and Remi Kabaka, Jr. It is the band's first studio album since 2010's \"The Fall\", and features collaborations from several artists including Grace Jones, Kali Uchis, Vince Staples, Popcaan, D.R.A.M., Anthony Hamilton, De La Soul, Danny Brown, Kelela, Mavis Staples, Pusha T, and Benjamin Clementine.",
+      "Q: \"Let Me Out\" is a song released as the fifth single from what band's fifth studio album \"Humanz\" which was recorded in London, Paris, New York City, Chicago, and Jamaica ?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0010_easy_0",
+    "question": "What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song 'The Battle?'",
+    "ground_truth_answer": "Tammy Wynette",
+    "generated_answer": "Tammy Wynette",
+    "retrieved_contexts": [
+      "Q: What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song \"The Battle?\"",
+      "[The Battle (George Jones song)] \"The Battle\" is a song by American country music artist George Jones. It was composed by Norro Wilson, George Richey, and Linda Kimball and became the title track of Jones' 1976 LP. The song uses war as a metaphor in describing an argument and eventual reconciliation between a couple, with the woman emerging victorious and the narrator exclaiming, \"Oh, what a sweet surrender!\" The song begins with the sound of drums mimicking the start of a battle march",
+      ". [Tammy Wynette] Tammy Wynette (born Virginia Wynette Pugh; May 5, 1942 – April 6, 1998) was an American country music singer-songwriter and one of country music's best-known artists and biggest-selling female singers.",
+      ". [Tammy Wynette] Tammy Wynette (born Virginia Wynette Pugh; May 5, 1942 – April 6, 1998) was an American country music singer-songwriter and one of country music's best-known artists and biggest-selling female singers.",
+      "[Peggy Seeger] Margaret \"Peggy\" Seeger (born June 17, 1935) is an American folksinger. She is also well known in Britain, where she has lived for more than 30 years, and was married to the singer and songwriter Ewan MacColl until his death in 1989. [Ewan MacColl] James Henry Miller (25 January 1915 – 22 October 1989), better known by his stage name Ewan MacColl, was an English folk singer, songwriter, communist, labour activist, actor, poet, playwright and record producer."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.75,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0010_hard_2",
+    "question": "What was the peak position of the song 'The Battle' by George Jones on the charts, and in the same year, what was the chart performance of the duet 'Golden Ring' by George Jones and his ex-wife Tammy Wynette?",
+    "ground_truth_answer": "The song 'The Battle' peaked at #16, while the duet 'Golden Ring' became a #1 hit.",
+    "generated_answer": "The song 'The Battle' by George Jones peaked at #16, and in the same year, the duet 'Golden Ring' by George Jones and his ex-wife Tammy Wynette reached #1 on the charts.",
+    "retrieved_contexts": [
+      ". Despite Billy Sherrill's ambitious production and Jones' committed vocal performance, the single did not crack the Top 10, stalling at #16 and continued the singer's commercial slide as a solo artist. Meanwhile, the single \"Golden Ring,\" a duet with his estranged ex-wife Tammy Wynette, became a #1 hit that same year",
+      "Q: What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song \"The Battle?\"",
+      "[The Battle (George Jones song)] \"The Battle\" is a song by American country music artist George Jones. It was composed by Norro Wilson, George Richey, and Linda Kimball and became the title track of Jones' 1976 LP. The song uses war as a metaphor in describing an argument and eventual reconciliation between a couple, with the woman emerging victorious and the narrator exclaiming, \"Oh, what a sweet surrender!\" The song begins with the sound of drums mimicking the start of a battle march",
+      "Q: Who performed the lead single on the album Friends in Low Places, No Fences, that reached #1 on Billboard?",
+      ". His songwriting credits include ; \"Hey Cinderella\" (recorded by Suzy Bogguss); \"I Hate Everything\" a number-one recording by George Strait); \"I Just Wanted You to Know\" (recorded by Mark Chesnutt); \"I Thought It Was You\" (recorded by Doug Stone); \"Lying in Love with You\" (recorded by Jim Ed Brown and Helen Cornelius); \"Strawberry Wine\" (with Matraca Berg, recorded by Deana Carter); \"Wild Angels\" (with Matraca Berg; recorded by Martina McBride); \"Wrong Side of Memphis\" (with Matraca Berg, recorded by"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0010_medium_1",
+    "question": "What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song 'The Battle'?",
+    "ground_truth_answer": "Tammy Wynette",
+    "generated_answer": "Tammy Wynette",
+    "retrieved_contexts": [
+      "Q: What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song \"The Battle?\"",
+      "[The Battle (George Jones song)] \"The Battle\" is a song by American country music artist George Jones. It was composed by Norro Wilson, George Richey, and Linda Kimball and became the title track of Jones' 1976 LP. The song uses war as a metaphor in describing an argument and eventual reconciliation between a couple, with the woman emerging victorious and the narrator exclaiming, \"Oh, what a sweet surrender!\" The song begins with the sound of drums mimicking the start of a battle march",
+      ". [Tammy Wynette] Tammy Wynette (born Virginia Wynette Pugh; May 5, 1942 – April 6, 1998) was an American country music singer-songwriter and one of country music's best-known artists and biggest-selling female singers.",
+      ". [Tammy Wynette] Tammy Wynette (born Virginia Wynette Pugh; May 5, 1942 – April 6, 1998) was an American country music singer-songwriter and one of country music's best-known artists and biggest-selling female singers.",
+      "[Peggy Seeger] Margaret \"Peggy\" Seeger (born June 17, 1935) is an American folksinger. She is also well known in Britain, where she has lived for more than 30 years, and was married to the singer and songwriter Ewan MacColl until his death in 1989. [Ewan MacColl] James Henry Miller (25 January 1915 – 22 October 1989), better known by his stage name Ewan MacColl, was an English folk singer, songwriter, communist, labour activist, actor, poet, playwright and record producer."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0011_easy_0",
+    "question": "What album did the song 'Just the Two of Us' originally appear on?",
+    "ground_truth_answer": "Winelight",
+    "generated_answer": "The song 'Just the Two of Us' originally appeared on Grover Washington's 1980 album \"Winelight\".",
+    "retrieved_contexts": [
+      "[Just the Two of Us (Grover Washington Jr. song)] \"Just the Two of Us\" is a 1981 R&B single written by Bill Withers, William Salter and Ralph MacDonald, which was recorded by Grover Washington Jr. and Bill Withers. The song originally appeared on Washington's 1980 album \"Winelight\". An edited version reached number two on the \"Billboard\" Hot 100, staying there for 3 weeks, behind \"Morning Train (9 to 5)\" by Sheena Easton and \"Bette Davis Eyes\" by Kim Carnes",
+      "Q: An edited version of \"Just the Two of Us\" reached number two on the \"Billboard\" Hot 100 behind a song written and composed by Donna Weiss and Jackie DeShannon which spend how many weeks at No. 1 on the \"Billboard\" hot 100?",
+      "Q: Pauline Henry was known as the vocalist of a very popular cover song. Which album was this song from?",
+      "Q: Which American singer-songwriter known as \"the Caruso of Rock\", recorded on the Monument Records label and had hits such as \"Pretty One,\" and \"Uptown\"?",
+      ". The group's self-titled debut album was released on April 28, 2009, through Atlantic Records. Their second album \"The Strange Case Of...\" was released on April 10, 2012. Its lead single \"Love Bites (So Do I)\" from that album won their first Grammy Award for Best Hard Rock/Metal Performance on February 10, 2013."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0011_hard_2",
+    "question": "What is the connection between the 1981 songs 'Just the Two of Us' and 'Bette Davis Eyes' in terms of their performance on the Billboard Hot 100 chart?",
+    "ground_truth_answer": "Both songs reached high positions on the Billboard Hot 100 chart in 1981, with 'Bette Davis Eyes' spending nine weeks at No. 1 and 'Just the Two of Us' reaching number two, staying there for 3 weeks, behind 'Bette Davis Eyes' and 'Morning Train (9 to 5)'",
+    "generated_answer": "The connection between the 1981 songs 'Just the Two of Us' and 'Bette Davis Eyes' in terms of their performance on the Billboard Hot 100 chart is that 'Just the Two of Us' reached number two, while 'Bette Davis Eyes' spent nine weeks at No. 1.",
+    "retrieved_contexts": [
+      "[Just the Two of Us (Grover Washington Jr. song)] \"Just the Two of Us\" is a 1981 R&B single written by Bill Withers, William Salter and Ralph MacDonald, which was recorded by Grover Washington Jr. and Bill Withers. The song originally appeared on Washington's 1980 album \"Winelight\". An edited version reached number two on the \"Billboard\" Hot 100, staying there for 3 weeks, behind \"Morning Train (9 to 5)\" by Sheena Easton and \"Bette Davis Eyes\" by Kim Carnes",
+      ". The song won a Grammy Award for Best R&B Song. Bill Withers included the edited version on the 1981 compilation \"Bill Withers' Greatest Hits\" and many subsequent greatest hits collections. [Bette Davis Eyes] \"Bette Davis Eyes\" is a song written and composed by Donna Weiss and Jackie DeShannon, and made popular by American singer Kim Carnes. DeShannon recorded it in 1974; Carnes's 1981 version spent nine weeks at No. 1 on the \"Billboard\" Hot 100 and was \"Billboard\"' s biggest hit of 1981.",
+      "Q: An edited version of \"Just the Two of Us\" reached number two on the \"Billboard\" Hot 100 behind a song written and composed by Donna Weiss and Jackie DeShannon which spend how many weeks at No. 1 on the \"Billboard\" hot 100?",
+      ". She starred opposite Bob Hoskins in the 1978 BBC drama \"Pennies From Heaven\", before going on to win the 1980 BAFTA TV Award for Best Actress for \"Testament of Youth\" and \"Malice Aforethought\", and the 1982 Olivier Award for Best Actress in a Revival for \"A Doll's House\". Her film appearances include \"Chariots of Fire\" (1981), \"\" (1984) and \"The Shooting Party\" (1985).",
+      "Q: Which American singer-songwriter known as \"the Caruso of Rock\", recorded on the Monument Records label and had hits such as \"Pretty One,\" and \"Uptown\"?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.75,
+    "answer_correctness": 0.9
+  },
+  {
+    "sample_id": "hotpotqa_clu0011_medium_1",
+    "question": "Which 1981 song spent more weeks at number one on the Billboard Hot 100, 'Bette Davis Eyes' or 'Just the Two of Us'?",
+    "ground_truth_answer": "Bette Davis Eyes spent more weeks at number one",
+    "generated_answer": "Bette Davis Eyes spent more weeks at number one on the Billboard Hot 100.",
+    "retrieved_contexts": [
+      "[Just the Two of Us (Grover Washington Jr. song)] \"Just the Two of Us\" is a 1981 R&B single written by Bill Withers, William Salter and Ralph MacDonald, which was recorded by Grover Washington Jr. and Bill Withers. The song originally appeared on Washington's 1980 album \"Winelight\". An edited version reached number two on the \"Billboard\" Hot 100, staying there for 3 weeks, behind \"Morning Train (9 to 5)\" by Sheena Easton and \"Bette Davis Eyes\" by Kim Carnes",
+      ". The song won a Grammy Award for Best R&B Song. Bill Withers included the edited version on the 1981 compilation \"Bill Withers' Greatest Hits\" and many subsequent greatest hits collections. [Bette Davis Eyes] \"Bette Davis Eyes\" is a song written and composed by Donna Weiss and Jackie DeShannon, and made popular by American singer Kim Carnes. DeShannon recorded it in 1974; Carnes's 1981 version spent nine weeks at No. 1 on the \"Billboard\" Hot 100 and was \"Billboard\"' s biggest hit of 1981.",
+      "Q: An edited version of \"Just the Two of Us\" reached number two on the \"Billboard\" Hot 100 behind a song written and composed by Donna Weiss and Jackie DeShannon which spend how many weeks at No. 1 on the \"Billboard\" hot 100?",
+      "[Ghostbusters (song)] \"Ghostbusters\" is a song written and recorded by Ray Parker Jr. as the theme to the film of the same name starring Bill Murray, Dan Aykroyd, Harold Ramis, and Ernie Hudson. Debuting at #68 on June 16, 1984, the song reached number one on the \"Billboard\" Hot 100 on August 11, 1984, staying there for three weeks, and at number two on the UK Singles Chart on September 16, 1984, staying there for three weeks. The song re-entered the UK Top 75 on November 2, 2008, at No. 49",
+      "Q: Which American singer-songwriter known as \"the Caruso of Rock\", recorded on the Monument Records label and had hits such as \"Pretty One,\" and \"Uptown\"?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.75,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0012_easy_0",
+    "question": "When was Tim McIlrath born?",
+    "ground_truth_answer": "November 3, 1978",
+    "generated_answer": "Tim McIlrath was born on November 3, 1978.",
+    "retrieved_contexts": [
+      "Q: Are both Tim McIlrath and Spike Slawson American punk rock musicians?",
+      "[Tim McIlrath] Timothy James \"Tim\" McIlrath (born November 3, 1978) is an American punk rock musician. He is the lead singer, rhythm guitarist, songwriter and co-founder of the American punk rock band Rise Against. McIlrath is known to support animal rights and actively promotes PETA with his band. He is also straight edge. [Spike Slawson] Spike Slawson is an American punk rock musician, a member of Me First and the Gimme Gimmes, Swingin' Utters, Filthy Thievin' Bastards, Re-Volts, and Uke-Hunt.",
+      "Q: What is the birth date of the coach of the 2014-15 Michigan Wolverines men's basketball team?",
+      "Q: What year was the winner of the 2016 Marrakesh ePrix born?",
+      "Q: In what year was the creator of the current arrangement of the \"Simpson's Theme\" born?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0012_hard_2",
+    "question": "What is the connection between the birth year of Tim McIlrath, the release year of Keyshia Cole's debut album, and the certification status of that album?",
+    "ground_truth_answer": "Tim McIlrath was born in 1978, Keyshia Cole's debut album was released in 2005 and was certified gold and then platinum.",
+    "generated_answer": "The connection between the birth year of Tim McIlrath, the release year of Keyshia Cole's debut album, and the certification status of that album is that Tim McIlrath was born in 1978, Keyshia Cole's debut album was released in 2005, 27 years after Tim McIlrath's birth, and the album achieved significant commercial success by being certified gold and then platinum.",
+    "retrieved_contexts": [
+      ". The album's third and final single \"Look Back at Me\" featuring Killer Mike, which it was produced by Hard Hat Productions, became a regional hit club record and accompanied by a music video. [Keyshia Cole] Keyshia Cole (born October 15, 1981) is an American singer/songwriter, record producer, business woman, and television personality. She was born in Oakland, California. Her career began when she met MC Hammer at the age of 12, and later met rapper Tupac Shakur",
+      "Q: Are both Tim McIlrath and Spike Slawson American punk rock musicians?",
+      "[Tim McIlrath] Timothy James \"Tim\" McIlrath (born November 3, 1978) is an American punk rock musician. He is the lead singer, rhythm guitarist, songwriter and co-founder of the American punk rock band Rise Against. McIlrath is known to support animal rights and actively promotes PETA with his band. He is also straight edge. [Spike Slawson] Spike Slawson is an American punk rock musician, a member of Me First and the Gimme Gimmes, Swingin' Utters, Filthy Thievin' Bastards, Re-Volts, and Uke-Hunt.",
+      ". At the age of 18, she moved to Los Angeles and was later introduced to A&M Records. She released her debut album, \"The Way It Is\" (2005), which spawned five singles: \"Never,\" \"I Changed My Mind,\" \"(I Just Want It) To Be Over,\" \"I Should Have Cheated,\" and \"Love.\" It was certified gold within 17 weeks, and then platinum just eight weeks later. The album stayed on the charts for over a year, selling over 1.6 million copies.",
+      ". At the age of 18, she moved to Los Angeles and was later introduced to A&M Records. She released her debut album, \"The Way It Is\" (2005), which spawned five singles: \"Never,\" \"I Changed My Mind,\" \"(I Just Want It) To Be Over,\" \"I Should Have Cheated,\" and \"Love.\" It was certified gold within 17 weeks, and then platinum just eight weeks later. The album stayed on the charts for over a year, selling over 1.6 million copies."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0012_medium_1",
+    "question": "What is the birthplace of the American singer/songwriter who was featured in the song 'I Got a Thang for You' from the album Still Da Baddest?",
+    "ground_truth_answer": "Oakland, California",
+    "generated_answer": "The birthplace of the American singer/songwriter who was featured in the song 'I Got a Thang for You' from the album Still Da Baddest is Oakland, California.",
+    "retrieved_contexts": [
+      "Q: Still Da Baddest is the fourth studio album by American rapper Trina, following the poor chart performance, \"I Got a Thang for You\" featuring which American singer/songwriter, record producer, business woman, and television personality, and was born in Oakland, California?",
+      "[Still da Baddest] Still Da Baddest is the fourth studio album by American rapper Trina. It was released on April 1, 2008, by Slip-n-Slide, EMI and DP Entertainment. The album was preceded by the lead single, \"Single Again\" on November 6, 2007. Following the poor chart performance, \"I Got a Thang for You\" featuring Keyshia Cole, was released as the album's second single",
+      "Q: What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song \"The Battle?\"",
+      "[Dua Lipa] Dua Lipa ( ; ] ; born 22 August 1995) is an English singer, songwriter and model. Her musical career began at age 16, when she began covering songs by other artists on YouTube. In 2015, she was signed with Warner Music Group, and released her first single soon after. In December 2016, a documentary about Lipa was commissioned by \"The Fader\" magazine, titled \"See in Blue\". In January 2017, she won the EBBA Public Choice Award",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold. His fourth album, 1999's \"How Lucky I Am\", produced 2 top 40 singles, with the song \"God Gave Me You\" eventually becoming a big hit in the Philippines."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0013_easy_0",
+    "question": "What is the name of the album by Garth Brooks that was released on August 27, 1990, and reached #1 on Billboard's Top Country Albums chart?",
+    "ground_truth_answer": "No Fences",
+    "generated_answer": "The album by Garth Brooks that was released on August 27, 1990, and reached #1 on Billboard's Top Country Albums chart is No Fences.",
+    "retrieved_contexts": [
+      ". It was released on August 27, 1990, and reached #1 on \"Billboard's\" Top Country Albums chart. The album also reached #3 on the \"Billboard\" 200. On the latter chart it stayed in the top 40 for 126 weeks. No Fences remains Brooks' best-selling studio album to date with 17 million copies shipped in the US, and is the album that made him an international star. It was his first album issued in Europe (the original European release contained the four singles from his U.S. debut as bonus tracks)",
+      "[Friends in Low Places] \"Friends in Low Places\" is a song performed by American country pop artist Garth Brooks. It was released on August 6, 1990 as the lead single from his album \"No Fences\". The song spent four weeks at number one on the Hot Country Songs, and won both the Academy of Country Music and Country Music Association awards for 1990 Single of the Year. [No Fences] No Fences is the second studio album by the American country music artist Garth Brooks",
+      "Q: Who performed the lead single on the album Friends in Low Places, No Fences, that reached #1 on Billboard?",
+      ". [Dirt (Alice in Chains album)] Dirt is the second studio album by the American rock band Alice in Chains, released on September 29, 1992, through Columbia Records. Peaking at number six on the \"Billboard\" 200, the album was also well received by music critics. It has since been certified four-times platinum by the RIAA and gone on to sell five million copies worldwide, making \"Dirt\" the band's highest selling album to date",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold. His fourth album, 1999's \"How Lucky I Am\", produced 2 top 40 singles, with the song \"God Gave Me You\" eventually becoming a big hit in the Philippines."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0013_hard_2",
+    "question": "What is the release date of the album 'No Fences' by Garth Brooks, which is the best-selling studio album of the artist and was also released in the same year that 'Friends in Low Places' spent four weeks at number one on the Hot Country Songs, and how does the release date of this album compare to the release date of Alice in Chains' album 'Dirt'?",
+    "ground_truth_answer": "The album 'No Fences' by Garth Brooks was released on August 27, 1990, which is about 2 years before the release of Alice in Chains' album 'Dirt' on September 29, 1992.",
+    "generated_answer": "The release date of the album 'No Fences' by Garth Brooks is August 27, 1990, and it was released before Alice in Chains' album 'Dirt', which was released on September 29, 1992.",
+    "retrieved_contexts": [
+      "[Friends in Low Places] \"Friends in Low Places\" is a song performed by American country pop artist Garth Brooks. It was released on August 6, 1990 as the lead single from his album \"No Fences\". The song spent four weeks at number one on the Hot Country Songs, and won both the Academy of Country Music and Country Music Association awards for 1990 Single of the Year. [No Fences] No Fences is the second studio album by the American country music artist Garth Brooks",
+      ". It was released on August 27, 1990, and reached #1 on \"Billboard's\" Top Country Albums chart. The album also reached #3 on the \"Billboard\" 200. On the latter chart it stayed in the top 40 for 126 weeks. No Fences remains Brooks' best-selling studio album to date with 17 million copies shipped in the US, and is the album that made him an international star. It was his first album issued in Europe (the original European release contained the four singles from his U.S. debut as bonus tracks)",
+      "Q: Who performed the lead single on the album Friends in Low Places, No Fences, that reached #1 on Billboard?",
+      ". [Dirt (Alice in Chains album)] Dirt is the second studio album by the American rock band Alice in Chains, released on September 29, 1992, through Columbia Records. Peaking at number six on the \"Billboard\" 200, the album was also well received by music critics. It has since been certified four-times platinum by the RIAA and gone on to sell five million copies worldwide, making \"Dirt\" the band's highest selling album to date",
+      "[Hate to Feel] \"Hate to Feel\" is the tenth track on Alice in Chains' album \"Dirt\" (1992). The song was included on the compilation albums \"Music Bank\" (1999) and \"The Essential Alice in Chains\". It has also been the ninth track on later prints of the album and eleventh on others. Some editions of \"Dirt\" may merge this song with the then-unlisted 43-second track \"Iron Gland\""
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.95
+  },
+  {
+    "sample_id": "hotpotqa_clu0013_medium_1",
+    "question": "What was the release date of the album that included the song 'Friends in Low Places' and reached #1 on 'Billboard's' Top Country Albums chart?",
+    "ground_truth_answer": "August 27, 1990",
+    "generated_answer": "The album that included the song 'Friends in Low Places' and reached #1 on 'Billboard's' Top Country Albums chart was released on August 27, 1990.",
+    "retrieved_contexts": [
+      "Q: Who performed the lead single on the album Friends in Low Places, No Fences, that reached #1 on Billboard?",
+      "[Friends in Low Places] \"Friends in Low Places\" is a song performed by American country pop artist Garth Brooks. It was released on August 6, 1990 as the lead single from his album \"No Fences\". The song spent four weeks at number one on the Hot Country Songs, and won both the Academy of Country Music and Country Music Association awards for 1990 Single of the Year. [No Fences] No Fences is the second studio album by the American country music artist Garth Brooks",
+      ". It was released on August 27, 1990, and reached #1 on \"Billboard's\" Top Country Albums chart. The album also reached #3 on the \"Billboard\" 200. On the latter chart it stayed in the top 40 for 126 weeks. No Fences remains Brooks' best-selling studio album to date with 17 million copies shipped in the US, and is the album that made him an international star. It was his first album issued in Europe (the original European release contained the four singles from his U.S. debut as bonus tracks)",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold. His fourth album, 1999's \"How Lucky I Am\", produced 2 top 40 singles, with the song \"God Gave Me You\" eventually becoming a big hit in the Philippines.",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0014_easy_0",
+    "question": "In what year was John Baldwin Gourley born?",
+    "ground_truth_answer": "1981",
+    "generated_answer": "John Baldwin Gourley was born in 1981.",
+    "retrieved_contexts": [
+      ". [John Gourley] John Baldwin Gourley (born 1981) is an American musician, singer, and songwriter from Alaska. He is the lead singer and guitarist in the Portland, Oregon rock band Portugal. The Man. Gourley was previously the lead singer in screamo punk band, Anatomy of a Ghost. Gourley is also a visual artist, who often uses the alias The Fantastic The.",
+      "Q: In what year was the creator of the current arrangement of the \"Simpson's Theme\" born?",
+      "Q: The lead singer and guitarist in the Portland, Oregon rock band consisting of John Gourley, Zach Carothers, Kyle O'Quin, Jason Sechrist and Eric Howk, goes by what alias?",
+      "Q: According to the 2006 census what is the population of the city in which James Iroha Uchechukwu was born ?",
+      ". [John Beilein] John Patrick Beilein (pronounced \"bee-line\"; born February 5, 1953) is an American college basketball coach and current men's basketball head coach at the University of Michigan. He is the 16th head coach of the Michigan Wolverines. The 2016–17 season is his tenth at Michigan. Beilein has won 691 career games at four-year universities and 766 games altogether, including those at the junior college level"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0016_hard_2",
+    "question": "What is the name of the Californian rock band that recorded A Place in the Sun in 1995, and how many major-label recorded songs has Gary Harrison written, including the song 'Strawberry Wine' recorded by Deana Carter?",
+    "ground_truth_answer": "Lit, and over 300 major-label recorded songs",
+    "generated_answer": "Gary Harrison has written over 300 major-label recorded songs, including several number-one hits. A Place in the Sun is recorded by Californian rock band Lit, who have released a known hit, namely 'My Own Worst Enemy'.",
+    "retrieved_contexts": [
+      "Q: Gary Harrison, began his career in the 1970s and has written over how many major-label recorded songs including several number-one hits, another artist who have recorded his work include Bryan White, an American country music artist?",
+      ". His songwriting credits include ; \"Hey Cinderella\" (recorded by Suzy Bogguss); \"I Hate Everything\" a number-one recording by George Strait); \"I Just Wanted You to Know\" (recorded by Mark Chesnutt); \"I Thought It Was You\" (recorded by Doug Stone); \"Lying in Love with You\" (recorded by Jim Ed Brown and Helen Cornelius); \"Strawberry Wine\" (with Matraca Berg, recorded by Deana Carter); \"Wild Angels\" (with Matraca Berg; recorded by Martina McBride); \"Wrong Side of Memphis\" (with Matraca Berg, recorded by",
+      "Q: Californian rock band Lit recorded A Place in the Sun in 1995, but what's their best known song? [A Place in the Sun (Lit album)] A Place in the Sun is the second studio album by the American rock band Lit. [Lit (band)] Lit is an American rock band, formed in 1995 in Fullerton, California. They are best known for their hit song \"My Own Worst Enemy\".",
+      "[Gary Harrison] Harrison began his career in the 1970s and has written over 300 major-label recorded songs including several number-one hits",
+      ". The band consisted of Toni Halliday (vocals, occasionally guitar) and Dean Garcia (bass, guitar, drums, programming). Halliday wrote also the lyrics of their songs and they both contributed to songwriting. An important collaborator was the producer Alan Moulder, who helped them to shape their blend of heavy beats and densely layered guitar tracks set against Halliday's vocals."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.8,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0017_easy_0",
+    "question": "What is the birthdate of Bryan White?",
+    "ground_truth_answer": "February 17, 1974",
+    "generated_answer": "Bryan White was born on February 17, 1974.",
+    "retrieved_contexts": [
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold. His fourth album, 1999's \"How Lucky I Am\", produced 2 top 40 singles, with the song \"God Gave Me You\" eventually becoming a big hit in the Philippines.",
+      "Q: Gary Harrison, began his career in the 1970s and has written over how many major-label recorded songs including several number-one hits, another artist who have recorded his work include Bryan White, an American country music artist?",
+      "Q: What is the birth date of the coach of the 2014-15 Michigan Wolverines men's basketball team?",
+      "Q: When was Fannie Lee Chaney's son born?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0017_medium_1",
+    "question": "What is the nationality of Bryan White, the American country music artist mentioned alongside other musicians like Keith Stegall and Shawn Camp?",
+    "ground_truth_answer": "American",
+    "generated_answer": "The nationality of Bryan White, the American country music artist mentioned alongside other musicians like Keith Stegall and Shawn Camp, is American.",
+    "retrieved_contexts": [
+      "Q: Gary Harrison, began his career in the 1970s and has written over how many major-label recorded songs including several number-one hits, another artist who have recorded his work include Bryan White, an American country music artist?",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold",
+      ". [Bryan White] Bryan Shelton White (born February 17, 1974) is an American country music artist. Signed to Asylum Records in 1994 at age 20, White released his self-titled debut album that year. Both it and its follow-up, 1996's \"Between Now and Forever\", were certified platinum by the Recording Industry Association of America, and 1997's \"The Right Place\" was certified gold. His fourth album, 1999's \"How Lucky I Am\", produced 2 top 40 singles, with the song \"God Gave Me You\" eventually becoming a big hit in the Philippines.",
+      ". Other artists who have recorded his work include Kenny Chesney, Tim McGraw, Easton Corbin, Patty Loveless, Keith Whitley, John Michael Montgomery, Billy Ray Cyrus, Charley Pride, Anne Murray, Mindy McCready, Diamond Rio, Sammy Kershaw, Emmylou Harris, Ronnie Milsap, Highway 101, Molly Hatchet, Johnny Lee, Neal McCoy, Reba McEntire, Joe Nichols, Bob Welch, Nitty Gritty Dirt Band, Kenny Rogers, Matraca Berg, Pam Tillis, Crystal Gayle, Brenda Lee, B. J. Thomas, Alabama, Michelle Wright, Loverboy, Randy Travis, The Oak Ridge Boys, Conway Twitty, Barbara Mandrell, Lonestar, Steve Wariner, Joe Diffie, Michael Martin Murphey, Marty Balin, Cindy Alexander, Kim Carnes, Keith Stegall, Shawn Camp, Lee Greenwood, Russ Taff, George Canyon, The Kendalls, Chris LeDoux, Sylvia, Mickey Gilley, Eddy Raven, John Conlee, Bryan White, Blaine Larsen, Tammy Cochran, John Berry, Rick Trevino, Marie Osmond, Eric Heatherly, Pirates of the Mississippi, Chely Wright, and Robin Lee",
+      ". Thomas, Alabama, Michelle Wright, Loverboy, Randy Travis, The Oak Ridge Boys, Conway Twitty, Barbara Mandrell, Lonestar, Steve Wariner, Joe Diffie, Michael Martin Murphey, Marty Balin, Cindy Alexander, Kim Carnes, Keith Stegall, Shawn Camp, Lee Greenwood, Russ Taff, George Canyon, The Kendalls, Chris LeDoux, Sylvia, Mickey Gilley, Eddy Raven, John Conlee, Bryan White, Blaine Larsen, Tammy Cochran, John Berry, Rick Trevino, Marie Osmond, Eric Heatherly, Pirates of the Mississippi, Chely Wright, and Robin"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0018_easy_0",
+    "question": "Which musician played the bass guitar, Edwyn Collins or Jimmie Ross?",
+    "ground_truth_answer": "Jimmie Ross",
+    "generated_answer": "Jimmie Ross played the bass guitar.",
+    "retrieved_contexts": [
+      "Q: Which musician, Edwyn Collins or Jimmie Ross, played the bass guitar?",
+      ". [Jimmie Ross] Jimmie Ross is an American rock guitarist and vocalist who is best known for being a member of Pittsburgh band the Jaggerz, known for their 1970 hit \"The Rapper\". During the band's initial existence of 1965-1976, the bassist shared the duties of lead vocalist with guitarist Donnie Iris. By the time the Jaggerz regrouped in 1989, Iris was well into his solo career, and Ross became the sole lead vocalist and remained bassist. He continues to hold both positions today.",
+      "[Edwyn Collins] Edwyn Stephen Collins (born 23 August 1959) is a Scottish musician, producer and record label owner from Edinburgh, Scotland. Collins was the lead singer for the 1980s post-punk band Orange Juice, which he co-founded. Following the group's split in 1985, Collins started a solo career. His 1994 single \"A Girl Like You\" was a worldwide hit",
+      ". The band consisted of Mike Vennart (vocals, guitar), Steve Durose (guitar, backing vocals), Richard \"Gambler\" Ingram (guitar, keyboards), Mark Heron (drums) and Jon Ellis (bass guitar) for the majority of its career, with Steve Hodson replacing Ellis on bass guitar in 2006.",
+      "[Glenn Hughes] Glenn Hughes (born 21 August 1951) is an English rock bassist and vocalist, best known for playing bass and performing vocals for funk rock pioneers Trapeze, the Mk. III and IV line-ups of Deep Purple, as well as briefly fronting Black Sabbath in the mid-1980s. [Ross Lynch] Ross Shor Lynch (born December 29, 1995) is an American singer, songwriter, and actor. He is one of the founding members of the pop rock band R5"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0018_medium_1",
+    "question": "Which musician, Edwyn Collins or Jimmie Ross, is known for being a member of a band that had a 1970 hit with the song 'The Rapper'?",
+    "ground_truth_answer": "Jimmie Ross",
+    "generated_answer": "Jimmie Ross.",
+    "retrieved_contexts": [
+      "Q: Which musician, Edwyn Collins or Jimmie Ross, played the bass guitar?",
+      ". [Jimmie Ross] Jimmie Ross is an American rock guitarist and vocalist who is best known for being a member of Pittsburgh band the Jaggerz, known for their 1970 hit \"The Rapper\". During the band's initial existence of 1965-1976, the bassist shared the duties of lead vocalist with guitarist Donnie Iris. By the time the Jaggerz regrouped in 1989, Iris was well into his solo career, and Ross became the sole lead vocalist and remained bassist. He continues to hold both positions today.",
+      "[Edwyn Collins] Edwyn Stephen Collins (born 23 August 1959) is a Scottish musician, producer and record label owner from Edinburgh, Scotland. Collins was the lead singer for the 1980s post-punk band Orange Juice, which he co-founded. Following the group's split in 1985, Collins started a solo career. His 1994 single \"A Girl Like You\" was a worldwide hit",
+      "[Robert Fleischman] Robert Fleischman (born March 11, 1953) is an American musician, songwriter, and record producer. [Jimmy Barnes] James Dixon Swan {'1': \", '2': \", '3': \", '4': \"} (born 28 April 1956), better known as Jimmy Barnes, is a Scottish-Australian rock singer-songwriter. His career both as a solo performer and as the lead vocalist with the rock band Cold Chisel has made him one of the most popular and best-selling Australian music artists of all time",
+      ". 49. [Dan Aykroyd] Daniel Edward Aykroyd {'1': \", '2': \", '3': \", '4': \"} (born July 1, 1952) is a Canadian-American actor, comedian, producer, screenwriter, musician and businessman. He was an original member of the \"Not Ready for Prime Time Players\" on \"Saturday Night Live\" (1975–1979). A musical sketch he performed with John Belushi on \"SNL\", The Blues Brothers, turned into an actual performing band and then a highly successful 1980 film, also called \"The Blues Brothers\"."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0020_easy_0",
+    "question": "When was the song Apocalyptic by Halestorm released?",
+    "ground_truth_answer": "January 12, 2015",
+    "generated_answer": "The song Apocalyptic by Halestorm was released on January 12, 2015.",
+    "retrieved_contexts": [
+      "[Apocalyptic (song)] \"Apocalyptic\" is a song by the American hard rock band Halestorm. It was released on January 12, 2015, as the lead single from the band's third studio album, \"Into the Wild Life\". The video for the song was released on January 28. [Halestorm] Halestorm is an American hard rock band from Red Lion, Pennsylvania, consisting of lead vocalist and guitarist Lzzy Hale, her brother drummer and percussionist Arejay Hale, guitarist Joe Hottinger, and bassist Josh Smith",
+      "Q: \"Apocalypic\" is a song sung by Lizzy Hale from which group?",
+      "[Ghostbusters (song)] \"Ghostbusters\" is a song written and recorded by Ray Parker Jr. as the theme to the film of the same name starring Bill Murray, Dan Aykroyd, Harold Ramis, and Ernie Hudson. Debuting at #68 on June 16, 1984, the song reached number one on the \"Billboard\" Hot 100 on August 11, 1984, staying there for three weeks, and at number two on the UK Singles Chart on September 16, 1984, staying there for three weeks. The song re-entered the UK Top 75 on November 2, 2008, at No. 49",
+      ". It was released to contemporary hit radio in the United Kingdom on 21 July 2017 as the album's sixth single. It impacted the same format in the United States on 22 August 2017.",
+      ". The group's self-titled debut album was released on April 28, 2009, through Atlantic Records. Their second album \"The Strange Case Of...\" was released on April 10, 2012. Its lead single \"Love Bites (So Do I)\" from that album won their first Grammy Award for Best Hard Rock/Metal Performance on February 10, 2013."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0021_easy_0",
+    "question": "Which city is the American rock band The Shins from?",
+    "ground_truth_answer": "Albuquerque, New Mexico",
+    "generated_answer": "The Shins are based in Portland, Oregon, but they originated from Albuquerque, New Mexico.",
+    "retrieved_contexts": [
+      ". [The Shins] The Shins are an American indie rock band from Albuquerque, New Mexico, formed in 1996. The band's current lineup consists of James Mercer (vocals, guitar, songwriter), Jon Sortland (drums), Mark Watrous (guitar), Casey Foubert (guitar), Yuuki Matthews (bass), and Patti King (keyboards). The band is based in Portland, Oregon.",
+      "Q: Which city is the American rock band, that released their album on March 19, 2012, from?",
+      "Q: Are both The New Pornographers and Kings of Leon American rock bands?",
+      "[Port of Morrow (album)] Port of Morrow is the fourth studio album by American rock band The Shins. The album was released March 19, 2012, on Aural Apothecary and Columbia Records and was co-produced by Greg Kurstin and frontman James Mercer",
+      "Q: Axle Whitehead was a part of an American comedy-drama television series that is a remake of the British series with the same name set in what city?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.75,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0021_hard_2",
+    "question": "In which city is the American indie rock band The Shins currently based, after forming in Albuquerque, New Mexico, and releasing their fourth studio album on March 19, 2012?",
+    "ground_truth_answer": "Portland, Oregon",
+    "generated_answer": "The American indie rock band The Shins is currently based in Portland, Oregon.",
+    "retrieved_contexts": [
+      ". [The Shins] The Shins are an American indie rock band from Albuquerque, New Mexico, formed in 1996. The band's current lineup consists of James Mercer (vocals, guitar, songwriter), Jon Sortland (drums), Mark Watrous (guitar), Casey Foubert (guitar), Yuuki Matthews (bass), and Patti King (keyboards). The band is based in Portland, Oregon.",
+      "Q: Which city is the American rock band, that released their album on March 19, 2012, from?",
+      "[Port of Morrow (album)] Port of Morrow is the fourth studio album by American rock band The Shins. The album was released March 19, 2012, on Aural Apothecary and Columbia Records and was co-produced by Greg Kurstin and frontman James Mercer",
+      "[The New Pornographers] The New Pornographers is a Canadian indie rock band formed in 1997 in Vancouver, British Columbia. Presented as a musical collective of singer-songwriters and musicians from multiple projects, the band has released seven studio albums to critical acclaim for their use of multiple vocalists and elements of power pop incorporated into their music. [Kings of Leon] Kings of Leon is an American rock band that formed in Nashville, Tennessee, in 1999",
+      "Q: \"Let Me Out\" is a song released as the fifth single from what band's fifth studio album \"Humanz\" which was recorded in London, Paris, New York City, Chicago, and Jamaica ?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0021_medium_1",
+    "question": "In which city is the American indie rock band The Shins currently based?",
+    "ground_truth_answer": "Portland, Oregon",
+    "generated_answer": "The Shins are currently based in Portland, Oregon.",
+    "retrieved_contexts": [
+      ". [The Shins] The Shins are an American indie rock band from Albuquerque, New Mexico, formed in 1996. The band's current lineup consists of James Mercer (vocals, guitar, songwriter), Jon Sortland (drums), Mark Watrous (guitar), Casey Foubert (guitar), Yuuki Matthews (bass), and Patti King (keyboards). The band is based in Portland, Oregon.",
+      "Q: Which city is the American rock band, that released their album on March 19, 2012, from?",
+      "Q: Axle Whitehead was a part of an American comedy-drama television series that is a remake of the British series with the same name set in what city?",
+      "Q: Are both The New Pornographers and Kings of Leon American rock bands?",
+      "[The New Pornographers] The New Pornographers is a Canadian indie rock band formed in 1997 in Vancouver, British Columbia. Presented as a musical collective of singer-songwriters and musicians from multiple projects, the band has released seven studio albums to critical acclaim for their use of multiple vocalists and elements of power pop incorporated into their music. [Kings of Leon] Kings of Leon is an American rock band that formed in Nashville, Tennessee, in 1999"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0022_easy_0",
+    "question": "What is another name for Ethanol?",
+    "ground_truth_answer": "alcohol, ethyl alcohol, and drinking alcohol",
+    "generated_answer": "Ethanol is also known as alcohol.",
+    "retrieved_contexts": [
+      ". Also known are CdCl•HO and CdCl•5HO. [Ethanol] Ethanol, also called alcohol, ethyl alcohol, and drinking alcohol, is a compound and simple alcohol with the chemical formula C2H5OH . Its formula can be written also as CH3 −CH2 −OH or C2H5 −OH (an ethyl group linked to a hydroxyl group), and is often abbreviated as EtOH. Ethanol is a volatile, flammable, colorless liquid with a slight characteristic odor. It is used as a drug and is the principal type of alcohol found in alcoholic drinks.",
+      "Q: Cadmium Chloride is slightly soluble in this chemical, it is also called what?",
+      "Q: Are Gin and tonic and Paloma both cocktails based on tequila?",
+      "Q: Axle Whitehead was a part of an American comedy-drama television series that is a remake of the British series with the same name set in what city?",
+      ". It is located in southeastern Nigeria. The city had a population of 722,664 according to the 2006 Nigerian census. The name \"Enugu\" is derived from the two Igbo words \"Énú Ụ́gwụ́\" meaning \"hill top\" denoting the city's hilly geography. The city was named after Enugwu Ngwo, under which coal was found."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.8
+  },
+  {
+    "sample_id": "hotpotqa_clu0022_hard_2",
+    "question": "What is the chemical formula of the compound that is used as a drug and is the principal type of alcohol found in alcoholic drinks, which is also used in the preparation of a cocktail that includes a grapefruit-flavored soda?",
+    "ground_truth_answer": "C2H5OH",
+    "generated_answer": "the chemical formula of alcohol is C2H5OH.",
+    "retrieved_contexts": [
+      ". Also known are CdCl•HO and CdCl•5HO. [Ethanol] Ethanol, also called alcohol, ethyl alcohol, and drinking alcohol, is a compound and simple alcohol with the chemical formula C2H5OH . Its formula can be written also as CH3 −CH2 −OH or C2H5 −OH (an ethyl group linked to a hydroxyl group), and is often abbreviated as EtOH. Ethanol is a volatile, flammable, colorless liquid with a slight characteristic odor. It is used as a drug and is the principal type of alcohol found in alcoholic drinks.",
+      ". This drink is most commonly prepared by mixing tequila with a grapefruit-flavored soda such as Fresca, Squirt, or Jarritos and served on the rocks with a lime wedge. This drink also has the option of adding salt to the rim of the glass.",
+      "[Gin and tonic] A gin and tonic is a highball cocktail made with gin and tonic water poured over ice. It is usually garnished with a slice or wedge of lime. The amount of gin varies according to taste. Suggested ratios of gin to tonic are between 1:1 and 1:3. [Paloma (cocktail)] The paloma (Spanish for \"dove\") is a tequila-based cocktail",
+      "[Cadmium chloride] Cadmium chloride is a white crystalline compound of cadmium and chlorine, with the formula CdCl. It is a hygroscopic solid that is highly soluble in water and slightly soluble in alcohol. Although it is considered to be ionic, it has considerable covalent character to its bonding. The crystal structure of cadmium chloride (described below), composed of two-dimensional layers of ions, is a reference for describing other crystal structures. Also known are CdCl•HO and CdCl•5HO",
+      "Q: Are Gin and tonic and Paloma both cocktails based on tequila?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.75,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0022_medium_1",
+    "question": "What is the common name for the chemical in which Cadmium chloride is slightly soluble, as mentioned in the context of its solubility?",
+    "ground_truth_answer": "alcohol",
+    "generated_answer": "Ethanol",
+    "retrieved_contexts": [
+      "Q: Cadmium Chloride is slightly soluble in this chemical, it is also called what?",
+      "[Cadmium chloride] Cadmium chloride is a white crystalline compound of cadmium and chlorine, with the formula CdCl. It is a hygroscopic solid that is highly soluble in water and slightly soluble in alcohol. Although it is considered to be ionic, it has considerable covalent character to its bonding. The crystal structure of cadmium chloride (described below), composed of two-dimensional layers of ions, is a reference for describing other crystal structures. Also known are CdCl•HO and CdCl•5HO",
+      ". Also known are CdCl•HO and CdCl•5HO. [Ethanol] Ethanol, also called alcohol, ethyl alcohol, and drinking alcohol, is a compound and simple alcohol with the chemical formula C2H5OH . Its formula can be written also as CH3 −CH2 −OH or C2H5 −OH (an ethyl group linked to a hydroxyl group), and is often abbreviated as EtOH. Ethanol is a volatile, flammable, colorless liquid with a slight characteristic odor. It is used as a drug and is the principal type of alcohol found in alcoholic drinks.",
+      ". It is distinguished by its wedge-shaped marks on clay tablets, made by means of a blunt reed for a stylus. The name \"cuneiform\" itself simply means \"wedge shaped\".",
+      "[Teri W. Odom] Teri W. Odom is an American chemist and materials scientist. She is the Associate Chair of the Chemistry Department, Charles E. and Emma H. Morrison Professor of Chemistry, and a Professor of Materials Science and Engineering at Northwestern University. Odom is a member of the editorial advisory board of ACS Nano, Chemical Physics Letters, Journal of Physical Chemistry, and Nano Letters. She is also currently the Executive Editor of ACS Photonics"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0023_medium_1",
+    "question": "Which tennis player, Jonathan Stark or Henri Leconte, won a Grand Slam doubles title at the French Open?",
+    "ground_truth_answer": "Both Jonathan Stark and Henri Leconte won a Grand Slam doubles title at the French Open",
+    "generated_answer": "Henri Leconte",
+    "retrieved_contexts": [
+      "Q: Which tennis player won more Grand Slam titles, Henri Leconte or Jonathan Stark?",
+      "[Jonathan Stark (tennis)] Jonathan Stark (born April 3, 1971) is a former professional tennis player from the United States. During his career he won two Grand Slam doubles titles (the 1994 French Open Men's Doubles and the 1995 Wimbledon Championships Mixed Doubles). Stark reached the World No. 1 doubles ranking in 1994. [Henri Leconte] Henri Leconte (born 4 July 1963) is a former French professional tennis player",
+      ". He reached the men's singles final at the French Open in 1988, won the French Open men's doubles title in 1984, and helped France win the Davis Cup in 1991. Leconte's career-high singles ranking was world No. 5.",
+      "Q: The 2000–01 NBA season was the Jazz's 27th season in the National Basketball Association, and 22nd season in Salt Lake City, Utah, after the retirement of Jeff Hornacek, the Jazz signed free agents John Starks, and who?",
+      "Q: Which 1999 French Open - Women's Doubles runner-up was born in Russia on 7 June 1981?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 0.5
+  },
+  {
+    "sample_id": "hotpotqa_clu0024_easy_0",
+    "question": "What is the birthdate of Chris Evert?",
+    "ground_truth_answer": "December 21, 1954",
+    "generated_answer": "December 21, 1954",
+    "retrieved_contexts": [
+      "Q: Who is the former professional tennis player from Italy, Chris Evert or Mara Santangelo?",
+      "[Chris Evert] Christine Marie Evert (born December 21, 1954), known as Chris Evert Lloyd from 1979 to 1987, is a former World No. 1 professional tennis player from the United States. She won 18 Grand Slam singles championships and three doubles titles. She was the year-ending World No. 1 singles player in 1974, 1975, 1976, 1977, 1978, 1980, and 1981. Overall Evert won 157 singles championships and 32 doubles titles",
+      "[Chris Noonan] Chris Noonan (born 14 November 1952) is a Sydney-based Australian filmmaker and actor best known for the family film \"Babe\" (1995), for which he was nominated for both the Academy Award for Best Director and Academy Award for Best Adapted Screenplay. [Academy Award for Best Director] The Academy Award for Best Director (officially known as the Academy Award for Best Directing) is an award presented annually by the Academy of Motion Picture Arts and Sciences (AMPAS)",
+      "Q: Which organization presents the award in which Chris Noonan was nominated for his work in \"Babe?\"",
+      "Q: What is the birth date of the coach of the 2014-15 Michigan Wolverines men's basketball team?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0024_hard_2",
+    "question": "What is the age difference between Mary Pierce, the French retired tennis professional, and Mara Santangelo, the former professional tennis player from Italy?",
+    "ground_truth_answer": "Mary Pierce is approximately 6 years older than Mara Santangelo",
+    "generated_answer": "The age difference between Mary Pierce and Mara Santangelo is 6 years.",
+    "retrieved_contexts": [
+      "Q: Who is the former professional tennis player from Italy, Chris Evert or Mara Santangelo?",
+      ". [Mara Santangelo] Mara Santangelo (born 28 June 1981) is a former professional tennis player from Italy. She retired from the sport on 28 January 2011.",
+      "[Kim Clijsters] Kim Antonie Lode Clijsters (] ; born 8 June 1983) is a Belgian former professional tennis player. Clijsters is a former world No. 1 in both singles and doubles. [Mary Pierce] Mary Pierce (born 15 January 1975) is a French retired tennis professional who played on the Women's Tennis Association (WTA) tour. Born in Canada, she is a citizen of Canada, and the United States. Pierce played for France in team competitions and in the Olympics.",
+      "Q: Between two tennis players Kim Clijsters and Mary Pierce, who is older?",
+      "[Chris Evert] Christine Marie Evert (born December 21, 1954), known as Chris Evert Lloyd from 1979 to 1987, is a former World No. 1 professional tennis player from the United States. She won 18 Grand Slam singles championships and three doubles titles. She was the year-ending World No. 1 singles player in 1974, 1975, 1976, 1977, 1978, 1980, and 1981. Overall Evert won 157 singles championships and 32 doubles titles"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0024_medium_1",
+    "question": "Which tennis player, between Mary Pierce and Mara Santangelo, is older?",
+    "ground_truth_answer": "Mary Pierce",
+    "generated_answer": "Mary Pierce is older.",
+    "retrieved_contexts": [
+      "Q: Who is the former professional tennis player from Italy, Chris Evert or Mara Santangelo?",
+      "Q: Between two tennis players Kim Clijsters and Mary Pierce, who is older?",
+      ". [Mara Santangelo] Mara Santangelo (born 28 June 1981) is a former professional tennis player from Italy. She retired from the sport on 28 January 2011.",
+      "[Kim Clijsters] Kim Antonie Lode Clijsters (] ; born 8 June 1983) is a Belgian former professional tennis player. Clijsters is a former world No. 1 in both singles and doubles. [Mary Pierce] Mary Pierce (born 15 January 1975) is a French retired tennis professional who played on the Women's Tennis Association (WTA) tour. Born in Canada, she is a citizen of Canada, and the United States. Pierce played for France in team competitions and in the Olympics.",
+      "[Chris Evert] Christine Marie Evert (born December 21, 1954), known as Chris Evert Lloyd from 1979 to 1987, is a former World No. 1 professional tennis player from the United States. She won 18 Grand Slam singles championships and three doubles titles. She was the year-ending World No. 1 singles player in 1974, 1975, 1976, 1977, 1978, 1980, and 1981. Overall Evert won 157 singles championships and 32 doubles titles"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0025_easy_0",
+    "question": "What is the name of the only species in the Indogrammodes genus of moths found in India?",
+    "ground_truth_answer": "Indogrammodes pectinicornalis",
+    "generated_answer": "The only species in the Indogrammodes genus of moths found in India is Indogrammodes pectinicornalis.",
+    "retrieved_contexts": [
+      "[Indogrammodes] Indogrammodes is a genus of moths of the Crambidae family. It contains only one species, Indogrammodes pectinicornalis, which is found in India. [India] India, officially the Republic of India (\"Bhārat Gaṇarājya\"), is a country in South Asia. It is the seventh-largest country by area, the second-most populous country (with over 1.2 billion people), and the most populous democracy in the world",
+      "Q: Which genus of moth in the world's seventh-largest country contains only one species?",
+      "Q: Cadmium Chloride is slightly soluble in this chemical, it is also called what?",
+      "Q: Jayantabhai Ki Luv Story includes a lead role for the film actress and model who is a native of what city?",
+      "Q: What hamlet and census designated place was the location of the only pay-per-view Bunkhouse Stampede?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0025_medium_1",
+    "question": "In which country can the species Indogrammodes pectinicornalis be found, and what is the rank of this country by area?",
+    "ground_truth_answer": "India, the seventh-largest country",
+    "generated_answer": "The species Indogrammodes pectinicornalis can be found in India, which is the seventh-largest country by area.",
+    "retrieved_contexts": [
+      "[Indogrammodes] Indogrammodes is a genus of moths of the Crambidae family. It contains only one species, Indogrammodes pectinicornalis, which is found in India. [India] India, officially the Republic of India (\"Bhārat Gaṇarājya\"), is a country in South Asia. It is the seventh-largest country by area, the second-most populous country (with over 1.2 billion people), and the most populous democracy in the world",
+      "Q: Which genus of moth in the world's seventh-largest country contains only one species?",
+      "Q: The American Aircraft Penetrator was modified from a helicopter produced by what nation's military?",
+      "Q: What is the name of this American multinational corporation that provides IT services, headquartered in New Jersey, that acquired Mirabeau?",
+      "Q: Gülhane Park and Zografeion Lyceum, are located in which country?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0026_easy_0",
+    "question": "What are the names of the three bodies of water that border India?",
+    "ground_truth_answer": "The Indian Ocean, the Arabian Sea, and the Bay of Bengal",
+    "generated_answer": "The three bodies of water that border India are the Indian Ocean, the Bay of Bengal, and the Arabian Sea.",
+    "retrieved_contexts": [
+      ". It is bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast. It shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the northeast; and Myanmar (Burma) and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives. India's Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.",
+      "Q: Marion is approximately 50 mi north of a city that is the third-most populous what in the U.S.?",
+      "Q: Where is the base of one of the three main British intelligence agencies?",
+      "Q: Which movie was released first, The Hunchback of Notre Dame or Saludos Amigos?",
+      ". It is the only canal in the US in continuous use for its original purposes of providing power, transport and municipal water. [New Orleans Outfall Canals] There are three outfall canals in New Orleans, Louisiana – the 17th Street, Orleans Avenue and London Avenue canals. These canals are a critical element of New Orleans’ flood control system, serving as drainage conduits for much of the city. There are 13 mi of levees and floodwalls that line the sides of the canals"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0026_hard_2",
+    "question": "What are the names of the two historical locations mentioned in the passages that are located in the same city as the Topkapı Palace and Taksim Square?",
+    "ground_truth_answer": "Gülhane Park and Zografeion Lyceum",
+    "generated_answer": "The names of the two historical locations mentioned in the passages that are located in the same city as the Topkapı Palace and Taksim Square are Gülhane Park and Zografeion Lyceum.",
+    "retrieved_contexts": [
+      "[Gülhane Park] Gülhane Park (Turkish: \"Gülhane Parkı\" , \"Rosehouse Park\"; from Persian: \"Gulkhāna\", \"house of flowers\") is a historical urban park in the Eminönü district of Istanbul, Turkey; it is located adjacent to and on the grounds of the Topkapı Palace. The south entrance of the park sports one of the larger gates of the palace. It is the oldest and one of the most expansive public parks in Istanbul",
+      ". [Zografeion Lyceum] Zografeion Lyceum (Turkish: \"Özel Zoğrafyon Rum Lisesi\" , Greek: Ζωγράφειον Λύκειον ) is one of the remaining open Greek schools in Istanbul. The school is in the Istanbul city centre in the Beyoğlu district and very close to the Taksim Square, which is considered the heart of the city.",
+      "Q: Gülhane Park and Zografeion Lyceum, are located in which country?",
+      "Q: What city does Bundestag and Reichstag building have in common?",
+      "Q: What city are George Washington University Hospital and MedStar Washington Hospital Center located in?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0027_hard_2",
+    "question": "What is the name of the kickboxer who was once considered the best in the world, fought in the Global Fighting Championship, and won the K-1 Heavyweight championship in 2007-2008?",
+    "ground_truth_answer": "Badr Hari",
+    "generated_answer": "Badr Hari is the kickboxer who was once considered the best in the world, fought in the Global Fighting Championship, and won the K-1 Heavyweight championship in 2007-2008.",
+    "retrieved_contexts": [
+      "Q: Who was once considered the best kick boxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+      ". <ref name=\"Emirates 24/7\"> </ref> [Badr Hari] Badr Hari (Arabic: بدر هاري‎ ‎ ; born 8 December 1984) is a Moroccan-Dutch super heavyweight kickboxer from Amsterdam, fighting out of Mike's Gym in Oostzaan. He is a former K-1 Heavyweight champion (2007—2008), It's Showtime Heavyweight world champion (2009-2010) and \"K-1 World Grand Prix 2009\" finalist",
+      "[Global Fighting Championship] Global Fighting Championship (also known as GFC) was a UAE-based kickboxing and mixed martial arts (MMA) event. Fighters from around world on the roster include Badr Hari, Peter Aerts, Peter Graham, Dewey Cooper, Zabit Samedov. It was considered as one of the biggest kickboxing and MMA promotion in Middle East",
+      ". Hari has been a prominent figure in the world of kickboxing and was once considered the best kickboxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+      ". He is widely considered by commentators, critics, media, and other martial artists to be one of the most influential martial artists of all time, and a pop culture icon of the 20th century. He is often credited with helping to change the way Asians were presented in American films."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0027_medium_1",
+    "question": "Which kickboxer, known for being a former K-1 Heavyweight champion, was also part of the Global Fighting Championship roster?",
+    "ground_truth_answer": "Badr Hari",
+    "generated_answer": "Badr Hari is a former K-1 Heavyweight champion and part of Global Fighting Championship.",
+    "retrieved_contexts": [
+      "[Global Fighting Championship] Global Fighting Championship (also known as GFC) was a UAE-based kickboxing and mixed martial arts (MMA) event. Fighters from around world on the roster include Badr Hari, Peter Aerts, Peter Graham, Dewey Cooper, Zabit Samedov. It was considered as one of the biggest kickboxing and MMA promotion in Middle East",
+      ". <ref name=\"Emirates 24/7\"> </ref> [Badr Hari] Badr Hari (Arabic: بدر هاري‎ ‎ ; born 8 December 1984) is a Moroccan-Dutch super heavyweight kickboxer from Amsterdam, fighting out of Mike's Gym in Oostzaan. He is a former K-1 Heavyweight champion (2007—2008), It's Showtime Heavyweight world champion (2009-2010) and \"K-1 World Grand Prix 2009\" finalist",
+      "Q: Who was once considered the best kick boxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+      ". Hari has been a prominent figure in the world of kickboxing and was once considered the best kickboxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+      "Q: Which American singer-songwriter known as \"the Caruso of Rock\", recorded on the Monument Records label and had hits such as \"Pretty One,\" and \"Uptown\"?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0028_easy_0",
+    "question": "In what year did the Dutch-Belgian television series 'Het Huis Anubis' first air?",
+    "ground_truth_answer": "2006",
+    "generated_answer": "The Dutch-Belgian television series 'Het Huis Anubis' first aired in 2006.",
+    "retrieved_contexts": [
+      "Q: The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in what year?",
+      ". The show aired from 1 January 2011 to 17 June 2013. [Het Huis Anubis] Het Huis Anubis (\"The House of Anubis\") is a Belgian-Dutch children's television drama created by Studio 100 and Nickelodeon, airing in the Netherlands and Flanders. It first aired in September 2006 and the last episode was broadcast on December 4, 2009. The show was a huge success in the Benelux, despite the show's low budget for the first two seasons.",
+      "[House of Anubis] House of Anubis is a mystery television series developed for Nickelodeon based on the Dutch-Belgian television series \"Het Huis Anubis\". The series was created by Hans Bourlon and Gert Verhulst and premiered on Nickelodeon on 1 January 2011 in the United States and on 25 February 2011 in the United Kingdom. The series is the first series from the network to be filmed outside the United States and the first telenovela-format series for the network",
+      "[Human Error (House)] \"Human Error\" is the twenty-fourth episode and season finale of the third season of \"House\" and the seventieth episode overall. [House (TV series)] House (also called House, M.D.) is an American television medical drama that originally ran on the Fox network for eight seasons, from November 16, 2004 to May 21, 2012. The series' main character is Dr",
+      "Q: What South Korean sitcom starred a South Korean singer and actress who began her music career at the age of 15?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0029_easy_0",
+    "question": "What is the length of the Mount Panorama Circuit track?",
+    "ground_truth_answer": "6.213 km",
+    "generated_answer": "The Mount Panorama Circuit track is 6.213 km long.",
+    "retrieved_contexts": [
+      ". It is situated on a hill with the dual official names of Mount Panorama and Wahluu and is best known as the home of the Bathurst 1000 motor race held each October, and the Bathurst 12 Hour event held each February. The 6.213 km long track is technically a street circuit, and is a public road, with normal speed restrictions, when no racing events are being run, and there are many residences which can only be accessed from the circuit.",
+      ". It is situated on a hill with the dual official names of Mount Panorama and Wahluu and is best known as the home of the Bathurst 1000 motor race held each October, and the Bathurst 12 Hour event held each February. The 6.213 km long track is technically a street circuit, and is a public road, with normal speed restrictions, when no racing events are being run, and there are many residences which can only be accessed from the circuit.",
+      ". The Australian GT Championship was to compete as the first hour only and cars were permitted to enter for only that hour or to cross-enter for both the first hour and continue for the endurance race. [Mount Panorama Circuit] Mount Panorama Circuit is a motor racing track located in Bathurst, New South Wales, Australia",
+      "Q: What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+      "[2013 Liqui Moly Bathurst 12 Hour] The 2013 Liqui Moly Bathurst 12 Hour was an endurance race for a variety of GT and touring car classes, including: GT3 cars, GT4 cars, Group 3E Series Production Cars and Dubai 24 Hour cars. The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 10 February 2013, was the eleventh running of the Bathurst 12 Hour. The race also incorporated the opening round of the 2013 Australian GT Championship"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0029_hard_2",
+    "question": "What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged, and what other notable event is held at this track?",
+    "ground_truth_answer": "The track is 6.213 km long, and another notable event held at this track is the Bathurst 1000 motor race.",
+    "generated_answer": "The track is 6.213 km long and the other notable event held at this track is the Bathurst 1000 motor race.",
+    "retrieved_contexts": [
+      "Q: What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+      "[2013 Liqui Moly Bathurst 12 Hour] The 2013 Liqui Moly Bathurst 12 Hour was an endurance race for a variety of GT and touring car classes, including: GT3 cars, GT4 cars, Group 3E Series Production Cars and Dubai 24 Hour cars. The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 10 February 2013, was the eleventh running of the Bathurst 12 Hour. The race also incorporated the opening round of the 2013 Australian GT Championship",
+      ". It is situated on a hill with the dual official names of Mount Panorama and Wahluu and is best known as the home of the Bathurst 1000 motor race held each October, and the Bathurst 12 Hour event held each February. The 6.213 km long track is technically a street circuit, and is a public road, with normal speed restrictions, when no racing events are being run, and there are many residences which can only be accessed from the circuit.",
+      ". It is situated on a hill with the dual official names of Mount Panorama and Wahluu and is best known as the home of the Bathurst 1000 motor race held each October, and the Bathurst 12 Hour event held each February. The 6.213 km long track is technically a street circuit, and is a public road, with normal speed restrictions, when no racing events are being run, and there are many residences which can only be accessed from the circuit.",
+      ". The Australian GT Championship was to compete as the first hour only and cars were permitted to enter for only that hour or to cross-enter for both the first hour and continue for the endurance race. [Mount Panorama Circuit] Mount Panorama Circuit is a motor racing track located in Bathurst, New South Wales, Australia"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0029_medium_1",
+    "question": "What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+    "ground_truth_answer": "6.213 km",
+    "generated_answer": "The track is 6.213 kilometers long.",
+    "retrieved_contexts": [
+      "Q: What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+      "[2013 Liqui Moly Bathurst 12 Hour] The 2013 Liqui Moly Bathurst 12 Hour was an endurance race for a variety of GT and touring car classes, including: GT3 cars, GT4 cars, Group 3E Series Production Cars and Dubai 24 Hour cars. The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 10 February 2013, was the eleventh running of the Bathurst 12 Hour. The race also incorporated the opening round of the 2013 Australian GT Championship",
+      ". It is situated on a hill with the dual official names of Mount Panorama and Wahluu and is best known as the home of the Bathurst 1000 motor race held each October, and the Bathurst 12 Hour event held each February. The 6.213 km long track is technically a street circuit, and is a public road, with normal speed restrictions, when no racing events are being run, and there are many residences which can only be accessed from the circuit.",
+      ". It is situated on a hill with the dual official names of Mount Panorama and Wahluu and is best known as the home of the Bathurst 1000 motor race held each October, and the Bathurst 12 Hour event held each February. The 6.213 km long track is technically a street circuit, and is a public road, with normal speed restrictions, when no racing events are being run, and there are many residences which can only be accessed from the circuit.",
+      ". The Australian GT Championship was to compete as the first hour only and cars were permitted to enter for only that hour or to cross-enter for both the first hour and continue for the endurance race. [Mount Panorama Circuit] Mount Panorama Circuit is a motor racing track located in Bathurst, New South Wales, Australia"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0030_hard_2",
+    "question": "What was the release year of the film starring Robert Knapp, and in which year did Walter Coy narrate the NBC western anthology series 'Frontier'?",
+    "ground_truth_answer": "1959, 1955-1956",
+    "generated_answer": "Gunmen from Laredo was released in 1959 and Walter Coy narrated the NBC western anthology series 'Frontier' in 1955–1956.",
+    "retrieved_contexts": [
+      "[Gunmen from Laredo] Gunmen from Laredo is a 1959 American western film produced and directed by Wallace MacDonald, which stars Robert Knapp, Maureen Hingert, and Walter Coy. [Walter Coy] Walter Darwin Coy (January 31, 1909 – December 11, 1974) was an American stage, radio, film, and, principally, television actor, originally from Great Falls, Montana. He was best known for narrating the NBC western anthology series, \"Frontier\", which aired early Sunday evenings in the 1955–1956 season.",
+      "Q: Gunmen from Laredo starred which narrator of \"Frontier\"?",
+      "Q: What actor in the film D.C. Cab also had a role in the TV series Barney Miller?",
+      ". [Beowulf (2007 film)] Beowulf is a 2007 British-American 3D motion capture epic fantasy film directed by Robert Zemeckis and written by Neil Gaiman and Roger Avary, based on the Old English epic poem of the same name. The film was created through a motion capture process similar to the technique Zemeckis used in \"The Polar Express\". The cast includes Ray Winstone, Anthony Hopkins, Robin Wright Penn, Brendan Gleeson, John Malkovich, Crispin Glover, Alison Lohman, and Angelina Jolie",
+      ". Ron Hubbard's 1982 novel of the same name. Directed by Roger Christian and starring John Travolta, Barry Pepper and Forest Whitaker, the film depicts an Earth that has been under the rule of the alien Psychlos for 1,000 years and tells the story of the rebellion that develops when the Psychlos attempt to use the surviving humans as gold miners."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0031_easy_0",
+    "question": "In which Super Bowl was Malcolm Smith named Most Valuable Player?",
+    "ground_truth_answer": "Super Bowl XLVIII",
+    "generated_answer": "Malcolm Smith was named Most Valuable Player of Super Bowl XLVIII.",
+    "retrieved_contexts": [
+      "Q: In which American football game was Malcolm Smith named Most Valuable player?",
+      "[Malcolm Smith (American football)] Malcolm Xavier Smith (born July 5, 1989) is an American football linebacker for the San Francisco 49ers of the National Football League (NFL). Smith played college football at USC. He was drafted by the Seattle Seahawks in the seventh round of the 2011 NFL Draft. Smith was named the Most Valuable Player of Super Bowl XLVIII after they defeated the Denver Broncos",
+      ". [Super Bowl XLVIII] Super Bowl XLVIII was an American football game between the American Football Conference (AFC) champion Denver Broncos and National Football Conference (NFC) champion Seattle Seahawks to decide the National Football League (NFL) champion for the 2013 season. The Seahawks defeated the Broncos 43–8, the largest margin of victory for an underdog and tied for the third largest point differential overall (35) in Super Bowl history with Super Bowl XXVII (1993)",
+      "Q: The Golden Globe Award winner for best actor from \"Roseanne\" starred along what actress in Gigantic?",
+      ". He is widely considered by commentators, critics, media, and other martial artists to be one of the most influential martial artists of all time, and a pop culture icon of the 20th century. He is often credited with helping to change the way Asians were presented in American films."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0031_hard_2",
+    "question": "In which stadium did the Seattle Seahawks, the team that Malcolm Smith played for when they won Super Bowl XLVIII, play their Super Bowl XLVIII game against the Denver Broncos?",
+    "ground_truth_answer": "MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey",
+    "generated_answer": "MetLife Stadium",
+    "retrieved_contexts": [
+      ". [Super Bowl XLVIII] Super Bowl XLVIII was an American football game between the American Football Conference (AFC) champion Denver Broncos and National Football Conference (NFC) champion Seattle Seahawks to decide the National Football League (NFL) champion for the 2013 season. The Seahawks defeated the Broncos 43–8, the largest margin of victory for an underdog and tied for the third largest point differential overall (35) in Super Bowl history with Super Bowl XXVII (1993)",
+      "[Malcolm Smith (American football)] Malcolm Xavier Smith (born July 5, 1989) is an American football linebacker for the San Francisco 49ers of the National Football League (NFL). Smith played college football at USC. He was drafted by the Seattle Seahawks in the seventh round of the 2011 NFL Draft. Smith was named the Most Valuable Player of Super Bowl XLVIII after they defeated the Denver Broncos",
+      ". This became the first Super Bowl victory for the Seahawks and the fifth Super Bowl loss for the Broncos, the most of any team. The game was played on February 2, 2014, at MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey, the first Super Bowl played outdoors in a cold-weather city and the first Super Bowl to be played on a February 2.",
+      ". It was the first time the winning team scored over 40 points, while holding their opponent to under 10. This became the first Super Bowl victory for the Seahawks and the fifth Super Bowl loss for the Broncos, the most of any team. The game was played on February 2, 2014, at MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey, the first Super Bowl played outdoors in a cold-weather city and the first Super Bowl to be played on a February 2.",
+      "Q: In which American football game was Malcolm Smith named Most Valuable player?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.9
+  },
+  {
+    "sample_id": "hotpotqa_clu0031_medium_1",
+    "question": "In which stadium was the Super Bowl where Malcolm Smith was named Most Valuable Player played?",
+    "ground_truth_answer": "MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey",
+    "generated_answer": "The Super Bowl where Malcolm Smith was named Most Valuable Player was played in MetLife Stadium.",
+    "retrieved_contexts": [
+      "Q: In which American football game was Malcolm Smith named Most Valuable player?",
+      "[Malcolm Smith (American football)] Malcolm Xavier Smith (born July 5, 1989) is an American football linebacker for the San Francisco 49ers of the National Football League (NFL). Smith played college football at USC. He was drafted by the Seattle Seahawks in the seventh round of the 2011 NFL Draft. Smith was named the Most Valuable Player of Super Bowl XLVIII after they defeated the Denver Broncos",
+      "Q: In which stadium do the teams owned by Myra Kraft's husband play?",
+      ". This became the first Super Bowl victory for the Seahawks and the fifth Super Bowl loss for the Broncos, the most of any team. The game was played on February 2, 2014, at MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey, the first Super Bowl played outdoors in a cold-weather city and the first Super Bowl to be played on a February 2.",
+      ". It was the first time the winning team scored over 40 points, while holding their opponent to under 10. This became the first Super Bowl victory for the Seahawks and the fifth Super Bowl loss for the Broncos, the most of any team. The game was played on February 2, 2014, at MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey, the first Super Bowl played outdoors in a cold-weather city and the first Super Bowl to be played on a February 2."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.95
+  },
+  {
+    "sample_id": "hotpotqa_clu0032_easy_0",
+    "question": "What is the name of the stadium where the New England Patriots and the New England Revolution play their home matches?",
+    "ground_truth_answer": "Gillette Stadium",
+    "generated_answer": "Gillette Stadium.",
+    "retrieved_contexts": [
+      ". He is the chairman and chief executive officer of the Kraft Group, a diversified holding company with assets in paper and packaging, sports and entertainment, real estate development and a private equity portfolio. His sports holdings include: the National Football League's New England Patriots, Major League Soccer's New England Revolution and the stadium in which both teams play, Gillette Stadium.",
+      "Q: Benjamin Halfpenny was a footballer for a club that plays its home matches where?",
+      "Q: In which stadium do the teams owned by Myra Kraft's husband play?",
+      ". Their Goodison Park home hosted the drawn semi final between Wednesday and Bolton Wanderers. [Goodison Park] Goodison Park is a football stadium located in Walton, Liverpool, England. The stadium has been home to Premier League club Everton since its completion in 1892 and is one of the world's oldest purpose-built football grounds. The stadium is built in a residential area served by regular rail and bus services two miles (3 km) from Liverpool city centre.",
+      "Q: The 1895/96 Football League season was the eighth in Football League history with Everton, their Goodison Park home, is a football stadium located in Walton, Liverpool, in which country?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0032_hard_2",
+    "question": "What is the name of the stadium where the New England Patriots and the Widnes Vikings do not play their home matches, and what is the name of the stadium where the Widnes Vikings play their home matches?",
+    "ground_truth_answer": "Gillette Stadium; Select Security Stadium",
+    "generated_answer": "The New England Patriots play in Gillette Stadium and the Widnes Vikings play in Select Security Stadium.",
+    "retrieved_contexts": [
+      ". [Widnes Vikings] Widnes Vikings R.L.F.C. is an English professional rugby league club based in Widnes, Cheshire which currently plays in the Super League, the top tier of European rugby league. The club plays its home matches at the Select Security Stadium.",
+      "Q: In which stadium do the teams owned by Myra Kraft's husband play?",
+      "Q: Benjamin Halfpenny was a footballer for a club that plays its home matches where?",
+      ". He is the chairman and chief executive officer of the Kraft Group, a diversified holding company with assets in paper and packaging, sports and entertainment, real estate development and a private equity portfolio. His sports holdings include: the National Football League's New England Patriots, Major League Soccer's New England Revolution and the stadium in which both teams play, Gillette Stadium.",
+      ". Their Goodison Park home hosted the drawn semi final between Wednesday and Bolton Wanderers. [Goodison Park] Goodison Park is a football stadium located in Walton, Liverpool, England. The stadium has been home to Premier League club Everton since its completion in 1892 and is one of the world's oldest purpose-built football grounds. The stadium is built in a residential area served by regular rail and bus services two miles (3 km) from Liverpool city centre."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5,
+    "context_recall": 1.0,
+    "context_precision": 0.66,
+    "answer_correctness": 0.5
+  },
+  {
+    "sample_id": "hotpotqa_clu0032_medium_1",
+    "question": "Where does the rugby league club for which Ben Halfpenny played, Widnes Vikings, currently play its home matches?",
+    "ground_truth_answer": "The Select Security Stadium",
+    "generated_answer": "Widnes Vikings currently play its home matches at the Select Security Stadium.",
+    "retrieved_contexts": [
+      "Q: Benjamin Halfpenny was a footballer for a club that plays its home matches where?",
+      ". [Widnes Vikings] Widnes Vikings R.L.F.C. is an English professional rugby league club based in Widnes, Cheshire which currently plays in the Super League, the top tier of European rugby league. The club plays its home matches at the Select Security Stadium.",
+      "[Ben Halfpenny] Benjamin Halfpenny (25 April 1906 – 15 June 1966) was an English professional rugby league footballer who played in the 1920s, and 1930s, playing at representative level for Great Britain (non-Test matches), and England, and at club level for Widnes, St. Helens, and Warrington, as a wing , or loose forward/lock , i.e. number 2 or 5, 3 or 4, 8 or 10, 11 or 12, or, 13. [Widnes Vikings] Widnes Vikings R.L.F.C",
+      "Q: In which stadium do the teams owned by Myra Kraft's husband play?",
+      ". Their Goodison Park home hosted the drawn semi final between Wednesday and Bolton Wanderers. [Goodison Park] Goodison Park is a football stadium located in Walton, Liverpool, England. The stadium has been home to Premier League club Everton since its completion in 1892 and is one of the world's oldest purpose-built football grounds. The stadium is built in a residential area served by regular rail and bus services two miles (3 km) from Liverpool city centre."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0033_easy_0",
+    "question": "What is the total length of the Augusta Canal?",
+    "ground_truth_answer": "approximately 13 miles",
+    "generated_answer": "The total length of the Augusta Canal is 13 miles.",
+    "retrieved_contexts": [
+      "Q: Are the New Orleans Outfall Canals the same length as the Augusta Canal?",
+      "[Augusta Canal] The Augusta Canal is a historic canal located in Augusta, Georgia, United States. The canal is fed by the Savannah River and passes through three levels (approximately 13 miles total) in suburban and urban Augusta before the water returns to the river at various locations. It was devised to harness the water power at the fall line of the Savannah River to drive mills, to provide transportation of goods, and to provide a municipal water supply",
+      "Q: What is the length of the River which has Wild Horse Creek as a tributary ?",
+      "Q: What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+      ". It is the only canal in the US in continuous use for its original purposes of providing power, transport and municipal water. [New Orleans Outfall Canals] There are three outfall canals in New Orleans, Louisiana – the 17th Street, Orleans Avenue and London Avenue canals. These canals are a critical element of New Orleans’ flood control system, serving as drainage conduits for much of the city. There are 13 mi of levees and floodwalls that line the sides of the canals"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0033_hard_2",
+    "question": "What is the total length of the Augusta Canal and how does it compare to the length of the levees and floodwalls along the New Orleans Outfall Canals?",
+    "ground_truth_answer": "The Augusta Canal is approximately 13 miles total, which is equal to the length of the levees and floodwalls that line the sides of the New Orleans Outfall Canals.",
+    "generated_answer": "The length of the Augusta Canal is equal to the length of the levees and floodwalls along the New Orleans Outfall Canals.",
+    "retrieved_contexts": [
+      "Q: Are the New Orleans Outfall Canals the same length as the Augusta Canal?",
+      ". It is the only canal in the US in continuous use for its original purposes of providing power, transport and municipal water. [New Orleans Outfall Canals] There are three outfall canals in New Orleans, Louisiana – the 17th Street, Orleans Avenue and London Avenue canals. These canals are a critical element of New Orleans’ flood control system, serving as drainage conduits for much of the city. There are 13 mi of levees and floodwalls that line the sides of the canals",
+      "[Augusta Canal] The Augusta Canal is a historic canal located in Augusta, Georgia, United States. The canal is fed by the Savannah River and passes through three levels (approximately 13 miles total) in suburban and urban Augusta before the water returns to the river at various locations. It was devised to harness the water power at the fall line of the Savannah River to drive mills, to provide transportation of goods, and to provide a municipal water supply",
+      ". There are 13 mi of levees and floodwalls that line the sides of the canals. The 17th Street Canal is the largest and most important drainage canal and is capable of conveying more water than the Orleans Avenue and London Avenue Canals combined.",
+      "Q: What is the length of the River which has Wild Horse Creek as a tributary ?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.5
+  },
+  {
+    "sample_id": "hotpotqa_clu0034_easy_0",
+    "question": "How long is the Pineground Bridge?",
+    "ground_truth_answer": "96 ft",
+    "generated_answer": "The Pineground Bridge is 96 ft long.",
+    "retrieved_contexts": [
+      "[Pineground Bridge] The Pineground Bridge, also known as the Depot Road Bridge or the Thunder Bridge, is a through-type lenticular truss bridge that formerly carried Depot Road over the Suncook River in Chichester, New Hampshire. The bridge was built in 1887 by the Berlin Iron Bridge Co., and is the only one of its type (and only one of for lenticular truss bridges of any type, as of 2004) in the state. It is 96 ft long and 16 ft wide, and rises 15 ft above the river",
+      "Q: The Pineground Bridge formerly carried Depot Road over the Suncook River into a town with a population of what?",
+      "Q: What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+      "Q: What is the length of the River which has Wild Horse Creek as a tributary ?",
+      "Q: The Southern Railway runs from Vienna to Graz and the border with Slovenia at Spielfeld via the first mountain railway built in Europe to use what kind of track?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0034_hard_2",
+    "question": "What is the length of the Pineground Bridge, and in which year was it built, and what is the name of the river it spans?",
+    "ground_truth_answer": "The Pineground Bridge is 96 ft long, it was built in 1887, and it spans the Suncook River.",
+    "generated_answer": "The Pineground Bridge is 96 ft long, was built in 1887, and spans the Suncook River.",
+    "retrieved_contexts": [
+      "[Pineground Bridge] The Pineground Bridge, also known as the Depot Road Bridge or the Thunder Bridge, is a through-type lenticular truss bridge that formerly carried Depot Road over the Suncook River in Chichester, New Hampshire. The bridge was built in 1887 by the Berlin Iron Bridge Co., and is the only one of its type (and only one of for lenticular truss bridges of any type, as of 2004) in the state. It is 96 ft long and 16 ft wide, and rises 15 ft above the river",
+      "Q: The Pineground Bridge formerly carried Depot Road over the Suncook River into a town with a population of what?",
+      "Q: What is the length of the River which has Wild Horse Creek as a tributary ?",
+      "Q: What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+      "Q: The Southern Railway runs from Vienna to Graz and the border with Slovenia at Spielfeld via the first mountain railway built in Europe to use what kind of track?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0036_hard_2",
+    "question": "What is the name of the director of the 2001 American romantic comedy film in which Lucy Gordon had a small role, and who also directed a film starring John Cusack and Kate Beckinsale?",
+    "ground_truth_answer": "Peter Chelsom",
+    "generated_answer": "The director of the 2001 American romantic comedy film in which Lucy Gordon had a small role and also directed a film starring John Cusack and Kate Beckinsale is Peter Chelsom.",
+    "retrieved_contexts": [
+      "Q: Who was the director of the 2001 American romantic comedy film written by Marc Klein in which Lucy Gordon had a small role?",
+      ". Before the film was released, she was found hanged in her flat in Paris on 20 May 2009 after committing suicide. [Serendipity (film)] Serendipity is a 2001 American romantic comedy film directed by Peter Chelsom, written by Marc Klein, and starring John Cusack and Kate Beckinsale. The music score was composed by Alan Silvestri.",
+      "Q: Who is the director of the 2003 film which has scenes in it filmed at the Quality Cafe in Los Angeles?",
+      "Q: Ted Sutton plays Sergeant Cunningham in a2002 film that stars Mel Gibson as what character?",
+      "Q: Mackenzie Davis appeared in the 2013 Canadian romantic comedy film directed by whom?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0036_medium_1",
+    "question": "Who directed the 2001 American romantic comedy film in which Lucy Gordon had a small role?",
+    "ground_truth_answer": "Peter Chelsom",
+    "generated_answer": "Peter Chelsom directed the 2001 American romantic comedy film in which Lucy Gordon had a small role.",
+    "retrieved_contexts": [
+      "Q: Who was the director of the 2001 American romantic comedy film written by Marc Klein in which Lucy Gordon had a small role?",
+      ". Before the film was released, she was found hanged in her flat in Paris on 20 May 2009 after committing suicide. [Serendipity (film)] Serendipity is a 2001 American romantic comedy film directed by Peter Chelsom, written by Marc Klein, and starring John Cusack and Kate Beckinsale. The music score was composed by Alan Silvestri.",
+      "Q: Mackenzie Davis appeared in the 2013 Canadian romantic comedy film directed by whom?",
+      "[Lucy Gordon (actress)] Lucy Gordon (22 May 1980 – 20 May 2009) was an English actress and model. She became a face of CoverGirl in 1997 before starting an acting career. Her first film was \"Perfume\" in 2001 before going on to have small roles in \"Spider-Man 3\", \"Serendipity\" and \"The Four Feathers\". Gordon had played the actress and singer Jane Birkin in the film \"\", a biopic of singer-songwriter Serge Gainsbourg",
+      "Q: The American Pre-Code comedy film featuring an American actress, dancer, and singer, widely known for performing in films and RKO's musical films, was released in what year?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0038_easy_0",
+    "question": "When was Swoosie Kurtz born?",
+    "ground_truth_answer": "September 6, 1944",
+    "generated_answer": "Swoosie Kurtz was born on September 6, 1944.",
+    "retrieved_contexts": [
+      ". [Swoosie Kurtz] Swoosie Kurtz ( , ; born September 6, 1944) is an American actress. She is an Emmy Award winner and two-time Tony Award winner.",
+      "Q: In what year was the creator of the current arrangement of the \"Simpson's Theme\" born?",
+      "[Allie Goertz] Allison Beth \"Allie\" Goertz (born March 2, 1991) is an American musician. Goertz is known for her satirical songs based on various pop culture topics. Her videos are posted on YouTube under the name of Cossbysweater. Subjects of her songs have included the film \"The Room\", the character Milhouse from the television show \"The Simpsons\", and the game Dungeons & Dragons. Her style has been compared to that of Bo Burnham",
+      "[Chuck Versus the Role Models] \"Chuck Versus the Role Models\" is episode 15 of the third season of \"Chuck\". Chuck and Sarah are assigned to train under Craig and Laura Turner (Fred Willard and Swoosie Kurtz), a married CIA team who, despite their impeccable record, hate one another. The Turners' stormy relationship forces Chuck and Sarah to wonder if they're doomed with the same fate. Meanwhile, Casey must train the newest member of the team - Morgan",
+      "Q: What year was the winner of the 2016 Marrakesh ePrix born?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0040_easy_0",
+    "question": "What is the name of the hospital where Dr. Gregory House leads a team of diagnosticians?",
+    "ground_truth_answer": "Princeton–Plainsboro Teaching Hospital",
+    "generated_answer": "Princeton–Plainsboro Teaching Hospital.",
+    "retrieved_contexts": [
+      ". The series' main character is Dr. Gregory House (Hugh Laurie), an unconventional, misanthropic medical genius who, despite his dependence on pain medication, leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching Hospital (PPTH) in New Jersey. The series' premise originated with Paul Attanasio, while David Shore, who is credited as creator, was primarily responsible for the conception of the title character",
+      "Q: What city are George Washington University Hospital and MedStar Washington Hospital Center located in?",
+      ". It also serves as a teaching hospital for Georgetown University School of Medicine.",
+      "[Human Error (House)] \"Human Error\" is the twenty-fourth episode and season finale of the third season of \"House\" and the seventieth episode overall. [House (TV series)] House (also called House, M.D.) is an American television medical drama that originally ran on the Fox network for eight seasons, from November 16, 2004 to May 21, 2012. The series' main character is Dr",
+      "[George Washington University Hospital] The George Washington University Hospital is located in Washington, D.C. in the United States. It is affiliated with the George Washington University School of Medicine and Health Sciences. The current facility opened on August 23, 2002, with 371 beds in a 400,000 sq. ft. building, housing more than $45 million of medical equipment and costing over $96 million to construct"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0040_hard_2",
+    "question": "What are the names of the hospitals mentioned in the passages that are located in Washington, D.C. and what are their respective numbers of beds?",
+    "ground_truth_answer": "The George Washington University Hospital has 371 beds and MedStar Washington Hospital Center is licensed for 926 beds.",
+    "generated_answer": "MedStar Washington Hospital Center, with 926 beds, is the largest private hospital in Washington, D.C.",
+    "retrieved_contexts": [
+      "[George Washington University Hospital] The George Washington University Hospital is located in Washington, D.C. in the United States. It is affiliated with the George Washington University School of Medicine and Health Sciences. The current facility opened on August 23, 2002, with 371 beds in a 400,000 sq. ft. building, housing more than $45 million of medical equipment and costing over $96 million to construct",
+      "Q: Is Children's National Medical Center or MedStar Washington Hospital Center the largest private hospital in Washington, D.C.?",
+      "Q: What city are George Washington University Hospital and MedStar Washington Hospital Center located in?",
+      ". [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients. It also serves as a teaching hospital for Georgetown University School of Medicine.",
+      ". The hospital is licensed by the District of Columbia Department of Consumer and Regulatory Affairs and accredited by the U.S. Joint Commission. [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 0.5
+  },
+  {
+    "sample_id": "hotpotqa_clu0040_medium_1",
+    "question": "In which city is the George Washington University Hospital located, and what is the name of the hospital where Dr. Gregory House works?",
+    "ground_truth_answer": "Washington, D.C., and Princeton–Plainsboro Teaching Hospital",
+    "generated_answer": "The George Washington University Hospital is located in Washington, D.C., and Dr. Gregory House works at the fictional Princeton–Plainsboro Teaching Hospital in New Jersey.",
+    "retrieved_contexts": [
+      "Q: What city are George Washington University Hospital and MedStar Washington Hospital Center located in?",
+      "[George Washington University Hospital] The George Washington University Hospital is located in Washington, D.C. in the United States. It is affiliated with the George Washington University School of Medicine and Health Sciences. The current facility opened on August 23, 2002, with 371 beds in a 400,000 sq. ft. building, housing more than $45 million of medical equipment and costing over $96 million to construct",
+      ". The series' main character is Dr. Gregory House (Hugh Laurie), an unconventional, misanthropic medical genius who, despite his dependence on pain medication, leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching Hospital (PPTH) in New Jersey. The series' premise originated with Paul Attanasio, while David Shore, who is credited as creator, was primarily responsible for the conception of the title character",
+      ". It also serves as a teaching hospital for Georgetown University School of Medicine.",
+      ". [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients. It also serves as a teaching hospital for Georgetown University School of Medicine."
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0041_hard_2",
+    "question": "What is the difference in the number of beds between the largest private hospital in Washington, D.C. and Children's National Medical Center?",
+    "ground_truth_answer": "623 beds",
+    "generated_answer": "The largest private hospital in Washington, D.C. has 926 beds, which has a greater number of beds than Children's National Medical Center which has 303 beds.",
+    "retrieved_contexts": [
+      "Q: Is Children's National Medical Center or MedStar Washington Hospital Center the largest private hospital in Washington, D.C.?",
+      "[Children's National Medical Center] Children’s National Medical Center (formerly DC Children’s Hospital) is ranked among the top 10 children’s hospitals in the country by \"U.S. News & World Report.\" Located just north of the McMillan Reservoir and Howard University, it shares grounds with Washington Hospital Center, National Rehabilitation Hospital, and the DC Veterans Affairs Medical Center",
+      ". The hospital is licensed by the District of Columbia Department of Consumer and Regulatory Affairs and accredited by the U.S. Joint Commission. [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients",
+      ". [MedStar Washington Hospital Center] MedStar Washington Hospital Center is the largest private hospital in Washington, D.C. A member of MedStar Health, the not-for-profit Hospital Center is licensed for 926 beds. Health services in primary, secondary and tertiary care are offered to adult and neonatal patients. It also serves as a teaching hospital for Georgetown University School of Medicine.",
+      ". Kurt Newman, M.D., has served as the president and chief executive officer of Children’s National since 2011. Children's National is a not-for-profit institution that performs more than 450,000 visits each year. Featuring 303 beds and a Level IV NICU, Children's National is the regional referral center for pediatric emergency, trauma, cancer, cardiac and critical care as well as neonatology, orthopaedic surgery, neurology and neurosurgery"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 1.0,
+    "answer_correctness": 1.0
+  },
+  {
+    "sample_id": "hotpotqa_clu0042_easy_0",
+    "question": "Where was the series House largely filmed?",
+    "ground_truth_answer": "Century City",
+    "generated_answer": "The series House was filmed largely in Century City.",
+    "retrieved_contexts": [
+      ". The series' executive producers included Shore, Attanasio, Attanasio's business partner Katie Jacobs, and film director Bryan Singer. It was filmed largely in Century City.",
+      "[House of Anubis] House of Anubis is a mystery television series developed for Nickelodeon based on the Dutch-Belgian television series \"Het Huis Anubis\". The series was created by Hans Bourlon and Gert Verhulst and premiered on Nickelodeon on 1 January 2011 in the United States and on 25 February 2011 in the United Kingdom. The series is the first series from the network to be filmed outside the United States and the first telenovela-format series for the network",
+      ". The series' main character is Dr. Gregory House (Hugh Laurie), an unconventional, misanthropic medical genius who, despite his dependence on pain medication, leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching Hospital (PPTH) in New Jersey. The series' premise originated with Paul Attanasio, while David Shore, who is credited as creator, was primarily responsible for the conception of the title character",
+      ". It is filmed at the Inspire: Luton Sports Village, which is based in Stopsley, Luton. The show premiered on ITV on 5 January 2013 winning the ratings battle for its 7.15pm-8.15pm slot with an average audience of 5.6 million viewers, a network share of 23.6%, however, it was cancelled on 15 February 2014 after just two series. [Tom Daley] Thomas Robert Daley (born 21 May 1994) is a British diver",
+      "Q: The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in what year?"
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_recall": 1.0,
+    "context_precision": 0.5,
+    "answer_correctness": 1.0
+  }
+]

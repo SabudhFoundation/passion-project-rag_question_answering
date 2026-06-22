@@ -1,3 +1,5 @@
 # Preface {.unnumbered}
 
-Write your content.
+The development of this Retrieval-Augmented Generation (RAG) Question Answering system represents a comprehensive engineering and research effort to build a production-ready application that leverages state-of-the-art Natural Language Processing (NLP) techniques. Traditional Question Answering systems have struggled with multi-hop reasoning—the ability to connect information across multiple documents to answer complex questions. By focusing on the challenging HotpotQA dataset, this project addresses this limitation head-on.
+
+This report serves as a detailed reference guide and documentation for the architecture, design choices, file inventory, and experimental evaluation of the final system. Over five major iterations, the system evolved from a basic retriever to a highly optimized, persistent, and hybrid RAG system with late-interaction re-ranking. The contents of this report outline the journey, technical specifications, and key performance benchmarks of the finalized pipeline.

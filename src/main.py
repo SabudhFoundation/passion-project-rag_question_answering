@@ -136,7 +136,15 @@ def main() -> None:
     elif args.query:
         from pipelines.query import QueryPipeline
         pipeline = QueryPipeline()
-        pipeline.run(args.query)
+        result = pipeline.run(args.query)
+
+        print("\n" + "=" * 60)
+        print("QUERY:")
+        print(result["query"])
+
+        print("\nANSWER:")
+        print(result["answer"])
+        print("=" * 60)
 
     elif args.evaluate:
         from pipelines.evaluation import EvaluationPipeline

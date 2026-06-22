@@ -1,3 +1,22 @@
-# Conclusion
+# Chapter 7: Conclusions
 
-Conclude by summarizing the key findings of the analysis, discussing the implications of the results, and suggesting areas for future research.
+## 6.1 Project Achievements
+
+The project successfully met all key design objectives, yielding a production-ready RAG system tailored for multi-hop question answering on the HotpotQA dataset. The architecture separates concerns into modular services, facilitating scaling, testing, and maintenance. Key achievements include the integration of hybrid search and post-retrieval re-ranking, and the design of a smart routing and query-rewriting layer to manage conversational context.
+
+## 6.2 Technical Excellence
+
+The codebase reflects software engineering best practices:
+- Single Responsibility: Classes (Embedder, Preprocessor, Chunker) execute one task.
+- Robust Error Handling: Custom exceptions (DataDownloadError, RetrievalError) isolate issues.
+- Persistence: Async MongoDB integration preserves user state.
+- Lazy Loading: Heavy embedding models and vector clients load only when needed, minimizing start-up times.
+
+## 6.3 Future Enhancements
+
+To build upon this work, future iterations could investigate:
+- Local GPU-accelerated embedding indexing to support larger source datasets.
+- Advanced post-retrieval processing, such as LLM-based chunk summarization and compression.
+- Contextual semantic caching to bypass LLM generation for duplicate queries, reducing API costs.
+- Extent the system to support multimodal RAG inputs, indexing tables and figures alongside text.
+

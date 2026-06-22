@@ -1,0 +1,36 @@
+# Appendix
+
+A. Complete File Inventory
+The project codebase is organized as follows:
+- src/config.py: Centralized configuration parameters
+- src/logger.py: Standardized Python logging setup
+- src/exceptions.py: Custom pipeline exceptions
+- src/preprocessing_data/pre_processing.py: Ingestion preprocessing
+- src/feature_engineering/build_features.py: Embedding representations
+- src/models/retriever.py: Hybrid search and reranking
+- src/models/predict_model.py: Generation models
+- src/models/prompts.py: Structured prompts
+- src/agents/query_router.py: Pre-retrieval routing agent
+- src/agents/query_rewriter.py: Chat-history rewrite agent
+- src/db/mongo_data_layer.py: MongoDB asynchronous motor connector
+- src/pipelines/ingestion.py: Indexing orchestration
+- src/pipelines/query.py: Runtime query execution
+- src/evaluation/improved_ragas_eval.py: Post-generation RAGAS evaluations
+- synthetic_data_generator.py: Document clustering and QA pair generator
+- src/visualization/app.py: UI visualization launcher
+
+B. Environment Variables Quick Reference
+The system requires the following environment variables set in a local .env file:
+- PINECONE_API_KEY: Authentication key for Pinecone DB.
+- GROQ_API_KEY: Authentication key for Groq LLMs.
+- GOOGLE_API_KEY: Authentication key for Gemini evaluation judge.
+- MONGO_URI: URI for MongoDB database (defaults to mongodb://localhost:27017).
+
+C. CLI Command Cheat Sheet
+The following commands drive the main system tasks:
+- Indexing Pipeline: python src/main.py --ingest
+- Single Query Run: python src/main.py --query "Question text"
+- Evaluate exact match: python src/main.py --evaluate --num 20
+- Run RAGAS Judge: python src/evaluation/improved_ragas_eval.py --samples 20
+- Launch Web Interface: python src/main.py --app
+- Generate Synthetic QA: python synthetic_data_generator.py --dataset hotpotqa --top-clusters 50
